@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/auth") // Główny adres dla logowania i restraint
+@RequestMapping("/api/auth") // Główny adres dla logowania i restracji
 public class AuthController {
 
     private final AuthService authService;
