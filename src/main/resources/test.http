@@ -1,0 +1,35 @@
+### Logowanie i pobranie tokenu
+// @name Test Logowania
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test@wp.pl",
+  "password": "mojehaslo123"
+}
+
+### Test Zmiany Nazwy Profilu
+// @name Profil
+PUT http://localhost:8080/api/auth/profile
+Content-Type: application/json
+Authorization: Bearer TUTAJ_WKLEJ_TOKEN
+
+{
+  "name": "NowaNazwaUzytkownika"
+}
+
+### Test Zmiany Hasła
+// @name ZmianaHasla
+PUT http://localhost:8080/api/auth/change-password
+Content-Type: application/json
+Authorization: Bearer TUTAJ_WKLEJ_TOKEN
+
+{
+  "oldPassword": "mojehaslo123",
+  "newPassword": "noweHaslo456"
+}
+
+### Test Usunięcia Konta
+// @name UsunKonto
+DELETE http://localhost:8080/api/auth/user
+Authorization: Bearer TUTAJ_WKLEJ_TOKEN
