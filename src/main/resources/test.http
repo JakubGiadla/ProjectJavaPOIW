@@ -1,35 +1,37 @@
+### Rejstracja
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+  "email": "kuba@example.com",
+  "password": "superbezpiecznehaslo",
+  "name": "Kuba"
+}
+
 ### Logowanie i pobranie tokenu
-// @name Test Logowania
 POST http://localhost:8080/api/auth/login
 Content-Type: application/json
 
 {
-  "email": "test@wp.pl",
-  "password": "mojehaslo123"
+  "email": "kuba@example.com",
+  "password": "superbezpiecznehaslo"
 }
 
-### Test Zmiany Nazwy Profilu
-// @name Profil
-PUT http://localhost:8080/api/auth/profile
+> {%
+    // Ta funkcja automatycznie zapisze token z odpowiedzi do zmiennej globalnej auth_token
+    client.global.set("auth_token", response.body.token);
+%}
+
+### Tworzenie nowego Wydarzenia (Event)
+POST http://localhost:8080/api/events
 Content-Type: application/json
-Authorization: Bearer TUTAJ_WKLEJ_TOKEN
+Authorization: Bearer {{auth_token}}
 
 {
-  "name": "NowaNazwaUzytkownika"
+  "title": "Domowka",
+  "location": "Gliwice"
 }
 
-### Test Zmiany Hasła
-// @name ZmianaHasla
-PUT http://localhost:8080/api/auth/change-password
-Content-Type: application/json
-Authorization: Bearer TUTAJ_WKLEJ_TOKEN
-
-{
-  "oldPassword": "mojehaslo123",
-  "newPassword": "noweHaslo456"
-}
-
-### Test Usunięcia Konta
-// @name UsunKonto
-DELETE http://localhost:8080/api/auth/user
-Authorization: Bearer TUTAJ_WKLEJ_TOKEN
+### Pobranie listy wydarzeń (Aby sprawdzić ID Twojego wydarzenia)
+GET http://localhost:8080/api/events
+Authorization: Bearer {{auth_token}}
