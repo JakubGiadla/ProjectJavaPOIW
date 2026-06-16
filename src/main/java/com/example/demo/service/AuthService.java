@@ -50,7 +50,7 @@ public class AuthService {
         User user = userRepository.findByEmail(email)
                 .orElseThrow(() -> new RuntimeException("Nie znaleziono użytkownika"));
 
-        user.setName(request.getName()); // Upewnij się, że w klasie User pole nazywa się 'name' i ma setter
+        user.setName(request.getName());
         userRepository.save(user);
     }
 

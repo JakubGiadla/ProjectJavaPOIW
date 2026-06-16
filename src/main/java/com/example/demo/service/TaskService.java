@@ -20,10 +20,11 @@ public class TaskService {
         this.attendeeRepository = attendeeRepository;
     }
 
-
-    private void validateAccess(Long eventId, String email) {
-        User user = userRepository.findByEmail(email).orElseThrow(() -> new RuntimeException("Użytkownik nie istnieje"));
-        Event event = eventRepository.findById(eventId).orElseThrow(() -> new RuntimeException("Wydarzenie nie istnieje"));
+    private Event getVerifiedEvent(Long eventId, String email) {
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new RuntimeException("Użytkownik nie istnieje"));
+        Event event = eventRepository.findById(eventId)
+                .orElseThrow(() -> new RuntimeException("Wydarzenie nie istnieje"));
 
         boolean isOrganizer = event.getOrganizer().equals(user);
         boolean isParticipant = attendeeRepository.existsByEventAndUser(event, user);
@@ -31,31 +32,42 @@ public class TaskService {
         if (!isOrganizer && !isParticipant) {
             throw new RuntimeException("Brak uprawnień do tego wydarzenia");
         }
+        return event;
     }
 
     public List<Task> getTasksByEvent(Long eventId, String email) {
-        validateAccess(eventId, email);
+        // Najpierw sprawdzamy dostęp, potem pobieramy zadania
+        getVerifiedEvent(eventId, email);
         return taskRepository.findByEventId(eventId);
     }
 
-    public Task addTask(Task task, String email) {
-        validateAccess(task.getEventId(), email);
+    public Task addTask(Task task, Long eventId, String email) {
+        Event event = getVerifiedEvent(eventId, email);
+        task.setEvent(event);
         return taskRepository.save(task);
     }
 
     public void completeTask(Long taskId, String email) {
-        Task task = taskRepository.findById(taskId).orElseThrow();
-        validateAccess(task.getEventId(), email);
+        Task task = taskRepository.findById(taskId)
+                .orElseThrow(() -> new RuntimeException("Zadanie nie istnieje"));
+
+        // Sprawdzamy dostęp do eventu, w którym jest to zadanie
+        getVerifiedEvent(task.getEvent().getId(), email);
+
         task.setCompleted(true);
         taskRepository.save(task);
     }
 
     public void assignTask(Long taskId, String targetEmail, String actorEmail) {
-        Task task = taskRepository.findById(taskId).orElseThrow();
-        validateAccess(task.getEventId(), actorEmail);
+        Task task = taskRepository.findById(taskId)
+                .orElseThrow(() -> new RuntimeException("Zadanie nie istnieje"));
 
-        User user = userRepository.findByEmail(targetEmail).orElseThrow();
-        task.setAssignee(user);
+        getVerifiedEvent(task.getEvent().getId(), actorEmail);
+
+        User assignee = userRepository.findByEmail(targetEmail)
+                .orElseThrow(() -> new RuntimeException("Użytkownik docelowy nie istnieje"));
+
+        task.setAssignee(assignee);
         taskRepository.save(task);
     }
 }

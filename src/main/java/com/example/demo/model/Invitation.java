@@ -6,7 +6,7 @@ import lombok.Setter;
 import java.time.LocalDateTime;
 
 @Getter
-@Setter // Jedna adnotacja tutaj automatycznie tworzy settery dla WSZYSTKICH pól pod spodem
+@Setter
 @Entity
 @Table(name = "invitations")
 public class Invitation {
@@ -35,11 +35,11 @@ public class Invitation {
 
     private boolean used;
 
-    // Pole numeryczne potrzebne do Twojego InvitationService
+
     @Column(name = "event_id")
     private Long eventId;
 
-    // Relacja obiektowa od drugiej osoby
+
     @ManyToOne
     @JoinColumn(name = "event_id", insertable = false, updatable = false)
     private Event event;

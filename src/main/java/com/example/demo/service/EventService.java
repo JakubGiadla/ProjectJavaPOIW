@@ -5,20 +5,19 @@ import com.example.demo.model.*;
 import com.example.demo.repository.*;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID; // <--- DODANO: import dla generatora kodów
 
 @Service
 public class EventService {
-    private final ExpenseRepository expenseRepository;
     private final EventRepository eventRepository;
     private final UserRepository userRepository;
+    private final ExpenseRepository expenseRepository;
     private final AttendeeRepository attendeeRepository;
-    private final SettlementEngine engine; // DODANO: deklaracja brakującego komponentu
+    private final SettlementEngine engine;
 
-    // Zaktualizowany konstruktor wstrzykujący wszystkie wymagane zależności
     public EventService(EventRepository eventRepository, UserRepository userRepository,
                         ExpenseRepository expenseRepository, AttendeeRepository attendeeRepository,
                         SettlementEngine engine) {
@@ -28,8 +27,6 @@ public class EventService {
         this.attendeeRepository = attendeeRepository;
         this.engine = engine;
     }
-
-    // --- METODY Z WERYFIKACJĄ ---
 
     public void closeEvent(Long eventId, String email) {
         Event event = findById(eventId);
@@ -63,8 +60,6 @@ public class EventService {
         }
     }
 
-    // --- METODY POMOCNICZE ---
-
     public void validateEventIsActive(Long eventId) {
         Event event = findById(eventId);
         if (event.isClosed()) {
@@ -78,10 +73,15 @@ public class EventService {
         return eventRepository.findByOrganizer(user);
     }
 
+    // --- ZMODYFIKOWANA METODA GENERUJĄCA KOD ---
     public Event createEvent(Event event, String email) {
         User organizer = userRepository.findByEmail(email)
                 .orElseThrow(() -> new RuntimeException("Nie znaleziono użytkownika"));
+
         event.setOrganizer(organizer);
+        String uniqueCode = UUID.randomUUID().toString().replace("-", "");
+        event.setJoinCode(uniqueCode);
+
         return eventRepository.save(event);
     }
 
@@ -104,84 +104,65 @@ public class EventService {
     }
 
     public EventReportDTO generateReport(Long eventId, String email) {
-        // 1. Weryfikacja dostępu
         Event event = getEventWithPermission(eventId, email);
 
-        // 2. Pobranie wydatków
-        List<Expense> expenses = expenseRepository.findByEventId(eventId);
+        List<Expense> expenses = event.getExpenses();
+        List<Attendee> attendees = event.getAttendees();
 
-        // 3. Obliczenie kosztu całkowitego
         double totalCost = expenses.stream()
                 .mapToDouble(Expense::getAmount)
                 .sum();
 
-        // Mapy pomocnicze: dopasowanie ID użytkownika do jego obiektu oraz gromadzenie bilansów (w groszach)
         Map<Long, User> userCache = new HashMap<>();
         Map<Long, Long> balancesMapLong = new HashMap<>();
 
-        // Inicjalizacja uczestników: Organizator
         User organizer = event.getOrganizer();
         userCache.put(organizer.getId(), organizer);
         balancesMapLong.put(organizer.getId(), 0L);
 
-        // Inicjalizacja uczestników: Zapisani goście
-        List<Attendee> attendees = attendeeRepository.findByEvent(event);
         for (Attendee attendee : attendees) {
             User u = attendee.getUser();
             userCache.put(u.getId(), u);
             balancesMapLong.put(u.getId(), 0L);
         }
 
-        // 4. Przetwarzanie kosztów wydatków na bazie ID użytkowników
         for (Expense expense : expenses) {
             User payer = expense.getPayer();
             if (payer == null) continue;
 
-            // Rejestrujemy płatnika w cache, gdyby nie był wcześniej zainicjalizowany
             userCache.put(payer.getId(), payer);
-
             long amountInCents = (long) (expense.getAmount() * 100);
             List<User> participants = expense.getParticipants();
 
-            if (participants == null || participants.isEmpty()) {
-                continue;
-            }
+            if (participants == null || participants.isEmpty()) continue;
 
             long perPerson = amountInCents / participants.size();
             long remainder = amountInCents % participants.size();
 
-            // Płatnik otrzymuje zwrot pełnej kwoty
             balancesMapLong.put(payer.getId(), balancesMapLong.getOrDefault(payer.getId(), 0L) + amountInCents);
 
-            // Pobranie części kosztów od uczestników
             for (int i = 0; i < participants.size(); i++) {
                 User u = participants.get(i);
-                userCache.put(u.getId(), u); // Zabezpieczenie cache
-
+                userCache.put(u.getId(), u);
                 long share = perPerson + (i == 0 ? remainder : 0);
                 balancesMapLong.put(u.getId(), balancesMapLong.getOrDefault(u.getId(), 0L) - share);
             }
         }
 
-        // Przygotowanie mapy obiektowej dla SettlementEngine (wymaganej przez sygnaturę metody calculate)
         Map<User, Long> settlementInput = new HashMap<>();
         for (Map.Entry<Long, Long> entry : balancesMapLong.entrySet()) {
             settlementInput.put(userCache.get(entry.getKey()), entry.getValue());
         }
 
-        // 5. Obliczenie transakcji wyrównawczych przez silnik rozliczeniowy
         List<Transaction> settlementTransactions = engine.calculate(settlementInput);
 
-        // 6. Konwersja danych bilansowych do formatu tekstowego dla DTO (PLN)
         Map<String, Double> balancesPerUser = new HashMap<>();
         for (Map.Entry<Long, Long> entry : balancesMapLong.entrySet()) {
             User u = userCache.get(entry.getKey());
             String userLabel = u.getName() != null ? u.getName() : u.getEmail();
-            double balanceInPln = entry.getValue() / 100.0;
-            balancesPerUser.put(userLabel, balanceInPln);
+            balancesPerUser.put(userLabel, entry.getValue() / 100.0);
         }
 
-        // 7. Zwrócenie kompletnego DTO raportu
         return EventReportDTO.builder()
                 .eventTitle(event.getTitle())
                 .expenses(expenses)

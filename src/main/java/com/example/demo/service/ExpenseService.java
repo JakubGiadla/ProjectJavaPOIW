@@ -36,27 +36,26 @@ public class ExpenseService {
         // 1. Sprawdź czy event jest aktywny
         eventService.validateEventIsActive(eventId);
 
-        // 2. Pobierz płatnika na podstawie e-maila (bezpieczne!)
+        // --- KLUCZOWA ZMIANA: Pobieramy obiekt Event z bazy ---
+        com.example.demo.model.Event event = eventService.findById(eventId);
+
         User payer = userRepository.findByEmail(email)
                 .orElseThrow(() -> new RuntimeException("Nie znaleziono użytkownika"));
 
-        // 3. Pobierz uczestników
         List<User> participants = userRepository.findAllById(request.getParticipantIds());
 
-        // 4. Dodaj wydatek przez metodę pomocniczą
-        Expense expense = addExpense(eventId, request.getTitle(), payer, request.getAmount(), participants);
-
-        return expense;
+        // --- Przekazujemy obiekt 'event' zamiast 'eventId' ---
+        return addExpense(event, request.getTitle(), payer, request.getAmount(), participants);
     }
 
     @Transactional
-    public Expense addExpense(Long eventId, String description, User payer, double amount, List<User> participants) {
+    public Expense addExpense(com.example.demo.model.Event event, String description, User payer, double amount, List<User> participants) {
         if (amount <= 0) throw new IllegalArgumentException("Kwota musi być dodatnia");
         if (participants == null || participants.isEmpty())
             throw new IllegalArgumentException("Musi być co najmniej jeden uczestnik");
 
         Expense newExpense = Expense.builder()
-                .eventId(eventId)
+                .event(event)
                 .description(description)
                 .payer(payer)
                 .amount(amount)

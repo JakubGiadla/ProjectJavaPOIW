@@ -34,9 +34,7 @@ public class TaskController {
      */
     @PostMapping
     public ResponseEntity<Task> addTask(@PathVariable Long eventId, @RequestBody Task task, Principal principal) {
-        // Powiązanie zadania z wydarzeniem na podstawie ID ze ścieżki
-        task.setEventId(eventId);
-        return ResponseEntity.ok(taskService.addTask(task, principal.getName()));
+        return ResponseEntity.ok(taskService.addTask(task, eventId, principal.getName()));
     }
 
     /**

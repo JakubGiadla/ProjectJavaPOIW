@@ -10,14 +10,18 @@ import lombok.*;
 @Entity
 @Table(name = "tasks")
 public class Task {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Long eventId; // Żeby wiedzieć, do którego wydarzenia należy
-    private String description; // Np. "kup dildo"
-    private boolean isCompleted; // Czy zadanie jest zrobione
+    @ManyToOne
+    @JoinColumn(name = "event_id")
+    private Event event;
+
+    private String description;
+    private boolean isCompleted;
 
     @ManyToOne
-    private User assignee; // Osoba, której przypisaliśmy zadanie
+    private User assignee;
 }

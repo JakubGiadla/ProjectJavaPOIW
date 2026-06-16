@@ -14,9 +14,7 @@ import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import java.util.List;
 
-// Wskazujemy Spring Bootowi, że jest to plik z ustawieniami, który zostanie wczytany priorytetowo podczas uruchamiania aplikacji
 @Configuration
-// Włączenie zabezpieczeń sieciowych, które są przez nas definiowane
 @EnableWebSecurity
 public class SecurityConfig {
 

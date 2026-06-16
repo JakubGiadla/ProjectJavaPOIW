@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-@Component // Dzięki temu Spring pozwoli na automatyczne wstrzyknięcie tej klasy w ExpenseService
+@Component
 public class SettlementEngine {
 
     public List<Transaction> calculate(Map<User, Long> balances) {

@@ -5,9 +5,9 @@ import lombok.*;
 import java.util.List;
 
 @Data
-@Builder // <--- To wygeneruje metodę builder()
-@NoArgsConstructor // <--- Wymagane przez JPA
-@AllArgsConstructor // <--- Wymagane przez @Builder
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "expenses")
 public class Expense {
@@ -15,7 +15,10 @@ public class Expense {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Long eventId;
+    @ManyToOne
+    @JoinColumn(name = "event_id")
+    private Event event; // Teraz używasz obiektu, a nie ID!
+
     private String description;
 
     @ManyToOne
@@ -25,14 +28,4 @@ public class Expense {
 
     @ManyToMany
     private List<User> participants;
-
-
-    // Ręczny konstruktor uwzględniający pole eventId
-    public Expense(Long eventId, String description, User payer, double amount, List<User> participants) {
-        this.eventId = eventId;
-        this.description = description;
-        this.payer = payer;
-        this.amount = amount;
-        this.participants = participants;
-    }
 }
