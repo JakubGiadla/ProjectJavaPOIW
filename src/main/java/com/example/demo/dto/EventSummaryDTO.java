@@ -17,4 +17,5 @@ public class EventSummaryDTO {
     private String location;
     private String type;
     private String organizerName;
+    private boolean closed;
 }

@@ -3,7 +3,7 @@ package com.example.demo.service;
 import com.example.demo.dto.AttendeeDTO;
 import com.example.demo.dto.EventDetailsDTO;
 import com.example.demo.dto.EventReportDTO;
-import com.example.demo.dto.EventSummaryDTO; // Dodany import dla DTO podsumowania
+import com.example.demo.dto.EventSummaryDTO;
 import com.example.demo.model.*;
 import com.example.demo.repository.*;
 import org.springframework.stereotype.Service;
@@ -90,9 +90,10 @@ public class EventService {
                 .location(event.getLocation())
                 .type(event.getType())
                 .joinCode(event.getJoinCode())
-                .isClosed(event.isClosed())
+                .isClosed(event.isClosed()) // To już było poprawne!
                 .organizerName(event.getOrganizer() != null ? event.getOrganizer().getName() : null)
                 .attendees(attendeeDTOs)
+                .tasks(event.getTasks())
                 .build();
     }
 
@@ -103,12 +104,10 @@ public class EventService {
         }
     }
 
-    // POPRAWIONA METODA: Zwraca EventSummaryDTO oraz wywołuje nową metodę z repozytorium
     public List<EventSummaryDTO> findAllByUser(String email) {
         User user = userRepository.findByEmail(email)
                 .orElseThrow(() -> new RuntimeException("Nie znaleziono użytkownika"));
 
-        // Pobiera wydarzenia zorganizowane przez użytkownika LUB te, do których dołączył
         List<Event> events = eventRepository.findAllByOrganizerOrAttendee(user);
 
         return events.stream()
@@ -119,6 +118,7 @@ public class EventService {
                         .location(event.getLocation())
                         .type(event.getType())
                         .organizerName(event.getOrganizer() != null ? event.getOrganizer().getName() : null)
+                        .closed(event.isClosed()) // 🔥 TU BYŁ PIES POGRZEBANY! Teraz przesyłamy stan z bazy!
                         .build())
                 .toList();
     }
@@ -130,6 +130,10 @@ public class EventService {
         event.setOrganizer(organizer);
         String uniqueCode = UUID.randomUUID().toString().replace("-", "");
         event.setJoinCode(uniqueCode);
+
+        Event savedEvent = eventRepository.save(event);
+        Attendee organizerAttendee = new Attendee(savedEvent, organizer);
+        attendeeRepository.save(organizerAttendee);
 
         return eventRepository.save(event);
     }
@@ -143,7 +147,7 @@ public class EventService {
         Event event = findById(eventId);
         User user = userRepository.findByEmail(email).orElseThrow();
 
-        boolean isOrganizer = event.getOrganizer().equals(user);
+        boolean isOrganizer = event.getOrganizer() != null && event.getOrganizer().getId().equals(user.getId());
         boolean isParticipant = attendeeRepository.existsByEventAndUser(event, user);
 
         if (!isOrganizer && !isParticipant) {

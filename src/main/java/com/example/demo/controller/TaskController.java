@@ -56,4 +56,24 @@ public class TaskController {
         taskService.assignTask(taskId, email, principal.getName());
         return ResponseEntity.ok(Map.of("message", "Zadanie przypisane!"));
     }
+
+    /**
+     * PUT /api/events/{eventId}/tasks/{taskId}/unassign
+     * Usuwa przypisanie wykonawcy od zadania (cofa zapisanie się).
+     */
+    @PutMapping("/{taskId}/unassign")
+    public ResponseEntity<Map<String, String>> unassignTask(@PathVariable Long taskId, Principal principal) {
+        taskService.unassignTask(taskId, principal.getName());
+        return ResponseEntity.ok(Map.of("message", "Cofnięto przypisanie do zadania!"));
+    }
+
+    /**
+     * DELETE /api/events/{eventId}/tasks/{taskId}
+     * Całkowicie usuwa zadanie z wydarzenia.
+     */
+    @DeleteMapping("/{taskId}")
+    public ResponseEntity<Map<String, String>> deleteTask(@PathVariable Long taskId, Principal principal) {
+        taskService.deleteTask(taskId, principal.getName());
+        return ResponseEntity.ok(Map.of("message", "Zadanie zostało usunięte!"));
+    }
 }

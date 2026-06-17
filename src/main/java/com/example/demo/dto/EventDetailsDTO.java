@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 import java.util.List;
+import com.example.demo.model.Task;
 
 @Data
 @Builder
@@ -21,4 +22,5 @@ public class EventDetailsDTO {
     private boolean isClosed;
     private String organizerName;
     private List<AttendeeDTO> attendees; // Tutaj trafią dołączone osoby!
+    private List<Task> tasks;
 }

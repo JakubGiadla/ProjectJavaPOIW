@@ -26,8 +26,7 @@ public class TaskService {
         Event event = eventRepository.findById(eventId)
                 .orElseThrow(() -> new RuntimeException("Wydarzenie nie istnieje"));
 
-        boolean isOrganizer = event.getOrganizer().equals(user);
-        boolean isParticipant = attendeeRepository.existsByEventAndUser(event, user);
+        boolean isOrganizer = event.getOrganizer() != null && event.getOrganizer().getId().equals(user.getId());        boolean isParticipant = attendeeRepository.existsByEventAndUser(event, user);
 
         if (!isOrganizer && !isParticipant) {
             throw new RuntimeException("Brak uprawnień do tego wydarzenia");
@@ -44,6 +43,12 @@ public class TaskService {
     public Task addTask(Task task, Long eventId, String email) {
         Event event = getVerifiedEvent(eventId, email);
         task.setEvent(event);
+
+        if (event.getTasks() == null) {
+            event.setTasks(new java.util.ArrayList<>());
+        }
+        event.getTasks().add(task);
+
         return taskRepository.save(task);
     }
 
@@ -69,5 +74,44 @@ public class TaskService {
 
         task.setAssignee(assignee);
         taskRepository.save(task);
+    }
+
+    public void unassignTask(Long taskId, String email) {
+        Task task = taskRepository.findById(taskId)
+                .orElseThrow(() -> new RuntimeException("Zadanie nie istnieje"));
+
+        User actor = userRepository.findByEmail(email)
+                .orElseThrow(() -> new RuntimeException("Użytkownik nie istnieje"));
+
+        Event event = task.getEvent();
+        boolean isOrganizer = event.getOrganizer() != null && event.getOrganizer().getId().equals(actor.getId());
+        boolean isCurrentAssignee = task.getAssignee() != null && task.getAssignee().getId().equals(actor.getId());
+
+        if (!isOrganizer && !isCurrentAssignee) {
+            throw new RuntimeException("Tylko przypisana osoba lub organizator może anulować przypisanie!");
+        }
+
+        task.setAssignee(null);
+        taskRepository.save(task);
+    }
+
+    // 3.  NOWA METODA: CAŁKOWITE USUNIĘCIE ZADANIA Z BAZY
+    // Blokada: Tylko przypisana osoba lub Organizator wyjazdu może usunąć to zadanie!
+    public void deleteTask(Long taskId, String email) {
+        Task task = taskRepository.findById(taskId)
+                .orElseThrow(() -> new RuntimeException("Zadanie nie istnieje"));
+
+        User actor = userRepository.findByEmail(email)
+                .orElseThrow(() -> new RuntimeException("Użytkownik nie istnieje"));
+
+        Event event = task.getEvent();
+        boolean isOrganizer = event.getOrganizer() != null && event.getOrganizer().getId().equals(actor.getId());
+        boolean isCurrentAssignee = task.getAssignee() != null && task.getAssignee().getId().equals(actor.getId());
+
+        if (!isOrganizer && !isCurrentAssignee) {
+            throw new RuntimeException("Brak uprawnień. Tylko wykonawca zadania lub organizator wyjazdu może je usunąć!");
+        }
+
+        taskRepository.delete(task);
     }
 }
