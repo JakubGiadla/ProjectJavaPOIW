@@ -93,6 +93,7 @@ public class EventService {
                 .isClosed(event.isClosed())
                 .organizerName(event.getOrganizer() != null ? event.getOrganizer().getName() : null)
                 .attendees(attendeeDTOs)
+                .tasks(event.getTasks())
                 .build();
     }
 
@@ -131,6 +132,12 @@ public class EventService {
         String uniqueCode = UUID.randomUUID().toString().replace("-", "");
         event.setJoinCode(uniqueCode);
 
+        Event savedEvent = eventRepository.save(event);
+
+        Attendee organizerAttendee = new Attendee(savedEvent, organizer);
+
+        attendeeRepository.save(organizerAttendee);
+
         return eventRepository.save(event);
     }
 
@@ -143,7 +150,7 @@ public class EventService {
         Event event = findById(eventId);
         User user = userRepository.findByEmail(email).orElseThrow();
 
-        boolean isOrganizer = event.getOrganizer().equals(user);
+        boolean isOrganizer = event.getOrganizer() != null && event.getOrganizer().getId().equals(user.getId());
         boolean isParticipant = attendeeRepository.existsByEventAndUser(event, user);
 
         if (!isOrganizer && !isParticipant) {
