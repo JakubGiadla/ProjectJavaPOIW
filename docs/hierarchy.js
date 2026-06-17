@@ -1,0 +1,56 @@
+var hierarchy =
+[
+    [ "com.example.demo.dto.ApiResponse", "classcom_1_1example_1_1demo_1_1dto_1_1ApiResponse.html", null ],
+    [ "AsyncConfigurer", null, [
+      [ "com.example.demo.config.AsyncConfig", "classcom_1_1example_1_1demo_1_1config_1_1AsyncConfig.html", null ]
+    ] ],
+    [ "com.example.demo.model.Attendee", "classcom_1_1example_1_1demo_1_1model_1_1Attendee.html", null ],
+    [ "com.example.demo.dto.AttendeeDTO", "classcom_1_1example_1_1demo_1_1dto_1_1AttendeeDTO.html", null ],
+    [ "com.example.demo.controller.AuthController", "classcom_1_1example_1_1demo_1_1controller_1_1AuthController.html", null ],
+    [ "com.example.demo.service.AuthService", "classcom_1_1example_1_1demo_1_1service_1_1AuthService.html", null ],
+    [ "com.example.demo.dto.ChangePasswordRequest", "classcom_1_1example_1_1demo_1_1dto_1_1ChangePasswordRequest.html", null ],
+    [ "com.example.demo.service.EmailService", "classcom_1_1example_1_1demo_1_1service_1_1EmailService.html", null ],
+    [ "com.example.demo.model.Event", "classcom_1_1example_1_1demo_1_1model_1_1Event.html", null ],
+    [ "com.example.demo.controller.EventController", "classcom_1_1example_1_1demo_1_1controller_1_1EventController.html", null ],
+    [ "com.example.demo.dto.EventDetailsDTO", "classcom_1_1example_1_1demo_1_1dto_1_1EventDetailsDTO.html", null ],
+    [ "com.example.demo.dto.EventReportDTO", "classcom_1_1example_1_1demo_1_1dto_1_1EventReportDTO.html", null ],
+    [ "com.example.demo.service.EventService", "classcom_1_1example_1_1demo_1_1service_1_1EventService.html", null ],
+    [ "com.example.demo.dto.EventSummaryDTO", "classcom_1_1example_1_1demo_1_1dto_1_1EventSummaryDTO.html", null ],
+    [ "com.example.demo.model.Expense", "classcom_1_1example_1_1demo_1_1model_1_1Expense.html", null ],
+    [ "com.example.demo.controller.ExpenseController", "classcom_1_1example_1_1demo_1_1controller_1_1ExpenseController.html", null ],
+    [ "com.example.demo.dto.ExpenseRequest", "classcom_1_1example_1_1demo_1_1dto_1_1ExpenseRequest.html", null ],
+    [ "com.example.demo.service.ExpenseService", "classcom_1_1example_1_1demo_1_1service_1_1ExpenseService.html", null ],
+    [ "com.example.demo.model.Invitation", "classcom_1_1example_1_1demo_1_1model_1_1Invitation.html", null ],
+    [ "com.example.demo.controller.InvitationController", "classcom_1_1example_1_1demo_1_1controller_1_1InvitationController.html", null ],
+    [ "com.example.demo.service.InvitationService", "classcom_1_1example_1_1demo_1_1service_1_1InvitationService.html", null ],
+    [ "JpaRepository", null, [
+      [ "com.example.demo.repository.AttendeeRepository", "interfacecom_1_1example_1_1demo_1_1repository_1_1AttendeeRepository.html", null ],
+      [ "com.example.demo.repository.EventRepository", "interfacecom_1_1example_1_1demo_1_1repository_1_1EventRepository.html", null ],
+      [ "com.example.demo.repository.ExpenseRepository", "interfacecom_1_1example_1_1demo_1_1repository_1_1ExpenseRepository.html", null ],
+      [ "com.example.demo.repository.InvitationRepository", "interfacecom_1_1example_1_1demo_1_1repository_1_1InvitationRepository.html", null ],
+      [ "com.example.demo.repository.NotificationRepository", "interfacecom_1_1example_1_1demo_1_1repository_1_1NotificationRepository.html", null ],
+      [ "com.example.demo.repository.TaskRepository", "interfacecom_1_1example_1_1demo_1_1repository_1_1TaskRepository.html", null ],
+      [ "com.example.demo.repository.UserRepository", "interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository.html", null ]
+    ] ],
+    [ "com.example.demo.service.JwtService", "classcom_1_1example_1_1demo_1_1service_1_1JwtService.html", null ],
+    [ "com.example.demo.dto.LoginRequest", "classcom_1_1example_1_1demo_1_1dto_1_1LoginRequest.html", null ],
+    [ "com.example.demo.config.MailConfig", "classcom_1_1example_1_1demo_1_1config_1_1MailConfig.html", null ],
+    [ "com.example.demo.Main", "classcom_1_1example_1_1demo_1_1Main.html", null ],
+    [ "com.example.demo.model.Notification", "classcom_1_1example_1_1demo_1_1model_1_1Notification.html", null ],
+    [ "com.example.demo.controller.NotificationController", "classcom_1_1example_1_1demo_1_1controller_1_1NotificationController.html", null ],
+    [ "com.example.demo.service.NotificationService", "classcom_1_1example_1_1demo_1_1service_1_1NotificationService.html", null ],
+    [ "OncePerRequestFilter", null, [
+      [ "com.example.demo.config.JwtAuthenticationFilter", "classcom_1_1example_1_1demo_1_1config_1_1JwtAuthenticationFilter.html", null ]
+    ] ],
+    [ "com.example.demo.service.PdfReportService", "classcom_1_1example_1_1demo_1_1service_1_1PdfReportService.html", null ],
+    [ "com.example.demo.dto.ProfileUpdateRequest", "classcom_1_1example_1_1demo_1_1dto_1_1ProfileUpdateRequest.html", null ],
+    [ "com.example.demo.controller.QrCodeController", "classcom_1_1example_1_1demo_1_1controller_1_1QrCodeController.html", null ],
+    [ "com.example.demo.service.QrCodeService", "classcom_1_1example_1_1demo_1_1service_1_1QrCodeService.html", null ],
+    [ "com.example.demo.controller.ReportController", "classcom_1_1example_1_1demo_1_1controller_1_1ReportController.html", null ],
+    [ "com.example.demo.config.SecurityConfig", "classcom_1_1example_1_1demo_1_1config_1_1SecurityConfig.html", null ],
+    [ "com.example.demo.service.SettlementEngine", "classcom_1_1example_1_1demo_1_1service_1_1SettlementEngine.html", null ],
+    [ "com.example.demo.model.Task", "classcom_1_1example_1_1demo_1_1model_1_1Task.html", null ],
+    [ "com.example.demo.controller.TaskController", "classcom_1_1example_1_1demo_1_1controller_1_1TaskController.html", null ],
+    [ "com.example.demo.service.TaskService", "classcom_1_1example_1_1demo_1_1service_1_1TaskService.html", null ],
+    [ "com.example.demo.model.User", "classcom_1_1example_1_1demo_1_1model_1_1User.html", null ]
+];
