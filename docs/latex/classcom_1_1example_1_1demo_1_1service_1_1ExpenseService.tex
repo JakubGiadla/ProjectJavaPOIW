@@ -1,0 +1,28 @@
+\doxysection{com.\+example.\+demo.\+service.\+Expense\+Service Class Reference}
+\hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService}{}\label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService}\index{com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a057c7437233bc7e45bd2282acd6abb0b}\label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a057c7437233bc7e45bd2282acd6abb0b} 
+{\bfseries Expense\+Service} (\doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1ExpenseRepository}{Expense\+Repository}} expense\+Repository, \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1SettlementEngine}{Settlement\+Engine}} engine, \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1EventService}{Event\+Service}} event\+Service, \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository}{User\+Repository}} user\+Repository)
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a65ee51bfddf9ed6c52d854cb8b8561fd}\label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a65ee51bfddf9ed6c52d854cb8b8561fd} 
+void {\bfseries register\+User} (\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1User}{User}} user)
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a854e1df9f6e6c3c0bb4cc44b624d94cd}\label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a854e1df9f6e6c3c0bb4cc44b624d94cd} 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Expense}{Expense}} {\bfseries create\+Expense} (Long event\+Id, \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1ExpenseRequest}{Expense\+Request}} request, String email)
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_af0fadd597902251ea73886cbc0eb529a}\label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_af0fadd597902251ea73886cbc0eb529a} 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Expense}{Expense}} {\bfseries add\+Expense} (\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Event}{com.\+example.\+demo.\+model.\+Event}} event, String description, \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1User}{User}} payer, double amount, List$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1User}{User}} $>$ participants, String split\+Type, Map$<$ Long, Double $>$ weights)
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a6cdd8a3f7fe7998650b4de432e5ed82e}\label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a6cdd8a3f7fe7998650b4de432e5ed82e} 
+List$<$ Transaction $>$ {\bfseries calculate\+Settlements} ()
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a1fdfe365087c07f817d6e46c13862b95}\label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a1fdfe365087c07f817d6e46c13862b95} 
+List$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Expense}{Expense}} $>$ {\bfseries get\+History} (Long event\+Id)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+src/\+main/\+java/\+com/\+example/\+demo/\+service/\+Expense\+Service.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,31 @@
+\doxysection{com.\+example.\+demo.\+service.\+Task\+Service Class Reference}
+\hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService}{}\label{classcom_1_1example_1_1demo_1_1service_1_1TaskService}\index{com.example.demo.service.TaskService@{com.example.demo.service.TaskService}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a1ad2222b5b25b3714e524932efb6b023}\label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a1ad2222b5b25b3714e524932efb6b023} 
+{\bfseries Task\+Service} (\doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1TaskRepository}{Task\+Repository}} task\+Repository, \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository}{User\+Repository}} user\+Repository, \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1EventRepository}{Event\+Repository}} event\+Repository, \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1AttendeeRepository}{Attendee\+Repository}} attendee\+Repository)
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a09493632498f7b2c667b9eccb9a54d4a}\label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a09493632498f7b2c667b9eccb9a54d4a} 
+List$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Task}{Task}} $>$ {\bfseries get\+Tasks\+By\+Event} (Long event\+Id, String email)
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a061d011af815933992ff7273d0830379}\label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a061d011af815933992ff7273d0830379} 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Task}{Task}} {\bfseries add\+Task} (\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Task}{Task}} task, Long event\+Id, String email)
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a217df9f680de2e393cd4def0ad9866c2}\label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a217df9f680de2e393cd4def0ad9866c2} 
+void {\bfseries complete\+Task} (Long task\+Id, String email)
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a45e71242a7225aeddc473a6279d7af28}\label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a45e71242a7225aeddc473a6279d7af28} 
+void {\bfseries assign\+Task} (Long task\+Id, String target\+Email, String actor\+Email)
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_aae24fb2828e4e9ad20bc9b01651ae128}\label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_aae24fb2828e4e9ad20bc9b01651ae128} 
+void {\bfseries unassign\+Task} (Long task\+Id, String email)
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a3fc19194f5be7a99a6e7b598e68b76af}\label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a3fc19194f5be7a99a6e7b598e68b76af} 
+void {\bfseries delete\+Task} (Long task\+Id, String email)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+src/\+main/\+java/\+com/\+example/\+demo/\+service/\+Task\+Service.\+java\end{DoxyCompactItemize}

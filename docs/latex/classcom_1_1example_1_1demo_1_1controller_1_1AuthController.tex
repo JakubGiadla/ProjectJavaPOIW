@@ -1,0 +1,58 @@
+\doxysection{com.\+example.\+demo.\+controller.\+Auth\+Controller Class Reference}
+\hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1AuthController}{}\label{classcom_1_1example_1_1demo_1_1controller_1_1AuthController}\index{com.example.demo.controller.AuthController@{com.example.demo.controller.AuthController}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1AuthController_a91ef8254081234626f2f6aeccfb1f7bf}\label{classcom_1_1example_1_1demo_1_1controller_1_1AuthController_a91ef8254081234626f2f6aeccfb1f7bf} 
+{\bfseries Auth\+Controller} (\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1AuthService}{Auth\+Service}} auth\+Service)
+\item 
+Response\+Entity$<$?$>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1AuthController_a670993d097af84aa1b2e6c3ce6818f0c}{login}} (@Request\+Body \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1LoginRequest}{Login\+Request}} login\+Request)
+\item 
+Response\+Entity$<$?$>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1AuthController_a5c5504509da076bc3ee86f1ac5c90b7a}{register}} (@Request\+Body \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1User}{User}} user)
+\item 
+Response\+Entity$<$?$>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1AuthController_a4e8af6ea5f151c126c867af947c9e760}{update\+Profile}} (@Request\+Body \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1ProfileUpdateRequest}{Profile\+Update\+Request}} request, Principal principal)
+\item 
+Response\+Entity$<$?$>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1AuthController_a84f81abe03826a76ffde8e4c4f9ea0dc}{change\+Password}} (@Request\+Body \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1ChangePasswordRequest}{Change\+Password\+Request}} request, Principal principal)
+\item 
+Response\+Entity$<$?$>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1AuthController_a232911f2e0985e5018063a80bc0a6fb7}{delete\+User}} (Principal principal)
+\end{DoxyCompactItemize}
+
+
+\label{classcom_1_1example_1_1demo_1_1controller_1_1AuthController_doc-func-members}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1AuthController_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1AuthController_a84f81abe03826a76ffde8e4c4f9ea0dc}\index{com.example.demo.controller.AuthController@{com.example.demo.controller.AuthController}!changePassword@{changePassword}}
+\index{changePassword@{changePassword}!com.example.demo.controller.AuthController@{com.example.demo.controller.AuthController}}
+\doxysubsubsection{\texorpdfstring{changePassword()}{changePassword()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1AuthController_a84f81abe03826a76ffde8e4c4f9ea0dc} 
+Response\+Entity$<$?$>$ com.\+example.\+demo.\+controller.\+Auth\+Controller.\+change\+Password (\begin{DoxyParamCaption}\item[{@Request\+Body \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1ChangePasswordRequest}{Change\+Password\+Request}}}]{request}{, }\item[{Principal}]{principal}{}\end{DoxyParamCaption})}
+
+ZMIANA HASŁA Flutter przesyła stare i nowe hasło, my je weryfikujemy i zmieniamy \Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1AuthController_a232911f2e0985e5018063a80bc0a6fb7}\index{com.example.demo.controller.AuthController@{com.example.demo.controller.AuthController}!deleteUser@{deleteUser}}
+\index{deleteUser@{deleteUser}!com.example.demo.controller.AuthController@{com.example.demo.controller.AuthController}}
+\doxysubsubsection{\texorpdfstring{deleteUser()}{deleteUser()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1AuthController_a232911f2e0985e5018063a80bc0a6fb7} 
+Response\+Entity$<$?$>$ com.\+example.\+demo.\+controller.\+Auth\+Controller.\+delete\+User (\begin{DoxyParamCaption}\item[{Principal}]{principal}{}\end{DoxyParamCaption})}
+
+USUNIĘ\+CIE KONTA Flutter woła to, gdy użytkownik chce skasować swoje konto \Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1AuthController_a670993d097af84aa1b2e6c3ce6818f0c}\index{com.example.demo.controller.AuthController@{com.example.demo.controller.AuthController}!login@{login}}
+\index{login@{login}!com.example.demo.controller.AuthController@{com.example.demo.controller.AuthController}}
+\doxysubsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1AuthController_a670993d097af84aa1b2e6c3ce6818f0c} 
+Response\+Entity$<$?$>$ com.\+example.\+demo.\+controller.\+Auth\+Controller.\+login (\begin{DoxyParamCaption}\item[{@Request\+Body \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1LoginRequest}{Login\+Request}}}]{login\+Request}{}\end{DoxyParamCaption})}
+
+To wywoła Flutter, gdy użytkownik wpisze dane w oknie logowania \Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1AuthController_a5c5504509da076bc3ee86f1ac5c90b7a}\index{com.example.demo.controller.AuthController@{com.example.demo.controller.AuthController}!register@{register}}
+\index{register@{register}!com.example.demo.controller.AuthController@{com.example.demo.controller.AuthController}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1AuthController_a5c5504509da076bc3ee86f1ac5c90b7a} 
+Response\+Entity$<$?$>$ com.\+example.\+demo.\+controller.\+Auth\+Controller.\+register (\begin{DoxyParamCaption}\item[{@Request\+Body \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1User}{User}}}]{user}{}\end{DoxyParamCaption})}
+
+To wywoła frontend, gdy użytkownik wypełni formularz "{}\+Zarejestruj się"{} \Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1AuthController_a4e8af6ea5f151c126c867af947c9e760}\index{com.example.demo.controller.AuthController@{com.example.demo.controller.AuthController}!updateProfile@{updateProfile}}
+\index{updateProfile@{updateProfile}!com.example.demo.controller.AuthController@{com.example.demo.controller.AuthController}}
+\doxysubsubsection{\texorpdfstring{updateProfile()}{updateProfile()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1AuthController_a4e8af6ea5f151c126c867af947c9e760} 
+Response\+Entity$<$?$>$ com.\+example.\+demo.\+controller.\+Auth\+Controller.\+update\+Profile (\begin{DoxyParamCaption}\item[{@Request\+Body \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1ProfileUpdateRequest}{Profile\+Update\+Request}}}]{request}{, }\item[{Principal}]{principal}{}\end{DoxyParamCaption})}
+
+DO ZAPISYWANIA NAZWY PROFILU Flutter przesyła dane w JSON-\/ie, my aktualizujemy profil 
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+src/\+main/\+java/\+com/\+example/\+demo/\+controller/\+Auth\+Controller.\+java\end{DoxyCompactItemize}

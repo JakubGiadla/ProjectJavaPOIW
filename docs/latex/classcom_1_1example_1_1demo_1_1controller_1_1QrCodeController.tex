@@ -1,0 +1,29 @@
+\doxysection{com.\+example.\+demo.\+controller.\+Qr\+Code\+Controller Class Reference}
+\hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1QrCodeController}{}\label{classcom_1_1example_1_1demo_1_1controller_1_1QrCodeController}\index{com.example.demo.controller.QrCodeController@{com.example.demo.controller.QrCodeController}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1QrCodeController_ac6cb6056d02a18a6481c7db99d32c6bf}\label{classcom_1_1example_1_1demo_1_1controller_1_1QrCodeController_ac6cb6056d02a18a6481c7db99d32c6bf} 
+{\bfseries Qr\+Code\+Controller} (\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1QrCodeService}{Qr\+Code\+Service}} qr\+Code\+Service)
+\item 
+Response\+Entity$<$ byte\+[$\,$]\+$>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1QrCodeController_a04ebbc0c3b2ae22ac3e731a0230bcac1}{get\+Qr\+Code}} (@Path\+Variable String text, Principal principal)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Kontroler odpowiedzialny za generowanie kodów QR. Umożliwia łatwe udostępnianie linków (np. do dołączenia do wydarzenia) w postaci graficznej. 
+
+\label{classcom_1_1example_1_1demo_1_1controller_1_1QrCodeController_doc-func-members}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1QrCodeController_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1QrCodeController_a04ebbc0c3b2ae22ac3e731a0230bcac1}\index{com.example.demo.controller.QrCodeController@{com.example.demo.controller.QrCodeController}!getQrCode@{getQrCode}}
+\index{getQrCode@{getQrCode}!com.example.demo.controller.QrCodeController@{com.example.demo.controller.QrCodeController}}
+\doxysubsubsection{\texorpdfstring{getQrCode()}{getQrCode()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1QrCodeController_a04ebbc0c3b2ae22ac3e731a0230bcac1} 
+Response\+Entity$<$ byte\+[$\,$]\+$>$ com.\+example.\+demo.\+controller.\+Qr\+Code\+Controller.\+get\+Qr\+Code (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{text}{, }\item[{Principal}]{principal}{}\end{DoxyParamCaption})}
+
+GET /\+api/\+qr/\+\{text\} Generuje obraz kodu QR na podstawie podanego tekstu (np. URL wydarzenia). 
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+src/\+main/\+java/\+com/\+example/\+demo/\+controller/\+Qr\+Code\+Controller.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,37 @@
+\doxysection{com.\+example.\+demo.\+controller.\+Report\+Controller Class Reference}
+\hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1ReportController}{}\label{classcom_1_1example_1_1demo_1_1controller_1_1ReportController}\index{com.example.demo.controller.ReportController@{com.example.demo.controller.ReportController}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_ab4e7d4b1d5eb9827317f58c4f85cb99f}\label{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_ab4e7d4b1d5eb9827317f58c4f85cb99f} 
+{\bfseries Report\+Controller} (\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1PdfReportService}{Pdf\+Report\+Service}} pdf\+Report\+Service, \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1ExpenseRepository}{Expense\+Repository}} expense\+Repository, \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1EventService}{Event\+Service}} event\+Service)
+\item 
+Response\+Entity$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1EventReportDTO}{Event\+Report\+DTO}} $>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_a4037decff2f27d066e4dcf962f82f647}{get\+Report\+Data}} (@Path\+Variable Long event\+Id, Principal principal)
+\item 
+Response\+Entity$<$ byte\+[$\,$]\+$>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_ad74e4505287ffc1732b54f0926c85010}{download\+Pdf\+Report}} (@Path\+Variable Long event\+Id, Principal principal)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Kontroler odpowiedzialny za generowanie raportów finansowych z wydarzeń. Umożliwia pobieranie danych rozliczeniowych w formacie JSON oraz eksport do pliku PDF. 
+
+\label{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_doc-func-members}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_ad74e4505287ffc1732b54f0926c85010}\index{com.example.demo.controller.ReportController@{com.example.demo.controller.ReportController}!downloadPdfReport@{downloadPdfReport}}
+\index{downloadPdfReport@{downloadPdfReport}!com.example.demo.controller.ReportController@{com.example.demo.controller.ReportController}}
+\doxysubsubsection{\texorpdfstring{downloadPdfReport()}{downloadPdfReport()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_ad74e4505287ffc1732b54f0926c85010} 
+Response\+Entity$<$ byte\+[$\,$]\+$>$ com.\+example.\+demo.\+controller.\+Report\+Controller.\+download\+Pdf\+Report (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{event\+Id}{, }\item[{Principal}]{principal}{}\end{DoxyParamCaption})}
+
+GET /\+api/\+reports/\+\{event\+Id\}/\+pdf Generuje i zwraca plik PDF z pełnym raportem finansowym dla danego wydarzenia. Ustawia odpowiednie nagłówki HTTP, aby przeglądarka rozpoznała plik jako PDF. \Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_a4037decff2f27d066e4dcf962f82f647}\index{com.example.demo.controller.ReportController@{com.example.demo.controller.ReportController}!getReportData@{getReportData}}
+\index{getReportData@{getReportData}!com.example.demo.controller.ReportController@{com.example.demo.controller.ReportController}}
+\doxysubsubsection{\texorpdfstring{getReportData()}{getReportData()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_a4037decff2f27d066e4dcf962f82f647} 
+Response\+Entity$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1EventReportDTO}{Event\+Report\+DTO}} $>$ com.\+example.\+demo.\+controller.\+Report\+Controller.\+get\+Report\+Data (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{event\+Id}{, }\item[{Principal}]{principal}{}\end{DoxyParamCaption})}
+
+GET /\+api/\+reports/\+\{event\+Id\} Zwraca surowe dane rozliczeniowe wydarzenia w formacie JSON. Weryfikuje uprawnienia użytkownika (principal) do dostępu do danych danego wydarzenia. 
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+src/\+main/\+java/\+com/\+example/\+demo/\+controller/\+Report\+Controller.\+java\end{DoxyCompactItemize}

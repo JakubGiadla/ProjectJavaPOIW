@@ -1,0 +1,43 @@
+\doxysection{com.\+example.\+demo.\+service.\+Event\+Service Class Reference}
+\hypertarget{classcom_1_1example_1_1demo_1_1service_1_1EventService}{}\label{classcom_1_1example_1_1demo_1_1service_1_1EventService}\index{com.example.demo.service.EventService@{com.example.demo.service.EventService}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1EventService_a382bea21197b135d3c575dc4ad3eb2fb}\label{classcom_1_1example_1_1demo_1_1service_1_1EventService_a382bea21197b135d3c575dc4ad3eb2fb} 
+{\bfseries Event\+Service} (\doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1EventRepository}{Event\+Repository}} event\+Repository, \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository}{User\+Repository}} user\+Repository, \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1ExpenseRepository}{Expense\+Repository}} expense\+Repository, \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1AttendeeRepository}{Attendee\+Repository}} attendee\+Repository, \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1SettlementEngine}{Settlement\+Engine}} engine)
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1EventService_abcd90ad6da0c49b02b5bc11c57d5d849}\label{classcom_1_1example_1_1demo_1_1service_1_1EventService_abcd90ad6da0c49b02b5bc11c57d5d849} 
+void {\bfseries close\+Event} (Long event\+Id, String email)
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1EventService_af418ba2345c4e5aeff9d03646792a100}\label{classcom_1_1example_1_1demo_1_1service_1_1EventService_af418ba2345c4e5aeff9d03646792a100} 
+void {\bfseries delete\+Event} (Long event\+Id, String email)
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1EventService_a2a9ea0e34b09f1a747a22ad2f0a3e2d4}\label{classcom_1_1example_1_1demo_1_1service_1_1EventService_a2a9ea0e34b09f1a747a22ad2f0a3e2d4} 
+void {\bfseries join\+Event} (String join\+Code, String email)
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1EventService_adeef06cba105f41233faee518308370c}\label{classcom_1_1example_1_1demo_1_1service_1_1EventService_adeef06cba105f41233faee518308370c} 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1EventDetailsDTO}{Event\+Details\+DTO}} {\bfseries get\+Event\+Details} (Long event\+Id, String email)
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1EventService_a279f3bcf9983a93d7bbed7c467a034e4}\label{classcom_1_1example_1_1demo_1_1service_1_1EventService_a279f3bcf9983a93d7bbed7c467a034e4} 
+void {\bfseries validate\+Event\+Is\+Active} (Long event\+Id)
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1EventService_ad58da4c294de7f2f92a772eabc05c505}\label{classcom_1_1example_1_1demo_1_1service_1_1EventService_ad58da4c294de7f2f92a772eabc05c505} 
+List$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1EventSummaryDTO}{Event\+Summary\+DTO}} $>$ {\bfseries find\+All\+By\+User} (String email)
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1EventService_aab3d175e32c681c7e919804dc285c86d}\label{classcom_1_1example_1_1demo_1_1service_1_1EventService_aab3d175e32c681c7e919804dc285c86d} 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Event}{Event}} {\bfseries create\+Event} (\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Event}{Event}} event, String email)
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1EventService_aebcee09b3548a332f9b3a5bc0acbd175}\label{classcom_1_1example_1_1demo_1_1service_1_1EventService_aebcee09b3548a332f9b3a5bc0acbd175} 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Event}{Event}} {\bfseries find\+By\+Id} (Long event\+Id)
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1EventService_a680d7db59d9065ebef8ccb6eadc2b7f7}\label{classcom_1_1example_1_1demo_1_1service_1_1EventService_a680d7db59d9065ebef8ccb6eadc2b7f7} 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Event}{Event}} {\bfseries get\+Event\+With\+Permission} (Long event\+Id, String email)
+\item 
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1EventService_a564aac88f671bed40628e7f634fa058c}\label{classcom_1_1example_1_1demo_1_1service_1_1EventService_a564aac88f671bed40628e7f634fa058c} 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1EventReportDTO}{Event\+Report\+DTO}} {\bfseries generate\+Report} (Long event\+Id, String email)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+src/\+main/\+java/\+com/\+example/\+demo/\+service/\+Event\+Service.\+java\end{DoxyCompactItemize}

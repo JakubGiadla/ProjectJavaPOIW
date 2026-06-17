@@ -1,0 +1,58 @@
+\doxysection{com.\+example.\+demo.\+controller.\+Notification\+Controller Class Reference}
+\hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1NotificationController}{}\label{classcom_1_1example_1_1demo_1_1controller_1_1NotificationController}\index{com.example.demo.controller.NotificationController@{com.example.demo.controller.NotificationController}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Response\+Entity$<$ Map$<$ String, String $>$ $>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1NotificationController_a9b42929a5901f7238e7fad9285e20916}{notify\+Debt}} ( @Request\+Param String email, @Request\+Param String debtor\+Name, @Request\+Param double amount, Principal principal)
+\item 
+Response\+Entity$<$ List$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Notification}{Notification}} $>$ $>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1NotificationController_ab192cc9c176776b4ac561e910a9e676b}{get\+All\+Notifications}} (Principal principal)
+\item 
+Response\+Entity$<$ Map$<$ String, String $>$ $>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1NotificationController_a4fef78df1472a75973af7bdaab11ed86}{mark\+As\+Read}} (@Path\+Variable Long id, Principal principal)
+\item 
+Response\+Entity$<$ Map$<$ String, String $>$ $>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1NotificationController_ac712ff3e1fa3dac775ec85c4e543256c}{mark\+All\+As\+Read}} (Principal principal)
+\item 
+Response\+Entity$<$ Map$<$ String, String $>$ $>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1NotificationController_ad14085bf923f184d33fc0a3f9ce3fd59}{delete\+Notification}} (@Path\+Variable Long id, Principal principal)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Kontroler obsługujący powiadomienia systemowe i e-\/mailowe. Zapewnia użytkownikom wgląd w historię powiadomień oraz możliwość zarządzania ich stanem. 
+
+\label{classcom_1_1example_1_1demo_1_1controller_1_1NotificationController_doc-func-members}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1NotificationController_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1NotificationController_ad14085bf923f184d33fc0a3f9ce3fd59}\index{com.example.demo.controller.NotificationController@{com.example.demo.controller.NotificationController}!deleteNotification@{deleteNotification}}
+\index{deleteNotification@{deleteNotification}!com.example.demo.controller.NotificationController@{com.example.demo.controller.NotificationController}}
+\doxysubsubsection{\texorpdfstring{deleteNotification()}{deleteNotification()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1NotificationController_ad14085bf923f184d33fc0a3f9ce3fd59} 
+Response\+Entity$<$ Map$<$ String, String $>$ $>$ com.\+example.\+demo.\+controller.\+Notification\+Controller.\+delete\+Notification (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{id}{, }\item[{Principal}]{principal}{}\end{DoxyParamCaption})}
+
+DELETE /\+api/\+notifications/\+\{id\} Usuwa wybrane powiadomienie z bazy danych po uprzedniej weryfikacji uprawnień. \Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1NotificationController_ab192cc9c176776b4ac561e910a9e676b}\index{com.example.demo.controller.NotificationController@{com.example.demo.controller.NotificationController}!getAllNotifications@{getAllNotifications}}
+\index{getAllNotifications@{getAllNotifications}!com.example.demo.controller.NotificationController@{com.example.demo.controller.NotificationController}}
+\doxysubsubsection{\texorpdfstring{getAllNotifications()}{getAllNotifications()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1NotificationController_ab192cc9c176776b4ac561e910a9e676b} 
+Response\+Entity$<$ List$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Notification}{Notification}} $>$ $>$ com.\+example.\+demo.\+controller.\+Notification\+Controller.\+get\+All\+Notifications (\begin{DoxyParamCaption}\item[{Principal}]{principal}{}\end{DoxyParamCaption})}
+
+GET /\+api/\+notifications Pobiera listę wszystkich powiadomień należących do aktualnie zalogowanego użytkownika. \Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1NotificationController_ac712ff3e1fa3dac775ec85c4e543256c}\index{com.example.demo.controller.NotificationController@{com.example.demo.controller.NotificationController}!markAllAsRead@{markAllAsRead}}
+\index{markAllAsRead@{markAllAsRead}!com.example.demo.controller.NotificationController@{com.example.demo.controller.NotificationController}}
+\doxysubsubsection{\texorpdfstring{markAllAsRead()}{markAllAsRead()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1NotificationController_ac712ff3e1fa3dac775ec85c4e543256c} 
+Response\+Entity$<$ Map$<$ String, String $>$ $>$ com.\+example.\+demo.\+controller.\+Notification\+Controller.\+mark\+All\+As\+Read (\begin{DoxyParamCaption}\item[{Principal}]{principal}{}\end{DoxyParamCaption})}
+
+PUT /\+api/\+notifications/\+mark-\/all-\/read Oznacza wszystkie powiadomienia danego użytkownika jako przeczytane. \Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1NotificationController_a4fef78df1472a75973af7bdaab11ed86}\index{com.example.demo.controller.NotificationController@{com.example.demo.controller.NotificationController}!markAsRead@{markAsRead}}
+\index{markAsRead@{markAsRead}!com.example.demo.controller.NotificationController@{com.example.demo.controller.NotificationController}}
+\doxysubsubsection{\texorpdfstring{markAsRead()}{markAsRead()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1NotificationController_a4fef78df1472a75973af7bdaab11ed86} 
+Response\+Entity$<$ Map$<$ String, String $>$ $>$ com.\+example.\+demo.\+controller.\+Notification\+Controller.\+mark\+As\+Read (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{id}{, }\item[{Principal}]{principal}{}\end{DoxyParamCaption})}
+
+PUT /\+api/\+notifications/\+mark-\/read/\+\{id\} Oznacza konkretne powiadomienie jako przeczytane. Wewnątrz serwisu następuje weryfikacja, czy użytkownik jest właścicielem tego powiadomienia. \Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1NotificationController_a9b42929a5901f7238e7fad9285e20916}\index{com.example.demo.controller.NotificationController@{com.example.demo.controller.NotificationController}!notifyDebt@{notifyDebt}}
+\index{notifyDebt@{notifyDebt}!com.example.demo.controller.NotificationController@{com.example.demo.controller.NotificationController}}
+\doxysubsubsection{\texorpdfstring{notifyDebt()}{notifyDebt()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1NotificationController_a9b42929a5901f7238e7fad9285e20916} 
+Response\+Entity$<$ Map$<$ String, String $>$ $>$ com.\+example.\+demo.\+controller.\+Notification\+Controller.\+notify\+Debt (\begin{DoxyParamCaption}\item[{@Request\+Param String}]{email}{, }\item[{@Request\+Param String}]{debtor\+Name}{, }\item[{@Request\+Param double}]{amount}{, }\item[{Principal}]{principal}{}\end{DoxyParamCaption})}
+
+POST /\+api/\+notifications/\+send-\/debt Wysyła powiadomienie e-\/mailowe o nowym długu do wskazanego użytkownika. 
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+src/\+main/\+java/\+com/\+example/\+demo/\+controller/\+Notification\+Controller.\+java\end{DoxyCompactItemize}
