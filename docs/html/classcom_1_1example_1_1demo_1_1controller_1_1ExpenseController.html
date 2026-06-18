@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.17.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: com.example.demo.controller.ExpenseController Class Reference</title>
+<title>EventSplit: com.example.demo.controller.ExpenseController Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -30,7 +30,7 @@ mermaid.initialize({ startOnLoad: true, theme: theme });
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">EventSplit
    </div>
   </td>
  </tr>
@@ -121,10 +121,36 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('classcom_1_1ex
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac5c4443b01448f591499669899e79c64" id="r_ac5c4443b01448f591499669899e79c64"><td class="memItemLeft"><a id="ac5c4443b01448f591499669899e79c64" name="ac5c4443b01448f591499669899e79c64"></a>
-&#160;</td><td class="memItemRight"><b>ExpenseController</b> (<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1ExpenseService.html">ExpenseService</a> expenseService, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1EventService.html">EventService</a> eventService)</td></tr>
+<tr class="memitem:ac5c4443b01448f591499669899e79c64" id="r_ac5c4443b01448f591499669899e79c64"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac5c4443b01448f591499669899e79c64">ExpenseController</a> (<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1ExpenseService.html">ExpenseService</a> expenseService, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1EventService.html">EventService</a> eventService)</td></tr>
 <tr class="memitem:a0f812b7fbcb3ae9fffa8d27725382662" id="r_a0f812b7fbcb3ae9fffa8d27725382662"><td class="memItemLeft">ResponseEntity&lt;?&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a0f812b7fbcb3ae9fffa8d27725382662">addExpense</a> (@PathVariable Long eventId, @RequestBody <a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1ExpenseRequest.html">ExpenseRequest</a> request, Principal principal)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac9879afb2937667f9c54e4122521cc4f" id="r_ac9879afb2937667f9c54e4122521cc4f"><td class="memItemLeft">final <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1ExpenseService.html">ExpenseService</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac9879afb2937667f9c54e4122521cc4f">expenseService</a></td></tr>
+<tr class="memitem:a9736f86a5098af87f73e57da387b4ff1" id="r_a9736f86a5098af87f73e57da387b4ff1"><td class="memItemLeft">final <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1EventService.html">EventService</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9736f86a5098af87f73e57da387b4ff1">eventService</a></td></tr>
 </table>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac5c4443b01448f591499669899e79c64" name="ac5c4443b01448f591499669899e79c64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5c4443b01448f591499669899e79c64">&#9670;&#160;</a></span>ExpenseController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">com.example.demo.controller.ExpenseController.ExpenseController </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1ExpenseService.html">ExpenseService</a></td>          <td class="paramname"><span class="paramname"><em>expenseService</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1EventService.html">EventService</a></td>          <td class="paramname"><span class="paramname"><em>eventService</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a0f812b7fbcb3ae9fffa8d27725382662" name="a0f812b7fbcb3ae9fffa8d27725382662"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f812b7fbcb3ae9fffa8d27725382662">&#9670;&#160;</a></span>addExpense()</h2>
@@ -153,8 +179,53 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a9736f86a5098af87f73e57da387b4ff1" name="a9736f86a5098af87f73e57da387b4ff1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9736f86a5098af87f73e57da387b4ff1">&#9670;&#160;</a></span>eventService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1EventService.html">EventService</a> com.example.demo.controller.ExpenseController.eventService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9879afb2937667f9c54e4122521cc4f" name="ac9879afb2937667f9c54e4122521cc4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9879afb2937667f9c54e4122521cc4f">&#9670;&#160;</a></span>expenseService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1ExpenseService.html">ExpenseService</a> com.example.demo.controller.ExpenseController.expenseService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/main/java/com/example/demo/controller/<b>ExpenseController.java</b></li>
+<li>src/main/java/com/example/demo/controller/<a class="el" href="ExpenseController_8java.html">ExpenseController.java</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -169,7 +240,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>com</b></li><li class="navelem"><b>example</b></li><li class="navelem"><b>demo</b></li><li class="navelem"><b>controller</b></li><li class="navelem"><a href="classcom_1_1example_1_1demo_1_1controller_1_1ExpenseController.html">ExpenseController</a></li>
+    <li class="navelem"><b>com</b></li><li class="navelem"><b>example</b></li><li class="navelem"><a href="namespacecom_1_1example_1_1demo.html">demo</a></li><li class="navelem"><a href="namespacecom_1_1example_1_1demo_1_1controller.html">controller</a></li><li class="navelem"><a href="classcom_1_1example_1_1demo_1_1controller_1_1ExpenseController.html">ExpenseController</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
   </ul>
 </div>

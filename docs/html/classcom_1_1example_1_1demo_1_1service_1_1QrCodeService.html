@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.17.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: com.example.demo.service.QrCodeService Class Reference</title>
+<title>EventSplit: com.example.demo.service.QrCodeService Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -30,7 +30,7 @@ mermaid.initialize({ startOnLoad: true, theme: theme });
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">EventSplit
    </div>
   </td>
  </tr>
@@ -121,13 +121,138 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('classcom_1_1ex
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0ae2edfd1ec769c52db6a587a46bee0a" id="r_a0ae2edfd1ec769c52db6a587a46bee0a"><td class="memItemLeft"><a id="a0ae2edfd1ec769c52db6a587a46bee0a" name="a0ae2edfd1ec769c52db6a587a46bee0a"></a>
-&#160;</td><td class="memItemRight"><b>QrCodeService</b> (<a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1EventRepository.html">EventRepository</a> eventRepository, <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository.html">UserRepository</a> userRepository, <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1AttendeeRepository.html">AttendeeRepository</a> attendeeRepository)</td></tr>
-<tr class="memitem:a041771e48715b3f5ab71e44004106899" id="r_a041771e48715b3f5ab71e44004106899"><td class="memItemLeft"><a id="a041771e48715b3f5ab71e44004106899" name="a041771e48715b3f5ab71e44004106899"></a>
-byte[]&#160;</td><td class="memItemRight"><b>generateQrCode</b> (String joinCode, String textToEncode, String email)</td></tr>
+<tr class="memitem:a0ae2edfd1ec769c52db6a587a46bee0a" id="r_a0ae2edfd1ec769c52db6a587a46bee0a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a0ae2edfd1ec769c52db6a587a46bee0a">QrCodeService</a> (<a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1EventRepository.html">EventRepository</a> eventRepository, <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository.html">UserRepository</a> userRepository, <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1AttendeeRepository.html">AttendeeRepository</a> attendeeRepository)</td></tr>
+<tr class="memitem:a041771e48715b3f5ab71e44004106899" id="r_a041771e48715b3f5ab71e44004106899"><td class="memItemLeft">byte[]&#160;</td><td class="memItemRight"><a class="el" href="#a041771e48715b3f5ab71e44004106899">generateQrCode</a> (String joinCode, String textToEncode, String email)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a71fedeba48fb82a8a84c2c8c59295216" id="r_a71fedeba48fb82a8a84c2c8c59295216"><td class="memItemLeft">final <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1EventRepository.html">EventRepository</a>&#160;</td><td class="memItemRight"><a class="el" href="#a71fedeba48fb82a8a84c2c8c59295216">eventRepository</a></td></tr>
+<tr class="memitem:a7596507df5993580763e6a157052f25c" id="r_a7596507df5993580763e6a157052f25c"><td class="memItemLeft">final <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository.html">UserRepository</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7596507df5993580763e6a157052f25c">userRepository</a></td></tr>
+<tr class="memitem:acca4e662279a5c56ca4a07e2efdadade" id="r_acca4e662279a5c56ca4a07e2efdadade"><td class="memItemLeft">final <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1AttendeeRepository.html">AttendeeRepository</a>&#160;</td><td class="memItemRight"><a class="el" href="#acca4e662279a5c56ca4a07e2efdadade">attendeeRepository</a></td></tr>
 </table>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0ae2edfd1ec769c52db6a587a46bee0a" name="a0ae2edfd1ec769c52db6a587a46bee0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ae2edfd1ec769c52db6a587a46bee0a">&#9670;&#160;</a></span>QrCodeService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">com.example.demo.service.QrCodeService.QrCodeService </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1EventRepository.html">EventRepository</a></td>          <td class="paramname"><span class="paramname"><em>eventRepository</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository.html">UserRepository</a></td>          <td class="paramname"><span class="paramname"><em>userRepository</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1AttendeeRepository.html">AttendeeRepository</a></td>          <td class="paramname"><span class="paramname"><em>attendeeRepository</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a041771e48715b3f5ab71e44004106899" name="a041771e48715b3f5ab71e44004106899"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a041771e48715b3f5ab71e44004106899">&#9670;&#160;</a></span>generateQrCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte[] com.example.demo.service.QrCodeService.generateQrCode </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>joinCode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>textToEncode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>email</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="acca4e662279a5c56ca4a07e2efdadade" name="acca4e662279a5c56ca4a07e2efdadade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acca4e662279a5c56ca4a07e2efdadade">&#9670;&#160;</a></span>attendeeRepository</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1AttendeeRepository.html">AttendeeRepository</a> com.example.demo.service.QrCodeService.attendeeRepository</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a71fedeba48fb82a8a84c2c8c59295216" name="a71fedeba48fb82a8a84c2c8c59295216"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71fedeba48fb82a8a84c2c8c59295216">&#9670;&#160;</a></span>eventRepository</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1EventRepository.html">EventRepository</a> com.example.demo.service.QrCodeService.eventRepository</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7596507df5993580763e6a157052f25c" name="a7596507df5993580763e6a157052f25c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7596507df5993580763e6a157052f25c">&#9670;&#160;</a></span>userRepository</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository.html">UserRepository</a> com.example.demo.service.QrCodeService.userRepository</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/main/java/com/example/demo/service/<b>QrCodeService.java</b></li>
+<li>src/main/java/com/example/demo/service/<a class="el" href="QrCodeService_8java.html">QrCodeService.java</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -142,7 +267,7 @@ byte[]&#160;</td><td class="memItemRight"><b>generateQrCode</b> (String joinCode
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>com</b></li><li class="navelem"><b>example</b></li><li class="navelem"><b>demo</b></li><li class="navelem"><b>service</b></li><li class="navelem"><a href="classcom_1_1example_1_1demo_1_1service_1_1QrCodeService.html">QrCodeService</a></li>
+    <li class="navelem"><b>com</b></li><li class="navelem"><b>example</b></li><li class="navelem"><a href="namespacecom_1_1example_1_1demo.html">demo</a></li><li class="navelem"><a href="namespacecom_1_1example_1_1demo_1_1service.html">service</a></li><li class="navelem"><a href="classcom_1_1example_1_1demo_1_1service_1_1QrCodeService.html">QrCodeService</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
   </ul>
 </div>

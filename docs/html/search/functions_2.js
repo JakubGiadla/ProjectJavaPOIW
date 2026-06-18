@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['deleteevent_0',['deleteEvent',['../classcom_1_1example_1_1demo_1_1controller_1_1EventController.html#a79d96ffd811806ea8fb3e7d4f8cc9ef1',1,'com::example::demo::controller::EventController']]],
-  ['deletenotification_1',['deleteNotification',['../classcom_1_1example_1_1demo_1_1controller_1_1NotificationController.html#ad14085bf923f184d33fc0a3f9ce3fd59',1,'com::example::demo::controller::NotificationController']]],
-  ['deletetask_2',['deleteTask',['../classcom_1_1example_1_1demo_1_1controller_1_1TaskController.html#af8b2501966713896ac6ffb463950700a',1,'com::example::demo::controller::TaskController']]],
-  ['deleteuser_3',['deleteUser',['../classcom_1_1example_1_1demo_1_1controller_1_1AuthController.html#a232911f2e0985e5018063a80bc0a6fb7',1,'com::example::demo::controller::AuthController']]],
-  ['downloadpdfreport_4',['downloadPdfReport',['../classcom_1_1example_1_1demo_1_1controller_1_1ReportController.html#ad74e4505287ffc1732b54f0926c85010',1,'com::example::demo::controller::ReportController']]]
+  ['deleteevent_0',['deleteEvent',['../classcom_1_1example_1_1demo_1_1controller_1_1EventController.html#a79d96ffd811806ea8fb3e7d4f8cc9ef1',1,'com.example.demo.controller.EventController.deleteEvent()'],['../classcom_1_1example_1_1demo_1_1service_1_1EventService.html#af418ba2345c4e5aeff9d03646792a100',1,'com.example.demo.service.EventService.deleteEvent()']]],
+  ['deletenotification_1',['deleteNotification',['../classcom_1_1example_1_1demo_1_1controller_1_1NotificationController.html#ad14085bf923f184d33fc0a3f9ce3fd59',1,'com.example.demo.controller.NotificationController.deleteNotification()'],['../classcom_1_1example_1_1demo_1_1service_1_1NotificationService.html#a64f0af3e04d48cc980c15f14a7959e5b',1,'com.example.demo.service.NotificationService.deleteNotification()']]],
+  ['deletetask_2',['deleteTask',['../classcom_1_1example_1_1demo_1_1controller_1_1TaskController.html#af8b2501966713896ac6ffb463950700a',1,'com.example.demo.controller.TaskController.deleteTask()'],['../classcom_1_1example_1_1demo_1_1service_1_1TaskService.html#a3fc19194f5be7a99a6e7b598e68b76af',1,'com.example.demo.service.TaskService.deleteTask()']]],
+  ['deleteuser_3',['deleteUser',['../classcom_1_1example_1_1demo_1_1controller_1_1AuthController.html#a232911f2e0985e5018063a80bc0a6fb7',1,'com.example.demo.controller.AuthController.deleteUser()'],['../classcom_1_1example_1_1demo_1_1service_1_1AuthService.html#aee7c217b37de8ad8a647740a24f90933',1,'com.example.demo.service.AuthService.deleteUser()']]],
+  ['dofilterinternal_4',['doFilterInternal',['../classcom_1_1example_1_1demo_1_1config_1_1JwtAuthenticationFilter.html#a0fa3b539d2d9d62dcc4cccd6f8b49e88',1,'com::example::demo::config::JwtAuthenticationFilter']]],
+  ['downloadpdfreport_5',['downloadPdfReport',['../classcom_1_1example_1_1demo_1_1controller_1_1ReportController.html#ad74e4505287ffc1732b54f0926c85010',1,'com::example::demo::controller::ReportController']]]
 ];

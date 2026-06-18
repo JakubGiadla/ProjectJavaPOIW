@@ -1,7 +1,11 @@
 var searchData=
 [
-  ['changepassword_0',['changePassword',['../classcom_1_1example_1_1demo_1_1controller_1_1AuthController.html#a84f81abe03826a76ffde8e4c4f9ea0dc',1,'com::example::demo::controller::AuthController']]],
-  ['closeevent_1',['closeEvent',['../classcom_1_1example_1_1demo_1_1controller_1_1EventController.html#a83a3a86f86b7fd7f1a1d2c6427832982',1,'com::example::demo::controller::EventController']]],
-  ['completetask_2',['completeTask',['../classcom_1_1example_1_1demo_1_1controller_1_1TaskController.html#a9c1087c60d16a968f9d848355ede0130',1,'com::example::demo::controller::TaskController']]],
-  ['createevent_3',['createEvent',['../classcom_1_1example_1_1demo_1_1controller_1_1EventController.html#ae8066317b7c67e7328022b4e25fae31c',1,'com::example::demo::controller::EventController']]]
+  ['calculate_0',['calculate',['../classcom_1_1example_1_1demo_1_1service_1_1SettlementEngine.html#adc91c0d01c4e2662abddec05f38266fc',1,'com::example::demo::service::SettlementEngine']]],
+  ['calculatesettlements_1',['calculateSettlements',['../classcom_1_1example_1_1demo_1_1service_1_1ExpenseService.html#a6cdd8a3f7fe7998650b4de432e5ed82e',1,'com::example::demo::service::ExpenseService']]],
+  ['changepassword_2',['changePassword',['../classcom_1_1example_1_1demo_1_1controller_1_1AuthController.html#a84f81abe03826a76ffde8e4c4f9ea0dc',1,'com.example.demo.controller.AuthController.changePassword()'],['../classcom_1_1example_1_1demo_1_1service_1_1AuthService.html#a22ccba409831f358f8603c5eddcb7a63',1,'com.example.demo.service.AuthService.changePassword()']]],
+  ['closeevent_3',['closeEvent',['../classcom_1_1example_1_1demo_1_1controller_1_1EventController.html#a83a3a86f86b7fd7f1a1d2c6427832982',1,'com.example.demo.controller.EventController.closeEvent()'],['../classcom_1_1example_1_1demo_1_1service_1_1EventService.html#abcd90ad6da0c49b02b5bc11c57d5d849',1,'com.example.demo.service.EventService.closeEvent()']]],
+  ['completetask_4',['completeTask',['../classcom_1_1example_1_1demo_1_1controller_1_1TaskController.html#a9c1087c60d16a968f9d848355ede0130',1,'com.example.demo.controller.TaskController.completeTask()'],['../classcom_1_1example_1_1demo_1_1service_1_1TaskService.html#a217df9f680de2e393cd4def0ad9866c2',1,'com.example.demo.service.TaskService.completeTask()']]],
+  ['corsconfigurationsource_5',['corsConfigurationSource',['../classcom_1_1example_1_1demo_1_1config_1_1SecurityConfig.html#adf5db550300fa0d349bfb566896286b7',1,'com::example::demo::config::SecurityConfig']]],
+  ['createevent_6',['createEvent',['../classcom_1_1example_1_1demo_1_1controller_1_1EventController.html#ae8066317b7c67e7328022b4e25fae31c',1,'com.example.demo.controller.EventController.createEvent()'],['../classcom_1_1example_1_1demo_1_1service_1_1EventService.html#aab3d175e32c681c7e919804dc285c86d',1,'com.example.demo.service.EventService.createEvent()']]],
+  ['createexpense_7',['createExpense',['../classcom_1_1example_1_1demo_1_1service_1_1ExpenseService.html#a854e1df9f6e6c3c0bb4cc44b624d94cd',1,'com::example::demo::service::ExpenseService']]]
 ];

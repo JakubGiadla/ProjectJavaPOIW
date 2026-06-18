@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.17.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: com.example.demo.controller.NotificationController Class Reference</title>
+<title>EventSplit: com.example.demo.controller.NotificationController Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -30,7 +30,7 @@ mermaid.initialize({ startOnLoad: true, theme: theme });
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">EventSplit
    </div>
   </td>
  </tr>
@@ -126,6 +126,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4fef78df1472a75973af7bdaab11ed86" id="r_a4fef78df1472a75973af7bdaab11ed86"><td class="memItemLeft">ResponseEntity&lt; Map&lt; String, String &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a4fef78df1472a75973af7bdaab11ed86">markAsRead</a> (@PathVariable Long id, Principal principal)</td></tr>
 <tr class="memitem:ac712ff3e1fa3dac775ec85c4e543256c" id="r_ac712ff3e1fa3dac775ec85c4e543256c"><td class="memItemLeft">ResponseEntity&lt; Map&lt; String, String &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ac712ff3e1fa3dac775ec85c4e543256c">markAllAsRead</a> (Principal principal)</td></tr>
 <tr class="memitem:ad14085bf923f184d33fc0a3f9ce3fd59" id="r_ad14085bf923f184d33fc0a3f9ce3fd59"><td class="memItemLeft">ResponseEntity&lt; Map&lt; String, String &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ad14085bf923f184d33fc0a3f9ce3fd59">deleteNotification</a> (@PathVariable Long id, Principal principal)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af80dce522006cd06b0b34220a50b4a53" id="r_af80dce522006cd06b0b34220a50b4a53"><td class="memItemLeft"><a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1EmailService.html">EmailService</a>&#160;</td><td class="memItemRight"><a class="el" href="#af80dce522006cd06b0b34220a50b4a53">emailService</a></td></tr>
+<tr class="memitem:a61481f3471bf90963360e17db2128383" id="r_a61481f3471bf90963360e17db2128383"><td class="memItemLeft"><a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1NotificationService.html">NotificationService</a>&#160;</td><td class="memItemRight"><a class="el" href="#a61481f3471bf90963360e17db2128383">notificationService</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Kontroler obsługujący powiadomienia systemowe i e-mailowe. Zapewnia użytkownikom wgląd w historię powiadomień oraz możliwość zarządzania ich stanem. </p>
@@ -242,8 +247,53 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="af80dce522006cd06b0b34220a50b4a53" name="af80dce522006cd06b0b34220a50b4a53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af80dce522006cd06b0b34220a50b4a53">&#9670;&#160;</a></span>emailService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1EmailService.html">EmailService</a> com.example.demo.controller.NotificationController.emailService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61481f3471bf90963360e17db2128383" name="a61481f3471bf90963360e17db2128383"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61481f3471bf90963360e17db2128383">&#9670;&#160;</a></span>notificationService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1NotificationService.html">NotificationService</a> com.example.demo.controller.NotificationController.notificationService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/main/java/com/example/demo/controller/<b>NotificationController.java</b></li>
+<li>src/main/java/com/example/demo/controller/<a class="el" href="NotificationController_8java.html">NotificationController.java</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -258,7 +308,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>com</b></li><li class="navelem"><b>example</b></li><li class="navelem"><b>demo</b></li><li class="navelem"><b>controller</b></li><li class="navelem"><a href="classcom_1_1example_1_1demo_1_1controller_1_1NotificationController.html">NotificationController</a></li>
+    <li class="navelem"><b>com</b></li><li class="navelem"><b>example</b></li><li class="navelem"><a href="namespacecom_1_1example_1_1demo.html">demo</a></li><li class="navelem"><a href="namespacecom_1_1example_1_1demo_1_1controller.html">controller</a></li><li class="navelem"><a href="classcom_1_1example_1_1demo_1_1controller_1_1NotificationController.html">NotificationController</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
   </ul>
 </div>

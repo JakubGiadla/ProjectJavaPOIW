@@ -24,22 +24,35 @@
 */
 var NAVTREE =
 [
-  [ "My Project", "index.html", [
+  [ "EventSplit", "index.html", [
+    [ "Packages", "namespaces.html", [
+      [ "Package List", "namespaces.html", "namespaces_dup" ],
+      [ "Package Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ]
+      ] ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ]
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ]
       ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"ApiResponse_8java.html",
+"classcom_1_1example_1_1demo_1_1dto_1_1EventReportDTO.html#a33c2f23ee802cc6d9e60f23e361355e9",
+"classcom_1_1example_1_1demo_1_1service_1_1EventService.html#abffb75f0237908ad52c34c37ff97fcb6"
 ];
 
 const SYNCONMSG = 'click to disable panel synchronization';

@@ -3,17 +3,53 @@
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1EmailService_a71ac9e2b6314ccd059352461f036322d}\label{classcom_1_1example_1_1demo_1_1service_1_1EmailService_a71ac9e2b6314ccd059352461f036322d} 
-void {\bfseries send\+Invitation\+Email} (String recipient\+Email, String invitation\+Link, String event\+Name)
+void \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1EmailService_a71ac9e2b6314ccd059352461f036322d}{send\+Invitation\+Email}} (String recipient\+Email, String invitation\+Link, String event\+Name)
 \item 
-\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1EmailService_a9868325574cd482a6fbb3e098d1c4a46}\label{classcom_1_1example_1_1demo_1_1service_1_1EmailService_a9868325574cd482a6fbb3e098d1c4a46} 
-void {\bfseries send\+Debt\+Notification} (String recipient\+Email, String debtor\+Name, double amount)
+void \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1EmailService_a9868325574cd482a6fbb3e098d1c4a46}{send\+Debt\+Notification}} (String recipient\+Email, String debtor\+Name, double amount)
 \item 
-\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1EmailService_a88a98c7072ea642e3d76ebd0c1800711}\label{classcom_1_1example_1_1demo_1_1service_1_1EmailService_a88a98c7072ea642e3d76ebd0c1800711} 
-void {\bfseries send\+Report\+Email} (String to, String event\+Name, byte\+[$\,$]\+ pdf\+Bytes)
+void \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1EmailService_a88a98c7072ea642e3d76ebd0c1800711}{send\+Report\+Email}} (String to, String event\+Name, byte\+[$\,$]\+ pdf\+Bytes)
 \end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Java\+Mail\+Sender \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1EmailService_a1e4e0c8295e54693b33b9162d05ae429}{mail\+Sender}}
+\end{DoxyCompactItemize}
+
+
+\label{classcom_1_1example_1_1demo_1_1service_1_1EmailService_doc-func-members}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1EmailService_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1EmailService_a9868325574cd482a6fbb3e098d1c4a46}\index{com.example.demo.service.EmailService@{com.example.demo.service.EmailService}!sendDebtNotification@{sendDebtNotification}}
+\index{sendDebtNotification@{sendDebtNotification}!com.example.demo.service.EmailService@{com.example.demo.service.EmailService}}
+\doxysubsubsection{\texorpdfstring{sendDebtNotification()}{sendDebtNotification()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1EmailService_a9868325574cd482a6fbb3e098d1c4a46} 
+void com.\+example.\+demo.\+service.\+Email\+Service.\+send\+Debt\+Notification (\begin{DoxyParamCaption}\item[{String}]{recipient\+Email}{, }\item[{String}]{debtor\+Name}{, }\item[{double}]{amount}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1EmailService_a71ac9e2b6314ccd059352461f036322d}\index{com.example.demo.service.EmailService@{com.example.demo.service.EmailService}!sendInvitationEmail@{sendInvitationEmail}}
+\index{sendInvitationEmail@{sendInvitationEmail}!com.example.demo.service.EmailService@{com.example.demo.service.EmailService}}
+\doxysubsubsection{\texorpdfstring{sendInvitationEmail()}{sendInvitationEmail()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1EmailService_a71ac9e2b6314ccd059352461f036322d} 
+void com.\+example.\+demo.\+service.\+Email\+Service.\+send\+Invitation\+Email (\begin{DoxyParamCaption}\item[{String}]{recipient\+Email}{, }\item[{String}]{invitation\+Link}{, }\item[{String}]{event\+Name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1EmailService_a88a98c7072ea642e3d76ebd0c1800711}\index{com.example.demo.service.EmailService@{com.example.demo.service.EmailService}!sendReportEmail@{sendReportEmail}}
+\index{sendReportEmail@{sendReportEmail}!com.example.demo.service.EmailService@{com.example.demo.service.EmailService}}
+\doxysubsubsection{\texorpdfstring{sendReportEmail()}{sendReportEmail()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1EmailService_a88a98c7072ea642e3d76ebd0c1800711} 
+void com.\+example.\+demo.\+service.\+Email\+Service.\+send\+Report\+Email (\begin{DoxyParamCaption}\item[{String}]{to}{, }\item[{String}]{event\+Name}{, }\item[{byte\+[$\,$]\+}]{pdf\+Bytes}{}\end{DoxyParamCaption})}
+
+
+
+\label{classcom_1_1example_1_1demo_1_1service_1_1EmailService_doc-variable-members}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1EmailService_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1EmailService_a1e4e0c8295e54693b33b9162d05ae429}\index{com.example.demo.service.EmailService@{com.example.demo.service.EmailService}!mailSender@{mailSender}}
+\index{mailSender@{mailSender}!com.example.demo.service.EmailService@{com.example.demo.service.EmailService}}
+\doxysubsubsection{\texorpdfstring{mailSender}{mailSender}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1EmailService_a1e4e0c8295e54693b33b9162d05ae429} 
+Java\+Mail\+Sender com.\+example.\+demo.\+service.\+Email\+Service.\+mail\+Sender\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
 \item 
-src/\+main/\+java/\+com/\+example/\+demo/\+service/\+Email\+Service.\+java\end{DoxyCompactItemize}
+src/\+main/\+java/\+com/\+example/\+demo/\+service/\+\doxymbox{\hyperlink{EmailService_8java}{Email\+Service.\+java}}\end{DoxyCompactItemize}

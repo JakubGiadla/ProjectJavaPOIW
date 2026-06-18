@@ -3,17 +3,36 @@
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_ab4e7d4b1d5eb9827317f58c4f85cb99f}\label{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_ab4e7d4b1d5eb9827317f58c4f85cb99f} 
-{\bfseries Report\+Controller} (\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1PdfReportService}{Pdf\+Report\+Service}} pdf\+Report\+Service, \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1ExpenseRepository}{Expense\+Repository}} expense\+Repository, \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1EventService}{Event\+Service}} event\+Service)
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_ab4e7d4b1d5eb9827317f58c4f85cb99f}{Report\+Controller}} (\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1PdfReportService}{Pdf\+Report\+Service}} pdf\+Report\+Service, \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1ExpenseRepository}{Expense\+Repository}} expense\+Repository, \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1EventService}{Event\+Service}} event\+Service)
 \item 
 Response\+Entity$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1EventReportDTO}{Event\+Report\+DTO}} $>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_a4037decff2f27d066e4dcf962f82f647}{get\+Report\+Data}} (@Path\+Variable Long event\+Id, Principal principal)
 \item 
 Response\+Entity$<$ byte\+[$\,$]\+$>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_ad74e4505287ffc1732b54f0926c85010}{download\+Pdf\+Report}} (@Path\+Variable Long event\+Id, Principal principal)
 \end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1PdfReportService}{Pdf\+Report\+Service}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_abd79874e14c9b56ecaf146bdbb3182a4}{pdf\+Report\+Service}}
+\item 
+final \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1ExpenseRepository}{Expense\+Repository}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_a69dd67396f269fbcd5e8c99584b8b279}{expense\+Repository}}
+\item 
+final \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1EventService}{Event\+Service}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_aed38e26760deaa5f67edfd371e646f09}{event\+Service}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Kontroler odpowiedzialny za generowanie raportów finansowych z wydarzeń. Umożliwia pobieranie danych rozliczeniowych w formacie JSON oraz eksport do pliku PDF. 
+
+\label{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_doc-constructors}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_ab4e7d4b1d5eb9827317f58c4f85cb99f}\index{com.example.demo.controller.ReportController@{com.example.demo.controller.ReportController}!ReportController@{ReportController}}
+\index{ReportController@{ReportController}!com.example.demo.controller.ReportController@{com.example.demo.controller.ReportController}}
+\doxysubsubsection{\texorpdfstring{ReportController()}{ReportController()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_ab4e7d4b1d5eb9827317f58c4f85cb99f} 
+com.\+example.\+demo.\+controller.\+Report\+Controller.\+Report\+Controller (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1PdfReportService}{Pdf\+Report\+Service}}}]{pdf\+Report\+Service}{, }\item[{\doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1ExpenseRepository}{Expense\+Repository}}}]{expense\+Repository}{, }\item[{\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1EventService}{Event\+Service}}}]{event\+Service}{}\end{DoxyParamCaption})}
+
+
 
 \label{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_doc-func-members}
 \Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_doc-func-members}
@@ -32,6 +51,29 @@ Response\+Entity$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1E
 
 GET /\+api/\+reports/\+\{event\+Id\} Zwraca surowe dane rozliczeniowe wydarzenia w formacie JSON. Weryfikuje uprawnienia użytkownika (principal) do dostępu do danych danego wydarzenia. 
 
+\label{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_doc-variable-members}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_aed38e26760deaa5f67edfd371e646f09}\index{com.example.demo.controller.ReportController@{com.example.demo.controller.ReportController}!eventService@{eventService}}
+\index{eventService@{eventService}!com.example.demo.controller.ReportController@{com.example.demo.controller.ReportController}}
+\doxysubsubsection{\texorpdfstring{eventService}{eventService}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_aed38e26760deaa5f67edfd371e646f09} 
+final \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1EventService}{Event\+Service}} com.\+example.\+demo.\+controller.\+Report\+Controller.\+event\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_a69dd67396f269fbcd5e8c99584b8b279}\index{com.example.demo.controller.ReportController@{com.example.demo.controller.ReportController}!expenseRepository@{expenseRepository}}
+\index{expenseRepository@{expenseRepository}!com.example.demo.controller.ReportController@{com.example.demo.controller.ReportController}}
+\doxysubsubsection{\texorpdfstring{expenseRepository}{expenseRepository}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_a69dd67396f269fbcd5e8c99584b8b279} 
+final \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1ExpenseRepository}{Expense\+Repository}} com.\+example.\+demo.\+controller.\+Report\+Controller.\+expense\+Repository\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_abd79874e14c9b56ecaf146bdbb3182a4}\index{com.example.demo.controller.ReportController@{com.example.demo.controller.ReportController}!pdfReportService@{pdfReportService}}
+\index{pdfReportService@{pdfReportService}!com.example.demo.controller.ReportController@{com.example.demo.controller.ReportController}}
+\doxysubsubsection{\texorpdfstring{pdfReportService}{pdfReportService}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1ReportController_abd79874e14c9b56ecaf146bdbb3182a4} 
+final \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1PdfReportService}{Pdf\+Report\+Service}} com.\+example.\+demo.\+controller.\+Report\+Controller.\+pdf\+Report\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
 The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
 \item 
-src/\+main/\+java/\+com/\+example/\+demo/\+controller/\+Report\+Controller.\+java\end{DoxyCompactItemize}
+src/\+main/\+java/\+com/\+example/\+demo/\+controller/\+\doxymbox{\hyperlink{ReportController_8java}{Report\+Controller.\+java}}\end{DoxyCompactItemize}

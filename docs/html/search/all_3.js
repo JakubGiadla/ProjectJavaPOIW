@@ -1,16 +1,11 @@
 var searchData=
 [
-  ['emailservice_0',['EmailService',['../classcom_1_1example_1_1demo_1_1service_1_1EmailService.html',1,'com::example::demo::service']]],
-  ['event_1',['Event',['../classcom_1_1example_1_1demo_1_1model_1_1Event.html',1,'com::example::demo::model']]],
-  ['eventcontroller_2',['EventController',['../classcom_1_1example_1_1demo_1_1controller_1_1EventController.html',1,'com::example::demo::controller']]],
-  ['eventdetailsdto_3',['EventDetailsDTO',['../classcom_1_1example_1_1demo_1_1dto_1_1EventDetailsDTO.html',1,'com::example::demo::dto']]],
-  ['eventreportdto_4',['EventReportDTO',['../classcom_1_1example_1_1demo_1_1dto_1_1EventReportDTO.html',1,'com::example::demo::dto']]],
-  ['eventrepository_5',['EventRepository',['../interfacecom_1_1example_1_1demo_1_1repository_1_1EventRepository.html',1,'com::example::demo::repository']]],
-  ['eventservice_6',['EventService',['../classcom_1_1example_1_1demo_1_1service_1_1EventService.html',1,'com::example::demo::service']]],
-  ['eventsummarydto_7',['EventSummaryDTO',['../classcom_1_1example_1_1demo_1_1dto_1_1EventSummaryDTO.html',1,'com::example::demo::dto']]],
-  ['expense_8',['Expense',['../classcom_1_1example_1_1demo_1_1model_1_1Expense.html',1,'com::example::demo::model']]],
-  ['expensecontroller_9',['ExpenseController',['../classcom_1_1example_1_1demo_1_1controller_1_1ExpenseController.html',1,'com::example::demo::controller']]],
-  ['expenserepository_10',['ExpenseRepository',['../interfacecom_1_1example_1_1demo_1_1repository_1_1ExpenseRepository.html',1,'com::example::demo::repository']]],
-  ['expenserequest_11',['ExpenseRequest',['../classcom_1_1example_1_1demo_1_1dto_1_1ExpenseRequest.html',1,'com::example::demo::dto']]],
-  ['expenseservice_12',['ExpenseService',['../classcom_1_1example_1_1demo_1_1service_1_1ExpenseService.html',1,'com::example::demo::service']]]
+  ['date_0',['date',['../classcom_1_1example_1_1demo_1_1dto_1_1EventDetailsDTO.html#a0db359a294d2e140ad9f0ed7d8e13119',1,'com.example.demo.dto.EventDetailsDTO.date'],['../classcom_1_1example_1_1demo_1_1dto_1_1EventSummaryDTO.html#ac12efd75305c3aa36c294579c0da7444',1,'com.example.demo.dto.EventSummaryDTO.date'],['../classcom_1_1example_1_1demo_1_1model_1_1Event.html#a513d94ca228e61001cbd8cf399e7aba4',1,'com.example.demo.model.Event.date']]],
+  ['deleteevent_1',['deleteEvent',['../classcom_1_1example_1_1demo_1_1controller_1_1EventController.html#a79d96ffd811806ea8fb3e7d4f8cc9ef1',1,'com.example.demo.controller.EventController.deleteEvent()'],['../classcom_1_1example_1_1demo_1_1service_1_1EventService.html#af418ba2345c4e5aeff9d03646792a100',1,'com.example.demo.service.EventService.deleteEvent()']]],
+  ['deletenotification_2',['deleteNotification',['../classcom_1_1example_1_1demo_1_1controller_1_1NotificationController.html#ad14085bf923f184d33fc0a3f9ce3fd59',1,'com.example.demo.controller.NotificationController.deleteNotification()'],['../classcom_1_1example_1_1demo_1_1service_1_1NotificationService.html#a64f0af3e04d48cc980c15f14a7959e5b',1,'com.example.demo.service.NotificationService.deleteNotification()']]],
+  ['deletetask_3',['deleteTask',['../classcom_1_1example_1_1demo_1_1controller_1_1TaskController.html#af8b2501966713896ac6ffb463950700a',1,'com.example.demo.controller.TaskController.deleteTask()'],['../classcom_1_1example_1_1demo_1_1service_1_1TaskService.html#a3fc19194f5be7a99a6e7b598e68b76af',1,'com.example.demo.service.TaskService.deleteTask()']]],
+  ['deleteuser_4',['deleteUser',['../classcom_1_1example_1_1demo_1_1controller_1_1AuthController.html#a232911f2e0985e5018063a80bc0a6fb7',1,'com.example.demo.controller.AuthController.deleteUser()'],['../classcom_1_1example_1_1demo_1_1service_1_1AuthService.html#aee7c217b37de8ad8a647740a24f90933',1,'com.example.demo.service.AuthService.deleteUser()']]],
+  ['description_5',['description',['../classcom_1_1example_1_1demo_1_1model_1_1Expense.html#a26001ae2bc17e79d624fb4d1af1d67c8',1,'com.example.demo.model.Expense.description'],['../classcom_1_1example_1_1demo_1_1model_1_1Task.html#a0c8f6de7aeb51e594ed96b397989ee1d',1,'com.example.demo.model.Task.description']]],
+  ['dofilterinternal_6',['doFilterInternal',['../classcom_1_1example_1_1demo_1_1config_1_1JwtAuthenticationFilter.html#a0fa3b539d2d9d62dcc4cccd6f8b49e88',1,'com::example::demo::config::JwtAuthenticationFilter']]],
+  ['downloadpdfreport_7',['downloadPdfReport',['../classcom_1_1example_1_1demo_1_1controller_1_1ReportController.html#ad74e4505287ffc1732b54f0926c85010',1,'com::example::demo::controller::ReportController']]]
 ];

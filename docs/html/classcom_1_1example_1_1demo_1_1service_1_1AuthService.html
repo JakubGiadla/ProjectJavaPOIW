@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.17.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: com.example.demo.service.AuthService Class Reference</title>
+<title>EventSplit: com.example.demo.service.AuthService Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -30,7 +30,7 @@ mermaid.initialize({ startOnLoad: true, theme: theme });
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">EventSplit
    </div>
   </td>
  </tr>
@@ -121,21 +121,209 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('classcom_1_1ex
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a82fb2416761ccb2dbfaa2835d14da8be" id="r_a82fb2416761ccb2dbfaa2835d14da8be"><td class="memItemLeft"><a id="a82fb2416761ccb2dbfaa2835d14da8be" name="a82fb2416761ccb2dbfaa2835d14da8be"></a>
-&#160;</td><td class="memItemRight"><b>AuthService</b> (<a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository.html">UserRepository</a> userRepository, BCryptPasswordEncoder passwordEncoder, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1JwtService.html">JwtService</a> jwtService)</td></tr>
-<tr class="memitem:ad6de7995f33eb0c6fa9d93d32083b5eb" id="r_ad6de7995f33eb0c6fa9d93d32083b5eb"><td class="memItemLeft"><a id="ad6de7995f33eb0c6fa9d93d32083b5eb" name="ad6de7995f33eb0c6fa9d93d32083b5eb"></a>
-<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html">User</a>&#160;</td><td class="memItemRight"><b>register</b> (<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html">User</a> user)</td></tr>
-<tr class="memitem:a3836a985fbc4801f43a20118b3724173" id="r_a3836a985fbc4801f43a20118b3724173"><td class="memItemLeft"><a id="a3836a985fbc4801f43a20118b3724173" name="a3836a985fbc4801f43a20118b3724173"></a>
-String&#160;</td><td class="memItemRight"><b>login</b> (<a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1LoginRequest.html">LoginRequest</a> request)</td></tr>
-<tr class="memitem:aa69ef4db8ba68183cb89e0066b6653cb" id="r_aa69ef4db8ba68183cb89e0066b6653cb"><td class="memItemLeft"><a id="aa69ef4db8ba68183cb89e0066b6653cb" name="aa69ef4db8ba68183cb89e0066b6653cb"></a>
-void&#160;</td><td class="memItemRight"><b>updateProfile</b> (String email, <a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1ProfileUpdateRequest.html">ProfileUpdateRequest</a> request)</td></tr>
-<tr class="memitem:a22ccba409831f358f8603c5eddcb7a63" id="r_a22ccba409831f358f8603c5eddcb7a63"><td class="memItemLeft"><a id="a22ccba409831f358f8603c5eddcb7a63" name="a22ccba409831f358f8603c5eddcb7a63"></a>
-void&#160;</td><td class="memItemRight"><b>changePassword</b> (String email, <a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1ChangePasswordRequest.html">ChangePasswordRequest</a> request)</td></tr>
-<tr class="memitem:aee7c217b37de8ad8a647740a24f90933" id="r_aee7c217b37de8ad8a647740a24f90933"><td class="memItemLeft"><a id="aee7c217b37de8ad8a647740a24f90933" name="aee7c217b37de8ad8a647740a24f90933"></a>
-void&#160;</td><td class="memItemRight"><b>deleteUser</b> (String email)</td></tr>
+<tr class="memitem:a82fb2416761ccb2dbfaa2835d14da8be" id="r_a82fb2416761ccb2dbfaa2835d14da8be"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a82fb2416761ccb2dbfaa2835d14da8be">AuthService</a> (<a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository.html">UserRepository</a> userRepository, BCryptPasswordEncoder passwordEncoder, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1JwtService.html">JwtService</a> jwtService)</td></tr>
+<tr class="memitem:ad6de7995f33eb0c6fa9d93d32083b5eb" id="r_ad6de7995f33eb0c6fa9d93d32083b5eb"><td class="memItemLeft"><a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html">User</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad6de7995f33eb0c6fa9d93d32083b5eb">register</a> (<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html">User</a> user)</td></tr>
+<tr class="memitem:a3836a985fbc4801f43a20118b3724173" id="r_a3836a985fbc4801f43a20118b3724173"><td class="memItemLeft">String&#160;</td><td class="memItemRight"><a class="el" href="#a3836a985fbc4801f43a20118b3724173">login</a> (<a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1LoginRequest.html">LoginRequest</a> request)</td></tr>
+<tr class="memitem:aa69ef4db8ba68183cb89e0066b6653cb" id="r_aa69ef4db8ba68183cb89e0066b6653cb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa69ef4db8ba68183cb89e0066b6653cb">updateProfile</a> (String email, <a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1ProfileUpdateRequest.html">ProfileUpdateRequest</a> request)</td></tr>
+<tr class="memitem:a22ccba409831f358f8603c5eddcb7a63" id="r_a22ccba409831f358f8603c5eddcb7a63"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a22ccba409831f358f8603c5eddcb7a63">changePassword</a> (String email, <a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1ChangePasswordRequest.html">ChangePasswordRequest</a> request)</td></tr>
+<tr class="memitem:aee7c217b37de8ad8a647740a24f90933" id="r_aee7c217b37de8ad8a647740a24f90933"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aee7c217b37de8ad8a647740a24f90933">deleteUser</a> (String email)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a8fdfbcc2331225571188e40a457582c8" id="r_a8fdfbcc2331225571188e40a457582c8"><td class="memItemLeft">final <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository.html">UserRepository</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8fdfbcc2331225571188e40a457582c8">userRepository</a></td></tr>
+<tr class="memitem:a5fa19257eaf50b68dcd2fb9bf7a51325" id="r_a5fa19257eaf50b68dcd2fb9bf7a51325"><td class="memItemLeft">final BCryptPasswordEncoder&#160;</td><td class="memItemRight"><a class="el" href="#a5fa19257eaf50b68dcd2fb9bf7a51325">passwordEncoder</a></td></tr>
+<tr class="memitem:a4abef075ddfb19f939bb853ade1f164f" id="r_a4abef075ddfb19f939bb853ade1f164f"><td class="memItemLeft">final <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1JwtService.html">JwtService</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4abef075ddfb19f939bb853ade1f164f">jwtService</a></td></tr>
 </table>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a82fb2416761ccb2dbfaa2835d14da8be" name="a82fb2416761ccb2dbfaa2835d14da8be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82fb2416761ccb2dbfaa2835d14da8be">&#9670;&#160;</a></span>AuthService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">com.example.demo.service.AuthService.AuthService </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository.html">UserRepository</a></td>          <td class="paramname"><span class="paramname"><em>userRepository</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BCryptPasswordEncoder</td>          <td class="paramname"><span class="paramname"><em>passwordEncoder</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1JwtService.html">JwtService</a></td>          <td class="paramname"><span class="paramname"><em>jwtService</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a22ccba409831f358f8603c5eddcb7a63" name="a22ccba409831f358f8603c5eddcb7a63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22ccba409831f358f8603c5eddcb7a63">&#9670;&#160;</a></span>changePassword()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.example.demo.service.AuthService.changePassword </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>email</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1ChangePasswordRequest.html">ChangePasswordRequest</a></td>          <td class="paramname"><span class="paramname"><em>request</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aee7c217b37de8ad8a647740a24f90933" name="aee7c217b37de8ad8a647740a24f90933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee7c217b37de8ad8a647740a24f90933">&#9670;&#160;</a></span>deleteUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.example.demo.service.AuthService.deleteUser </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>email</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3836a985fbc4801f43a20118b3724173" name="a3836a985fbc4801f43a20118b3724173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3836a985fbc4801f43a20118b3724173">&#9670;&#160;</a></span>login()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.example.demo.service.AuthService.login </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1LoginRequest.html">LoginRequest</a></td>          <td class="paramname"><span class="paramname"><em>request</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6de7995f33eb0c6fa9d93d32083b5eb" name="ad6de7995f33eb0c6fa9d93d32083b5eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6de7995f33eb0c6fa9d93d32083b5eb">&#9670;&#160;</a></span>register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html">User</a> com.example.demo.service.AuthService.register </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html">User</a></td>          <td class="paramname"><span class="paramname"><em>user</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa69ef4db8ba68183cb89e0066b6653cb" name="aa69ef4db8ba68183cb89e0066b6653cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa69ef4db8ba68183cb89e0066b6653cb">&#9670;&#160;</a></span>updateProfile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.example.demo.service.AuthService.updateProfile </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>email</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1ProfileUpdateRequest.html">ProfileUpdateRequest</a></td>          <td class="paramname"><span class="paramname"><em>request</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a4abef075ddfb19f939bb853ade1f164f" name="a4abef075ddfb19f939bb853ade1f164f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4abef075ddfb19f939bb853ade1f164f">&#9670;&#160;</a></span>jwtService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1JwtService.html">JwtService</a> com.example.demo.service.AuthService.jwtService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5fa19257eaf50b68dcd2fb9bf7a51325" name="a5fa19257eaf50b68dcd2fb9bf7a51325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fa19257eaf50b68dcd2fb9bf7a51325">&#9670;&#160;</a></span>passwordEncoder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final BCryptPasswordEncoder com.example.demo.service.AuthService.passwordEncoder</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8fdfbcc2331225571188e40a457582c8" name="a8fdfbcc2331225571188e40a457582c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fdfbcc2331225571188e40a457582c8">&#9670;&#160;</a></span>userRepository</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository.html">UserRepository</a> com.example.demo.service.AuthService.userRepository</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/main/java/com/example/demo/service/<b>AuthService.java</b></li>
+<li>src/main/java/com/example/demo/service/<a class="el" href="AuthService_8java.html">AuthService.java</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -150,7 +338,7 @@ void&#160;</td><td class="memItemRight"><b>deleteUser</b> (String email)</td></t
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>com</b></li><li class="navelem"><b>example</b></li><li class="navelem"><b>demo</b></li><li class="navelem"><b>service</b></li><li class="navelem"><a href="classcom_1_1example_1_1demo_1_1service_1_1AuthService.html">AuthService</a></li>
+    <li class="navelem"><b>com</b></li><li class="navelem"><b>example</b></li><li class="navelem"><a href="namespacecom_1_1example_1_1demo.html">demo</a></li><li class="navelem"><a href="namespacecom_1_1example_1_1demo_1_1service.html">service</a></li><li class="navelem"><a href="classcom_1_1example_1_1demo_1_1service_1_1AuthService.html">AuthService</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
   </ul>
 </div>

@@ -3,8 +3,7 @@
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1TaskController_a279d8a2aee0c664366dae407990ff8be}\label{classcom_1_1example_1_1demo_1_1controller_1_1TaskController_a279d8a2aee0c664366dae407990ff8be} 
-{\bfseries Task\+Controller} (\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1TaskService}{Task\+Service}} task\+Service)
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1TaskController_a279d8a2aee0c664366dae407990ff8be}{Task\+Controller}} (\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1TaskService}{Task\+Service}} task\+Service)
 \item 
 Response\+Entity$<$?$>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1TaskController_af388ad7cd4d02a732068e015a6ac6e4a}{get\+Tasks}} (@Path\+Variable Long event\+Id, Principal principal)
 \item 
@@ -18,10 +17,26 @@ Response\+Entity$<$ Map$<$ String, String $>$ $>$ \doxymbox{\hyperlink{classcom_
 \item 
 Response\+Entity$<$ Map$<$ String, String $>$ $>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1TaskController_af8b2501966713896ac6ffb463950700a}{delete\+Task}} (@Path\+Variable Long task\+Id, Principal principal)
 \end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1TaskService}{Task\+Service}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1TaskController_a5c64ea1be6ca3e5628a80a420eef960d}{task\+Service}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Kontroler zarządzający listą zadań (Tasks) w ramach konkretnego wydarzenia. Umożliwia pobieranie, dodawanie, oznaczanie oraz przypisywanie zadań uczestnikom. 
+
+\label{classcom_1_1example_1_1demo_1_1controller_1_1TaskController_doc-constructors}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1TaskController_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1TaskController_a279d8a2aee0c664366dae407990ff8be}\index{com.example.demo.controller.TaskController@{com.example.demo.controller.TaskController}!TaskController@{TaskController}}
+\index{TaskController@{TaskController}!com.example.demo.controller.TaskController@{com.example.demo.controller.TaskController}}
+\doxysubsubsection{\texorpdfstring{TaskController()}{TaskController()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1TaskController_a279d8a2aee0c664366dae407990ff8be} 
+com.\+example.\+demo.\+controller.\+Task\+Controller.\+Task\+Controller (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1TaskService}{Task\+Service}}}]{task\+Service}{}\end{DoxyParamCaption})}
+
+
 
 \label{classcom_1_1example_1_1demo_1_1controller_1_1TaskController_doc-func-members}
 \Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1TaskController_doc-func-members}
@@ -64,6 +79,17 @@ Response\+Entity$<$ Map$<$ String, String $>$ $>$ com.\+example.\+demo.\+control
 
 PUT /\+api/\+events/\+\{event\+Id\}/\+tasks/\+\{task\+Id\}/\+unassign Usuwa przypisanie wykonawcy od zadania (cofa zapisanie się). 
 
+\label{classcom_1_1example_1_1demo_1_1controller_1_1TaskController_doc-variable-members}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1TaskController_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1TaskController_a5c64ea1be6ca3e5628a80a420eef960d}\index{com.example.demo.controller.TaskController@{com.example.demo.controller.TaskController}!taskService@{taskService}}
+\index{taskService@{taskService}!com.example.demo.controller.TaskController@{com.example.demo.controller.TaskController}}
+\doxysubsubsection{\texorpdfstring{taskService}{taskService}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1TaskController_a5c64ea1be6ca3e5628a80a420eef960d} 
+final \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1TaskService}{Task\+Service}} com.\+example.\+demo.\+controller.\+Task\+Controller.\+task\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
 The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
 \item 
-src/\+main/\+java/\+com/\+example/\+demo/\+controller/\+Task\+Controller.\+java\end{DoxyCompactItemize}
+src/\+main/\+java/\+com/\+example/\+demo/\+controller/\+\doxymbox{\hyperlink{TaskController_8java}{Task\+Controller.\+java}}\end{DoxyCompactItemize}

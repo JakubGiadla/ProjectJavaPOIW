@@ -1,0 +1,27 @@
+var classcom_1_1example_1_1demo_1_1model_1_1User =
+[
+    [ "getAvatar", "classcom_1_1example_1_1demo_1_1model_1_1User.html#a0f118b2dc2873d4e58e96665f9f298c7", null ],
+    [ "getCreatedAt", "classcom_1_1example_1_1demo_1_1model_1_1User.html#a3b2624c2eedba69be4c400b070329ac2", null ],
+    [ "getEmail", "classcom_1_1example_1_1demo_1_1model_1_1User.html#a728ece60b0f5f93f2bfed39f22d58f80", null ],
+    [ "getId", "classcom_1_1example_1_1demo_1_1model_1_1User.html#a6851023bbdb9904fb4b9a4c1f232b432", null ],
+    [ "getName", "classcom_1_1example_1_1demo_1_1model_1_1User.html#aa377ccd0636ab611737791bfb7cd6316", null ],
+    [ "getPassword", "classcom_1_1example_1_1demo_1_1model_1_1User.html#aeeab5419dad11b50989f1362be9251bb", null ],
+    [ "getProvider", "classcom_1_1example_1_1demo_1_1model_1_1User.html#a6734befd8cc4f4b6fb1cb6c03cca1a5b", null ],
+    [ "isEnabled", "classcom_1_1example_1_1demo_1_1model_1_1User.html#abc39ee28eee45cadf7b89028ad95970b", null ],
+    [ "setAvatar", "classcom_1_1example_1_1demo_1_1model_1_1User.html#a40506779907f8339d2f678f0f259606a", null ],
+    [ "setCreatedAt", "classcom_1_1example_1_1demo_1_1model_1_1User.html#a2091284710da35835bbc4c1befbe5e71", null ],
+    [ "setEmail", "classcom_1_1example_1_1demo_1_1model_1_1User.html#af26393cb896a00f63de79a12a60e4a6d", null ],
+    [ "setEnabled", "classcom_1_1example_1_1demo_1_1model_1_1User.html#ad784f2683df13d827f03d82af03f86c6", null ],
+    [ "setId", "classcom_1_1example_1_1demo_1_1model_1_1User.html#a84f5e00dc9edfa6db54264978bee0e9e", null ],
+    [ "setName", "classcom_1_1example_1_1demo_1_1model_1_1User.html#a3ec501b507337a3ee3d355a3ee75c57b", null ],
+    [ "setPassword", "classcom_1_1example_1_1demo_1_1model_1_1User.html#a4bc8af1141749be83369935bb4d8d591", null ],
+    [ "setProvider", "classcom_1_1example_1_1demo_1_1model_1_1User.html#ab645ad06ea67a08a65308a7b26e3fb0b", null ],
+    [ "avatar", "classcom_1_1example_1_1demo_1_1model_1_1User.html#a76d37505576f03904b3f0b85d2a9c129", null ],
+    [ "createdAt", "classcom_1_1example_1_1demo_1_1model_1_1User.html#a30362c70946cb710256123d966bd08be", null ],
+    [ "email", "classcom_1_1example_1_1demo_1_1model_1_1User.html#a93a21cf0dadf62ccf2f9534c6d408705", null ],
+    [ "enabled", "classcom_1_1example_1_1demo_1_1model_1_1User.html#a0d4ee5e5fbdc466b110eea9bcaf68011", null ],
+    [ "id", "classcom_1_1example_1_1demo_1_1model_1_1User.html#add26bb9c581bf3573de8db54e936f16e", null ],
+    [ "name", "classcom_1_1example_1_1demo_1_1model_1_1User.html#a7a7722f30ce40ec0748ab07c9aaf0f7b", null ],
+    [ "password", "classcom_1_1example_1_1demo_1_1model_1_1User.html#aec1dfbeab1122dcc71805a6f46c10bfa", null ],
+    [ "provider", "classcom_1_1example_1_1demo_1_1model_1_1User.html#ac7db3e16b9b0d4ed450168efd3916345", null ]
+];

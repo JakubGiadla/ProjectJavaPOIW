@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.17.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: com.example.demo.service.JwtService Class Reference</title>
+<title>EventSplit: com.example.demo.service.JwtService Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -30,7 +30,7 @@ mermaid.initialize({ startOnLoad: true, theme: theme });
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">EventSplit
    </div>
   </td>
  </tr>
@@ -121,13 +121,96 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('classcom_1_1ex
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3f52c659e0d566ee9c4c61c09dcffa7f" id="r_a3f52c659e0d566ee9c4c61c09dcffa7f"><td class="memItemLeft"><a id="a3f52c659e0d566ee9c4c61c09dcffa7f" name="a3f52c659e0d566ee9c4c61c09dcffa7f"></a>
-String&#160;</td><td class="memItemRight"><b>generateToken</b> (String email)</td></tr>
-<tr class="memitem:a261fe551e9478f8b74f16239893c467a" id="r_a261fe551e9478f8b74f16239893c467a"><td class="memItemLeft"><a id="a261fe551e9478f8b74f16239893c467a" name="a261fe551e9478f8b74f16239893c467a"></a>
-String&#160;</td><td class="memItemRight"><b>extractUsername</b> (String token)</td></tr>
+<tr class="memitem:a3f52c659e0d566ee9c4c61c09dcffa7f" id="r_a3f52c659e0d566ee9c4c61c09dcffa7f"><td class="memItemLeft">String&#160;</td><td class="memItemRight"><a class="el" href="#a3f52c659e0d566ee9c4c61c09dcffa7f">generateToken</a> (String email)</td></tr>
+<tr class="memitem:a261fe551e9478f8b74f16239893c467a" id="r_a261fe551e9478f8b74f16239893c467a"><td class="memItemLeft">String&#160;</td><td class="memItemRight"><a class="el" href="#a261fe551e9478f8b74f16239893c467a">extractUsername</a> (String token)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:af3b9f61a716234d9e342f4a8c496be7f" id="r_af3b9f61a716234d9e342f4a8c496be7f"><td class="memItemLeft">static final SecretKey&#160;</td><td class="memItemRight"><a class="el" href="#af3b9f61a716234d9e342f4a8c496be7f">KEY</a> = Keys.secretKeyFor(SignatureAlgorithm.HS256)</td></tr>
+<tr class="memitem:a3835cb69b4f1400970c5e4056fc69b59" id="r_a3835cb69b4f1400970c5e4056fc69b59"><td class="memItemLeft">static final long&#160;</td><td class="memItemRight"><a class="el" href="#a3835cb69b4f1400970c5e4056fc69b59">EXPIRATION_TIME</a> = 86400000</td></tr>
 </table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a261fe551e9478f8b74f16239893c467a" name="a261fe551e9478f8b74f16239893c467a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a261fe551e9478f8b74f16239893c467a">&#9670;&#160;</a></span>extractUsername()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.example.demo.service.JwtService.extractUsername </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>token</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f52c659e0d566ee9c4c61c09dcffa7f" name="a3f52c659e0d566ee9c4c61c09dcffa7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f52c659e0d566ee9c4c61c09dcffa7f">&#9670;&#160;</a></span>generateToken()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.example.demo.service.JwtService.generateToken </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>email</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a3835cb69b4f1400970c5e4056fc69b59" name="a3835cb69b4f1400970c5e4056fc69b59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3835cb69b4f1400970c5e4056fc69b59">&#9670;&#160;</a></span>EXPIRATION_TIME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final long com.example.demo.service.JwtService.EXPIRATION_TIME = 86400000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3b9f61a716234d9e342f4a8c496be7f" name="af3b9f61a716234d9e342f4a8c496be7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3b9f61a716234d9e342f4a8c496be7f">&#9670;&#160;</a></span>KEY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final SecretKey com.example.demo.service.JwtService.KEY = Keys.secretKeyFor(SignatureAlgorithm.HS256)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/main/java/com/example/demo/service/<b>JwtService.java</b></li>
+<li>src/main/java/com/example/demo/service/<a class="el" href="JwtService_8java.html">JwtService.java</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -142,7 +225,7 @@ String&#160;</td><td class="memItemRight"><b>extractUsername</b> (String token)<
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>com</b></li><li class="navelem"><b>example</b></li><li class="navelem"><b>demo</b></li><li class="navelem"><b>service</b></li><li class="navelem"><a href="classcom_1_1example_1_1demo_1_1service_1_1JwtService.html">JwtService</a></li>
+    <li class="navelem"><b>com</b></li><li class="navelem"><b>example</b></li><li class="navelem"><a href="namespacecom_1_1example_1_1demo.html">demo</a></li><li class="navelem"><a href="namespacecom_1_1example_1_1demo_1_1service.html">service</a></li><li class="navelem"><a href="classcom_1_1example_1_1demo_1_1service_1_1JwtService.html">JwtService</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
   </ul>
 </div>

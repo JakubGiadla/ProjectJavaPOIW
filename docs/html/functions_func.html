@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.17.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Class Members - Functions</title>
+<title>EventSplit: Class Members - Functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -30,7 +30,7 @@ mermaid.initialize({ startOnLoad: true, theme: theme });
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">EventSplit
    </div>
   </td>
  </tr>
@@ -115,35 +115,179 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_func
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all documented functions with links to the class documentation for each member:</div><br/>
-<div class="qindex"><a class="qindex" href="#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="#index_j">J</a><div class="alphasepar"></div><a class="qindex" href="#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="#index_u">U</a></div>
-<ul>
-<li>addExpense()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1ExpenseController.html#a0f812b7fbcb3ae9fffa8d27725382662">com.example.demo.controller.ExpenseController</a></li>
-<li>addTask()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1TaskController.html#a8d4c50a9d48970f9d313895c6554f46d">com.example.demo.controller.TaskController</a></li>
-<li>assignTask()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1TaskController.html#a2e130ff80ccbf335a9e526eef7cc9ca6">com.example.demo.controller.TaskController</a></li>
-<li>changePassword()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1AuthController.html#a84f81abe03826a76ffde8e4c4f9ea0dc">com.example.demo.controller.AuthController</a></li>
-<li>closeEvent()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1EventController.html#a83a3a86f86b7fd7f1a1d2c6427832982">com.example.demo.controller.EventController</a></li>
-<li>completeTask()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1TaskController.html#a9c1087c60d16a968f9d848355ede0130">com.example.demo.controller.TaskController</a></li>
-<li>createEvent()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1EventController.html#ae8066317b7c67e7328022b4e25fae31c">com.example.demo.controller.EventController</a></li>
-<li>deleteEvent()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1EventController.html#a79d96ffd811806ea8fb3e7d4f8cc9ef1">com.example.demo.controller.EventController</a></li>
-<li>deleteNotification()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1NotificationController.html#ad14085bf923f184d33fc0a3f9ce3fd59">com.example.demo.controller.NotificationController</a></li>
-<li>deleteTask()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1TaskController.html#af8b2501966713896ac6ffb463950700a">com.example.demo.controller.TaskController</a></li>
-<li>deleteUser()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1AuthController.html#a232911f2e0985e5018063a80bc0a6fb7">com.example.demo.controller.AuthController</a></li>
+<div class="textblock">Here is a list of all functions with links to the classes they belong to:</div><br/>
+<div class="qindex"><a class="qindex" href="#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="#index_j">J</a><div class="alphasepar"></div><a class="qindex" href="#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="#index_q">Q</a><div class="alphasepar"></div><a class="qindex" href="#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="#index_u">U</a><div class="alphasepar"></div><a class="qindex" href="#index_v">V</a></div>
+
+
+<h3 class="doxsection"><a id="index_a" name="index_a"></a>- a -</h3><ul>
+<li>addExpense()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1ExpenseController.html#a0f812b7fbcb3ae9fffa8d27725382662">com.example.demo.controller.ExpenseController</a>, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1ExpenseService.html#af0fadd597902251ea73886cbc0eb529a">com.example.demo.service.ExpenseService</a></li>
+<li>addTask()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1TaskController.html#a8d4c50a9d48970f9d313895c6554f46d">com.example.demo.controller.TaskController</a>, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1TaskService.html#a061d011af815933992ff7273d0830379">com.example.demo.service.TaskService</a></li>
+<li>ApiResponse()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1ApiResponse.html#abe5940e5ffe4db8e0f08f6b867a38677">com.example.demo.dto.ApiResponse</a></li>
+<li>assignTask()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1TaskController.html#a2e130ff80ccbf335a9e526eef7cc9ca6">com.example.demo.controller.TaskController</a>, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1TaskService.html#a45e71242a7225aeddc473a6279d7af28">com.example.demo.service.TaskService</a></li>
+<li>Attendee()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1Attendee.html#a17bbb60009554183f4d0734f3c87b848">com.example.demo.model.Attendee</a></li>
+<li>AuthController()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1AuthController.html#a91ef8254081234626f2f6aeccfb1f7bf">com.example.demo.controller.AuthController</a></li>
+<li>AuthService()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1AuthService.html#a82fb2416761ccb2dbfaa2835d14da8be">com.example.demo.service.AuthService</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_c" name="index_c"></a>- c -</h3><ul>
+<li>calculate()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1SettlementEngine.html#adc91c0d01c4e2662abddec05f38266fc">com.example.demo.service.SettlementEngine</a></li>
+<li>calculateSettlements()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1ExpenseService.html#a6cdd8a3f7fe7998650b4de432e5ed82e">com.example.demo.service.ExpenseService</a></li>
+<li>changePassword()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1AuthController.html#a84f81abe03826a76ffde8e4c4f9ea0dc">com.example.demo.controller.AuthController</a>, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1AuthService.html#a22ccba409831f358f8603c5eddcb7a63">com.example.demo.service.AuthService</a></li>
+<li>closeEvent()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1EventController.html#a83a3a86f86b7fd7f1a1d2c6427832982">com.example.demo.controller.EventController</a>, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1EventService.html#abcd90ad6da0c49b02b5bc11c57d5d849">com.example.demo.service.EventService</a></li>
+<li>completeTask()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1TaskController.html#a9c1087c60d16a968f9d848355ede0130">com.example.demo.controller.TaskController</a>, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1TaskService.html#a217df9f680de2e393cd4def0ad9866c2">com.example.demo.service.TaskService</a></li>
+<li>corsConfigurationSource()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1config_1_1SecurityConfig.html#adf5db550300fa0d349bfb566896286b7">com.example.demo.config.SecurityConfig</a></li>
+<li>createEvent()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1EventController.html#ae8066317b7c67e7328022b4e25fae31c">com.example.demo.controller.EventController</a>, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1EventService.html#aab3d175e32c681c7e919804dc285c86d">com.example.demo.service.EventService</a></li>
+<li>createExpense()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1ExpenseService.html#a854e1df9f6e6c3c0bb4cc44b624d94cd">com.example.demo.service.ExpenseService</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_d" name="index_d"></a>- d -</h3><ul>
+<li>deleteEvent()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1EventController.html#a79d96ffd811806ea8fb3e7d4f8cc9ef1">com.example.demo.controller.EventController</a>, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1EventService.html#af418ba2345c4e5aeff9d03646792a100">com.example.demo.service.EventService</a></li>
+<li>deleteNotification()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1NotificationController.html#ad14085bf923f184d33fc0a3f9ce3fd59">com.example.demo.controller.NotificationController</a>, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1NotificationService.html#a64f0af3e04d48cc980c15f14a7959e5b">com.example.demo.service.NotificationService</a></li>
+<li>deleteTask()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1TaskController.html#af8b2501966713896ac6ffb463950700a">com.example.demo.controller.TaskController</a>, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1TaskService.html#a3fc19194f5be7a99a6e7b598e68b76af">com.example.demo.service.TaskService</a></li>
+<li>deleteUser()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1AuthController.html#a232911f2e0985e5018063a80bc0a6fb7">com.example.demo.controller.AuthController</a>, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1AuthService.html#aee7c217b37de8ad8a647740a24f90933">com.example.demo.service.AuthService</a></li>
+<li>doFilterInternal()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1config_1_1JwtAuthenticationFilter.html#a0fa3b539d2d9d62dcc4cccd6f8b49e88">com.example.demo.config.JwtAuthenticationFilter</a></li>
 <li>downloadPdfReport()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1ReportController.html#ad74e4505287ffc1732b54f0926c85010">com.example.demo.controller.ReportController</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_e" name="index_e"></a>- e -</h3><ul>
+<li>EventController()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1EventController.html#afe612b2a7856e9c4e43ad2be3c5503e9">com.example.demo.controller.EventController</a></li>
+<li>EventService()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1EventService.html#a382bea21197b135d3c575dc4ad3eb2fb">com.example.demo.service.EventService</a></li>
+<li>existsByEventAndUser()&#160;:&#160;<a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1AttendeeRepository.html#ab076ff2312c52a7bb47a699fb9e3958a">com.example.demo.repository.AttendeeRepository</a></li>
+<li>ExpenseController()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1ExpenseController.html#ac5c4443b01448f591499669899e79c64">com.example.demo.controller.ExpenseController</a></li>
+<li>ExpenseService()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1ExpenseService.html#a057c7437233bc7e45bd2282acd6abb0b">com.example.demo.service.ExpenseService</a></li>
+<li>extractUsername()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1JwtService.html#a261fe551e9478f8b74f16239893c467a">com.example.demo.service.JwtService</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_f" name="index_f"></a>- f -</h3><ul>
+<li>filterChain()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1config_1_1SecurityConfig.html#a93f16c1a5f73b6180a3d7da62d70539b">com.example.demo.config.SecurityConfig</a></li>
+<li>findAllByOrganizerOrAttendee()&#160;:&#160;<a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1EventRepository.html#a2e2ad695b1e1cdbed414153375a48309">com.example.demo.repository.EventRepository</a></li>
+<li>findAllByUser()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1EventService.html#ad58da4c294de7f2f92a772eabc05c505">com.example.demo.service.EventService</a>, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1NotificationService.html#a6f1de299ef3a299cc26c2d4aa80f89d7">com.example.demo.service.NotificationService</a></li>
+<li>findByEmail()&#160;:&#160;<a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository.html#a9aef15c2efc6c8fe027af0b076ec6f96">com.example.demo.repository.UserRepository</a></li>
+<li>findByEvent()&#160;:&#160;<a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1AttendeeRepository.html#ab9d020d304552417aa91b1f733c49699">com.example.demo.repository.AttendeeRepository</a></li>
+<li>findByEventId()&#160;:&#160;<a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1ExpenseRepository.html#ac25aa1940dc496c797ac09c67c2e816e">com.example.demo.repository.ExpenseRepository</a>, <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1InvitationRepository.html#a531a6d9a7aa997d249485b48531adf19">com.example.demo.repository.InvitationRepository</a>, <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1TaskRepository.html#af2bb3137be3ffe07c6daa729c6b0a53b">com.example.demo.repository.TaskRepository</a></li>
+<li>findById()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1EventService.html#aebcee09b3548a332f9b3a5bc0acbd175">com.example.demo.service.EventService</a></li>
+<li>findByJoinCode()&#160;:&#160;<a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1EventRepository.html#af9b037c6cd5ba15c0a563a1faf94a226">com.example.demo.repository.EventRepository</a></li>
+<li>findByOrganizer()&#160;:&#160;<a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1EventRepository.html#a917b961393ed6ca42131f11d48f818ae">com.example.demo.repository.EventRepository</a></li>
+<li>findByToken()&#160;:&#160;<a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1InvitationRepository.html#a73256fb48369df4b79c7efab809ea292">com.example.demo.repository.InvitationRepository</a></li>
+<li>findByUserId()&#160;:&#160;<a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1NotificationRepository.html#a223cdeec2c61199551be6a5b109439d4">com.example.demo.repository.NotificationRepository</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_g" name="index_g"></a>- g -</h3><ul>
+<li>generateEventReport()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1PdfReportService.html#ac1753372909f85e8a4dafb7af58ae696">com.example.demo.service.PdfReportService</a></li>
+<li>generateQrCode()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1QrCodeService.html#a041771e48715b3f5ab71e44004106899">com.example.demo.service.QrCodeService</a></li>
+<li>generateReport()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1EventService.html#a564aac88f671bed40628e7f634fa058c">com.example.demo.service.EventService</a></li>
+<li>generateToken()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1JwtService.html#a3f52c659e0d566ee9c4c61c09dcffa7f">com.example.demo.service.JwtService</a></li>
 <li>getAllEvents()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1EventController.html#ae2e464981372300d4a416694e9dfc813">com.example.demo.controller.EventController</a></li>
 <li>getAllNotifications()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1NotificationController.html#ab192cc9c176776b4ac561e910a9e676b">com.example.demo.controller.NotificationController</a></li>
-<li>getEventDetails()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1EventController.html#a5589297e61f917845b05784e3d0e240e">com.example.demo.controller.EventController</a></li>
-<li>getQrCode()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1QrCodeController.html#a04ebbc0c3b2ae22ac3e731a0230bcac1">com.example.demo.controller.QrCodeController</a></li>
+<li>getAsyncExecutor()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1config_1_1AsyncConfig.html#ac3e3a2717bbf6815a2747a278fee5927">com.example.demo.config.AsyncConfig</a></li>
+<li>getAvatar()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html#a0f118b2dc2873d4e58e96665f9f298c7">com.example.demo.model.User</a></li>
+<li>getCreatedAt()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html#a3b2624c2eedba69be4c400b070329ac2">com.example.demo.model.User</a></li>
+<li>getEmail()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html#a728ece60b0f5f93f2bfed39f22d58f80">com.example.demo.model.User</a></li>
+<li>getEventDetails()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1EventController.html#a5589297e61f917845b05784e3d0e240e">com.example.demo.controller.EventController</a>, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1EventService.html#adeef06cba105f41233faee518308370c">com.example.demo.service.EventService</a></li>
+<li>getEventWithPermission()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1EventService.html#a680d7db59d9065ebef8ccb6eadc2b7f7">com.example.demo.service.EventService</a></li>
+<li>getHistory()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1ExpenseService.html#a1fdfe365087c07f817d6e46c13862b95">com.example.demo.service.ExpenseService</a></li>
+<li>getId()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html#a6851023bbdb9904fb4b9a4c1f232b432">com.example.demo.model.User</a></li>
+<li>getInvitationLink()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1InvitationService.html#acc4d124d83c7e74ff90eaf0660283c02">com.example.demo.service.InvitationService</a></li>
+<li>getJavaMailSender()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1config_1_1MailConfig.html#a6b3149d04ad2b14832bd7a8bee641b2b">com.example.demo.config.MailConfig</a></li>
+<li>getJoinCode()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1InvitationService.html#af123fcc053dc19e9491d25b61d82c54f">com.example.demo.service.InvitationService</a></li>
+<li>getLink()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1InvitationController.html#a9765a7e6edbbc9b91d3f79a09f399ba8">com.example.demo.controller.InvitationController</a></li>
+<li>getMessage()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1ApiResponse.html#a96438d68f416c9916ae23cd1a133af96">com.example.demo.dto.ApiResponse</a></li>
+<li>getName()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html#aa377ccd0636ab611737791bfb7cd6316">com.example.demo.model.User</a></li>
+<li>getPassword()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html#aeeab5419dad11b50989f1362be9251bb">com.example.demo.model.User</a></li>
+<li>getProvider()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html#a6734befd8cc4f4b6fb1cb6c03cca1a5b">com.example.demo.model.User</a></li>
+<li>getQrCode()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1InvitationController.html#a0656497b362c73dd5799f4b26c875792">com.example.demo.controller.InvitationController</a>, <a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1QrCodeController.html#a04ebbc0c3b2ae22ac3e731a0230bcac1">com.example.demo.controller.QrCodeController</a></li>
 <li>getReportData()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1ReportController.html#a4037decff2f27d066e4dcf962f82f647">com.example.demo.controller.ReportController</a></li>
 <li>getTasks()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1TaskController.html#af388ad7cd4d02a732068e015a6ac6e4a">com.example.demo.controller.TaskController</a></li>
-<li>joinEvent()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1EventController.html#aa85790c9d8746866623e6fd525668507">com.example.demo.controller.EventController</a></li>
-<li>login()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1AuthController.html#a670993d097af84aa1b2e6c3ce6818f0c">com.example.demo.controller.AuthController</a></li>
-<li>markAllAsRead()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1NotificationController.html#ac712ff3e1fa3dac775ec85c4e543256c">com.example.demo.controller.NotificationController</a></li>
-<li>markAsRead()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1NotificationController.html#a4fef78df1472a75973af7bdaab11ed86">com.example.demo.controller.NotificationController</a></li>
+<li>getTasksByEvent()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1TaskService.html#a09493632498f7b2c667b9eccb9a54d4a">com.example.demo.service.TaskService</a></li>
+<li>getVerifiedEvent()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1TaskService.html#a3962bcd149d849c0a0740b863411fe8d">com.example.demo.service.TaskService</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_i" name="index_i"></a>- i -</h3><ul>
+<li>Invitation()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1Invitation.html#afe2c87f0cdfd82b236cecd01fcd80ac8">com.example.demo.model.Invitation</a></li>
+<li>isEnabled()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html#abc39ee28eee45cadf7b89028ad95970b">com.example.demo.model.User</a></li>
+<li>isSuccess()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1ApiResponse.html#a8863f9ccfb7c7a1dd8ba6895c4fc9ab0">com.example.demo.dto.ApiResponse</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_j" name="index_j"></a>- j -</h3><ul>
+<li>joinEvent()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1EventController.html#aa85790c9d8746866623e6fd525668507">com.example.demo.controller.EventController</a>, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1EventService.html#a2a9ea0e34b09f1a747a22ad2f0a3e2d4">com.example.demo.service.EventService</a></li>
+<li>JwtAuthenticationFilter()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1config_1_1JwtAuthenticationFilter.html#aab629e64e6e53cc4b49c599997bd3f88">com.example.demo.config.JwtAuthenticationFilter</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_l" name="index_l"></a>- l -</h3><ul>
+<li>login()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1AuthController.html#a670993d097af84aa1b2e6c3ce6818f0c">com.example.demo.controller.AuthController</a>, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1AuthService.html#a3836a985fbc4801f43a20118b3724173">com.example.demo.service.AuthService</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_m" name="index_m"></a>- m -</h3><ul>
+<li>main()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1Main.html#af5d5eeefa455f75f204401013d07267c">com.example.demo.Main</a></li>
+<li>markAllAsRead()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1NotificationController.html#ac712ff3e1fa3dac775ec85c4e543256c">com.example.demo.controller.NotificationController</a>, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1NotificationService.html#a159c6489203415f4114a48de1bc05ab9">com.example.demo.service.NotificationService</a></li>
+<li>markAsRead()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1NotificationController.html#a4fef78df1472a75973af7bdaab11ed86">com.example.demo.controller.NotificationController</a>, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1NotificationService.html#a14483a86fd5b2e59879fd17dce0c8136">com.example.demo.service.NotificationService</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_n" name="index_n"></a>- n -</h3><ul>
 <li>notifyDebt()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1NotificationController.html#a9b42929a5901f7238e7fad9285e20916">com.example.demo.controller.NotificationController</a></li>
-<li>register()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1AuthController.html#a5c5504509da076bc3ee86f1ac5c90b7a">com.example.demo.controller.AuthController</a></li>
-<li>unassignTask()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1TaskController.html#a70139764eaa41c228a94eebf530d6a28">com.example.demo.controller.TaskController</a></li>
-<li>updateProfile()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1AuthController.html#a4e8af6ea5f151c126c867af947c9e760">com.example.demo.controller.AuthController</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_p" name="index_p"></a>- p -</h3><ul>
+<li>passwordEncoder()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1config_1_1SecurityConfig.html#a859f2f29976b9adf2a5943d4142250be">com.example.demo.config.SecurityConfig</a></li>
+<li>processExpense()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1ExpenseService.html#a14a4aa6233ddc1bcbac546c95929f3b3">com.example.demo.service.ExpenseService</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_q" name="index_q"></a>- q -</h3><ul>
+<li>QrCodeController()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1QrCodeController.html#ac6cb6056d02a18a6481c7db99d32c6bf">com.example.demo.controller.QrCodeController</a></li>
+<li>QrCodeService()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1QrCodeService.html#a0ae2edfd1ec769c52db6a587a46bee0a">com.example.demo.service.QrCodeService</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_r" name="index_r"></a>- r -</h3><ul>
+<li>register()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1AuthController.html#a5c5504509da076bc3ee86f1ac5c90b7a">com.example.demo.controller.AuthController</a>, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1AuthService.html#ad6de7995f33eb0c6fa9d93d32083b5eb">com.example.demo.service.AuthService</a></li>
+<li>registerUser()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1ExpenseService.html#a65ee51bfddf9ed6c52d854cb8b8561fd">com.example.demo.service.ExpenseService</a></li>
+<li>ReportController()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1ReportController.html#ab4e7d4b1d5eb9827317f58c4f85cb99f">com.example.demo.controller.ReportController</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_s" name="index_s"></a>- s -</h3><ul>
+<li>SecurityConfig()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1config_1_1SecurityConfig.html#a35e864c0e0e76bb3f45505c555edb113">com.example.demo.config.SecurityConfig</a></li>
+<li>sendDebtNotification()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1EmailService.html#a9868325574cd482a6fbb3e098d1c4a46">com.example.demo.service.EmailService</a></li>
+<li>sendInvitation()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1InvitationController.html#a60a8802e9022b7f1947dc51b4631b4f1">com.example.demo.controller.InvitationController</a></li>
+<li>sendInvitationEmail()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1EmailService.html#a71ac9e2b6314ccd059352461f036322d">com.example.demo.service.EmailService</a></li>
+<li>sendReportEmail()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1EmailService.html#a88a98c7072ea642e3d76ebd0c1800711">com.example.demo.service.EmailService</a></li>
+<li>setAvatar()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html#a40506779907f8339d2f678f0f259606a">com.example.demo.model.User</a></li>
+<li>setCreatedAt()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html#a2091284710da35835bbc4c1befbe5e71">com.example.demo.model.User</a></li>
+<li>setEmail()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html#af26393cb896a00f63de79a12a60e4a6d">com.example.demo.model.User</a></li>
+<li>setEnabled()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html#ad784f2683df13d827f03d82af03f86c6">com.example.demo.model.User</a></li>
+<li>setId()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html#a84f5e00dc9edfa6db54264978bee0e9e">com.example.demo.model.User</a></li>
+<li>setName()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html#a3ec501b507337a3ee3d355a3ee75c57b">com.example.demo.model.User</a></li>
+<li>setPassword()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html#a4bc8af1141749be83369935bb4d8d591">com.example.demo.model.User</a></li>
+<li>setProvider()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html#ab645ad06ea67a08a65308a7b26e3fb0b">com.example.demo.model.User</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_t" name="index_t"></a>- t -</h3><ul>
+<li>TaskController()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1TaskController.html#a279d8a2aee0c664366dae407990ff8be">com.example.demo.controller.TaskController</a></li>
+<li>TaskService()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1TaskService.html#a1ad2222b5b25b3714e524932efb6b023">com.example.demo.service.TaskService</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_u" name="index_u"></a>- u -</h3><ul>
+<li>unassignTask()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1TaskController.html#a70139764eaa41c228a94eebf530d6a28">com.example.demo.controller.TaskController</a>, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1TaskService.html#aae24fb2828e4e9ad20bc9b01651ae128">com.example.demo.service.TaskService</a></li>
+<li>updateProfile()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1controller_1_1AuthController.html#a4e8af6ea5f151c126c867af947c9e760">com.example.demo.controller.AuthController</a>, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1AuthService.html#aa69ef4db8ba68183cb89e0066b6653cb">com.example.demo.service.AuthService</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_v" name="index_v"></a>- v -</h3><ul>
+<li>validateEventIsActive()&#160;:&#160;<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1EventService.html#a279f3bcf9983a93d7bbed7c467a034e4">com.example.demo.service.EventService</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

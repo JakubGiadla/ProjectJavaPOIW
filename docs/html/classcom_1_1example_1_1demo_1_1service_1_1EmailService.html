@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.17.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: com.example.demo.service.EmailService Class Reference</title>
+<title>EventSplit: com.example.demo.service.EmailService Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -30,7 +30,7 @@ mermaid.initialize({ startOnLoad: true, theme: theme });
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">EventSplit
    </div>
   </td>
  </tr>
@@ -121,15 +121,118 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('classcom_1_1ex
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a71ac9e2b6314ccd059352461f036322d" id="r_a71ac9e2b6314ccd059352461f036322d"><td class="memItemLeft"><a id="a71ac9e2b6314ccd059352461f036322d" name="a71ac9e2b6314ccd059352461f036322d"></a>
-void&#160;</td><td class="memItemRight"><b>sendInvitationEmail</b> (String recipientEmail, String invitationLink, String eventName)</td></tr>
-<tr class="memitem:a9868325574cd482a6fbb3e098d1c4a46" id="r_a9868325574cd482a6fbb3e098d1c4a46"><td class="memItemLeft"><a id="a9868325574cd482a6fbb3e098d1c4a46" name="a9868325574cd482a6fbb3e098d1c4a46"></a>
-void&#160;</td><td class="memItemRight"><b>sendDebtNotification</b> (String recipientEmail, String debtorName, double amount)</td></tr>
-<tr class="memitem:a88a98c7072ea642e3d76ebd0c1800711" id="r_a88a98c7072ea642e3d76ebd0c1800711"><td class="memItemLeft"><a id="a88a98c7072ea642e3d76ebd0c1800711" name="a88a98c7072ea642e3d76ebd0c1800711"></a>
-void&#160;</td><td class="memItemRight"><b>sendReportEmail</b> (String to, String eventName, byte[] pdfBytes)</td></tr>
+<tr class="memitem:a71ac9e2b6314ccd059352461f036322d" id="r_a71ac9e2b6314ccd059352461f036322d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a71ac9e2b6314ccd059352461f036322d">sendInvitationEmail</a> (String recipientEmail, String invitationLink, String eventName)</td></tr>
+<tr class="memitem:a9868325574cd482a6fbb3e098d1c4a46" id="r_a9868325574cd482a6fbb3e098d1c4a46"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9868325574cd482a6fbb3e098d1c4a46">sendDebtNotification</a> (String recipientEmail, String debtorName, double amount)</td></tr>
+<tr class="memitem:a88a98c7072ea642e3d76ebd0c1800711" id="r_a88a98c7072ea642e3d76ebd0c1800711"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a88a98c7072ea642e3d76ebd0c1800711">sendReportEmail</a> (String to, String eventName, byte[] pdfBytes)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a1e4e0c8295e54693b33b9162d05ae429" id="r_a1e4e0c8295e54693b33b9162d05ae429"><td class="memItemLeft">JavaMailSender&#160;</td><td class="memItemRight"><a class="el" href="#a1e4e0c8295e54693b33b9162d05ae429">mailSender</a></td></tr>
 </table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a9868325574cd482a6fbb3e098d1c4a46" name="a9868325574cd482a6fbb3e098d1c4a46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9868325574cd482a6fbb3e098d1c4a46">&#9670;&#160;</a></span>sendDebtNotification()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.example.demo.service.EmailService.sendDebtNotification </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>recipientEmail</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>debtorName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>amount</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a71ac9e2b6314ccd059352461f036322d" name="a71ac9e2b6314ccd059352461f036322d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71ac9e2b6314ccd059352461f036322d">&#9670;&#160;</a></span>sendInvitationEmail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.example.demo.service.EmailService.sendInvitationEmail </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>recipientEmail</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>invitationLink</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>eventName</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88a98c7072ea642e3d76ebd0c1800711" name="a88a98c7072ea642e3d76ebd0c1800711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88a98c7072ea642e3d76ebd0c1800711">&#9670;&#160;</a></span>sendReportEmail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.example.demo.service.EmailService.sendReportEmail </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>to</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>eventName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte[]</td>          <td class="paramname"><span class="paramname"><em>pdfBytes</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a1e4e0c8295e54693b33b9162d05ae429" name="a1e4e0c8295e54693b33b9162d05ae429"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e4e0c8295e54693b33b9162d05ae429">&#9670;&#160;</a></span>mailSender</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">JavaMailSender com.example.demo.service.EmailService.mailSender</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/main/java/com/example/demo/service/<b>EmailService.java</b></li>
+<li>src/main/java/com/example/demo/service/<a class="el" href="EmailService_8java.html">EmailService.java</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -144,7 +247,7 @@ void&#160;</td><td class="memItemRight"><b>sendReportEmail</b> (String to, Strin
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>com</b></li><li class="navelem"><b>example</b></li><li class="navelem"><b>demo</b></li><li class="navelem"><b>service</b></li><li class="navelem"><a href="classcom_1_1example_1_1demo_1_1service_1_1EmailService.html">EmailService</a></li>
+    <li class="navelem"><b>com</b></li><li class="navelem"><b>example</b></li><li class="navelem"><a href="namespacecom_1_1example_1_1demo.html">demo</a></li><li class="navelem"><a href="namespacecom_1_1example_1_1demo_1_1service.html">service</a></li><li class="navelem"><a href="classcom_1_1example_1_1demo_1_1service_1_1EmailService.html">EmailService</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
   </ul>
 </div>

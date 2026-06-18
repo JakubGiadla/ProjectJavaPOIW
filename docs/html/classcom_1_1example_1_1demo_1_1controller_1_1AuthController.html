@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.17.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: com.example.demo.controller.AuthController Class Reference</title>
+<title>EventSplit: com.example.demo.controller.AuthController Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -30,7 +30,7 @@ mermaid.initialize({ startOnLoad: true, theme: theme });
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">EventSplit
    </div>
   </td>
  </tr>
@@ -121,14 +121,35 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('classcom_1_1ex
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a91ef8254081234626f2f6aeccfb1f7bf" id="r_a91ef8254081234626f2f6aeccfb1f7bf"><td class="memItemLeft"><a id="a91ef8254081234626f2f6aeccfb1f7bf" name="a91ef8254081234626f2f6aeccfb1f7bf"></a>
-&#160;</td><td class="memItemRight"><b>AuthController</b> (<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1AuthService.html">AuthService</a> authService)</td></tr>
+<tr class="memitem:a91ef8254081234626f2f6aeccfb1f7bf" id="r_a91ef8254081234626f2f6aeccfb1f7bf"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a91ef8254081234626f2f6aeccfb1f7bf">AuthController</a> (<a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1AuthService.html">AuthService</a> authService)</td></tr>
 <tr class="memitem:a670993d097af84aa1b2e6c3ce6818f0c" id="r_a670993d097af84aa1b2e6c3ce6818f0c"><td class="memItemLeft">ResponseEntity&lt;?&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a670993d097af84aa1b2e6c3ce6818f0c">login</a> (@RequestBody <a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1LoginRequest.html">LoginRequest</a> loginRequest)</td></tr>
 <tr class="memitem:a5c5504509da076bc3ee86f1ac5c90b7a" id="r_a5c5504509da076bc3ee86f1ac5c90b7a"><td class="memItemLeft">ResponseEntity&lt;?&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a5c5504509da076bc3ee86f1ac5c90b7a">register</a> (@RequestBody <a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1User.html">User</a> user)</td></tr>
 <tr class="memitem:a4e8af6ea5f151c126c867af947c9e760" id="r_a4e8af6ea5f151c126c867af947c9e760"><td class="memItemLeft">ResponseEntity&lt;?&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a4e8af6ea5f151c126c867af947c9e760">updateProfile</a> (@RequestBody <a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1ProfileUpdateRequest.html">ProfileUpdateRequest</a> request, Principal principal)</td></tr>
 <tr class="memitem:a84f81abe03826a76ffde8e4c4f9ea0dc" id="r_a84f81abe03826a76ffde8e4c4f9ea0dc"><td class="memItemLeft">ResponseEntity&lt;?&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a84f81abe03826a76ffde8e4c4f9ea0dc">changePassword</a> (@RequestBody <a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1ChangePasswordRequest.html">ChangePasswordRequest</a> request, Principal principal)</td></tr>
 <tr class="memitem:a232911f2e0985e5018063a80bc0a6fb7" id="r_a232911f2e0985e5018063a80bc0a6fb7"><td class="memItemLeft">ResponseEntity&lt;?&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a232911f2e0985e5018063a80bc0a6fb7">deleteUser</a> (Principal principal)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a50d84ab154f70b8f19c4d4146e066386" id="r_a50d84ab154f70b8f19c4d4146e066386"><td class="memItemLeft">final <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1AuthService.html">AuthService</a>&#160;</td><td class="memItemRight"><a class="el" href="#a50d84ab154f70b8f19c4d4146e066386">authService</a></td></tr>
 </table>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a91ef8254081234626f2f6aeccfb1f7bf" name="a91ef8254081234626f2f6aeccfb1f7bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91ef8254081234626f2f6aeccfb1f7bf">&#9670;&#160;</a></span>AuthController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">com.example.demo.controller.AuthController.AuthController </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1AuthService.html">AuthService</a></td>          <td class="paramname"><span class="paramname"><em>authService</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a84f81abe03826a76ffde8e4c4f9ea0dc" name="a84f81abe03826a76ffde8e4c4f9ea0dc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84f81abe03826a76ffde8e4c4f9ea0dc">&#9670;&#160;</a></span>changePassword()</h2>
@@ -228,8 +249,31 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a50d84ab154f70b8f19c4d4146e066386" name="a50d84ab154f70b8f19c4d4146e066386"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50d84ab154f70b8f19c4d4146e066386">&#9670;&#160;</a></span>authService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1AuthService.html">AuthService</a> com.example.demo.controller.AuthController.authService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/main/java/com/example/demo/controller/<b>AuthController.java</b></li>
+<li>src/main/java/com/example/demo/controller/<a class="el" href="AuthController_8java.html">AuthController.java</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -244,7 +288,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>com</b></li><li class="navelem"><b>example</b></li><li class="navelem"><b>demo</b></li><li class="navelem"><b>controller</b></li><li class="navelem"><a href="classcom_1_1example_1_1demo_1_1controller_1_1AuthController.html">AuthController</a></li>
+    <li class="navelem"><b>com</b></li><li class="navelem"><b>example</b></li><li class="navelem"><a href="namespacecom_1_1example_1_1demo.html">demo</a></li><li class="navelem"><a href="namespacecom_1_1example_1_1demo_1_1controller.html">controller</a></li><li class="navelem"><a href="classcom_1_1example_1_1demo_1_1controller_1_1AuthController.html">AuthController</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
   </ul>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.17.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: com.example.demo.service.EventService Class Reference</title>
+<title>EventSplit: com.example.demo.service.EventService Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -30,7 +30,7 @@ mermaid.initialize({ startOnLoad: true, theme: theme });
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">EventSplit
    </div>
   </td>
  </tr>
@@ -121,31 +121,375 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('classcom_1_1ex
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a382bea21197b135d3c575dc4ad3eb2fb" id="r_a382bea21197b135d3c575dc4ad3eb2fb"><td class="memItemLeft"><a id="a382bea21197b135d3c575dc4ad3eb2fb" name="a382bea21197b135d3c575dc4ad3eb2fb"></a>
-&#160;</td><td class="memItemRight"><b>EventService</b> (<a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1EventRepository.html">EventRepository</a> eventRepository, <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository.html">UserRepository</a> userRepository, <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1ExpenseRepository.html">ExpenseRepository</a> expenseRepository, <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1AttendeeRepository.html">AttendeeRepository</a> attendeeRepository, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1SettlementEngine.html">SettlementEngine</a> engine)</td></tr>
-<tr class="memitem:abcd90ad6da0c49b02b5bc11c57d5d849" id="r_abcd90ad6da0c49b02b5bc11c57d5d849"><td class="memItemLeft"><a id="abcd90ad6da0c49b02b5bc11c57d5d849" name="abcd90ad6da0c49b02b5bc11c57d5d849"></a>
-void&#160;</td><td class="memItemRight"><b>closeEvent</b> (Long eventId, String email)</td></tr>
-<tr class="memitem:af418ba2345c4e5aeff9d03646792a100" id="r_af418ba2345c4e5aeff9d03646792a100"><td class="memItemLeft"><a id="af418ba2345c4e5aeff9d03646792a100" name="af418ba2345c4e5aeff9d03646792a100"></a>
-void&#160;</td><td class="memItemRight"><b>deleteEvent</b> (Long eventId, String email)</td></tr>
-<tr class="memitem:a2a9ea0e34b09f1a747a22ad2f0a3e2d4" id="r_a2a9ea0e34b09f1a747a22ad2f0a3e2d4"><td class="memItemLeft"><a id="a2a9ea0e34b09f1a747a22ad2f0a3e2d4" name="a2a9ea0e34b09f1a747a22ad2f0a3e2d4"></a>
-void&#160;</td><td class="memItemRight"><b>joinEvent</b> (String joinCode, String email)</td></tr>
-<tr class="memitem:adeef06cba105f41233faee518308370c" id="r_adeef06cba105f41233faee518308370c"><td class="memItemLeft"><a id="adeef06cba105f41233faee518308370c" name="adeef06cba105f41233faee518308370c"></a>
-<a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1EventDetailsDTO.html">EventDetailsDTO</a>&#160;</td><td class="memItemRight"><b>getEventDetails</b> (Long eventId, String email)</td></tr>
-<tr class="memitem:a279f3bcf9983a93d7bbed7c467a034e4" id="r_a279f3bcf9983a93d7bbed7c467a034e4"><td class="memItemLeft"><a id="a279f3bcf9983a93d7bbed7c467a034e4" name="a279f3bcf9983a93d7bbed7c467a034e4"></a>
-void&#160;</td><td class="memItemRight"><b>validateEventIsActive</b> (Long eventId)</td></tr>
-<tr class="memitem:ad58da4c294de7f2f92a772eabc05c505" id="r_ad58da4c294de7f2f92a772eabc05c505"><td class="memItemLeft"><a id="ad58da4c294de7f2f92a772eabc05c505" name="ad58da4c294de7f2f92a772eabc05c505"></a>
-List&lt; <a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1EventSummaryDTO.html">EventSummaryDTO</a> &gt;&#160;</td><td class="memItemRight"><b>findAllByUser</b> (String email)</td></tr>
-<tr class="memitem:aab3d175e32c681c7e919804dc285c86d" id="r_aab3d175e32c681c7e919804dc285c86d"><td class="memItemLeft"><a id="aab3d175e32c681c7e919804dc285c86d" name="aab3d175e32c681c7e919804dc285c86d"></a>
-<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1Event.html">Event</a>&#160;</td><td class="memItemRight"><b>createEvent</b> (<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1Event.html">Event</a> event, String email)</td></tr>
-<tr class="memitem:aebcee09b3548a332f9b3a5bc0acbd175" id="r_aebcee09b3548a332f9b3a5bc0acbd175"><td class="memItemLeft"><a id="aebcee09b3548a332f9b3a5bc0acbd175" name="aebcee09b3548a332f9b3a5bc0acbd175"></a>
-<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1Event.html">Event</a>&#160;</td><td class="memItemRight"><b>findById</b> (Long eventId)</td></tr>
-<tr class="memitem:a680d7db59d9065ebef8ccb6eadc2b7f7" id="r_a680d7db59d9065ebef8ccb6eadc2b7f7"><td class="memItemLeft"><a id="a680d7db59d9065ebef8ccb6eadc2b7f7" name="a680d7db59d9065ebef8ccb6eadc2b7f7"></a>
-<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1Event.html">Event</a>&#160;</td><td class="memItemRight"><b>getEventWithPermission</b> (Long eventId, String email)</td></tr>
-<tr class="memitem:a564aac88f671bed40628e7f634fa058c" id="r_a564aac88f671bed40628e7f634fa058c"><td class="memItemLeft"><a id="a564aac88f671bed40628e7f634fa058c" name="a564aac88f671bed40628e7f634fa058c"></a>
-<a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1EventReportDTO.html">EventReportDTO</a>&#160;</td><td class="memItemRight"><b>generateReport</b> (Long eventId, String email)</td></tr>
+<tr class="memitem:a382bea21197b135d3c575dc4ad3eb2fb" id="r_a382bea21197b135d3c575dc4ad3eb2fb"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a382bea21197b135d3c575dc4ad3eb2fb">EventService</a> (<a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1EventRepository.html">EventRepository</a> eventRepository, <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository.html">UserRepository</a> userRepository, <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1ExpenseRepository.html">ExpenseRepository</a> expenseRepository, <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1AttendeeRepository.html">AttendeeRepository</a> attendeeRepository, <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1SettlementEngine.html">SettlementEngine</a> engine)</td></tr>
+<tr class="memitem:abcd90ad6da0c49b02b5bc11c57d5d849" id="r_abcd90ad6da0c49b02b5bc11c57d5d849"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abcd90ad6da0c49b02b5bc11c57d5d849">closeEvent</a> (Long eventId, String email)</td></tr>
+<tr class="memitem:af418ba2345c4e5aeff9d03646792a100" id="r_af418ba2345c4e5aeff9d03646792a100"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af418ba2345c4e5aeff9d03646792a100">deleteEvent</a> (Long eventId, String email)</td></tr>
+<tr class="memitem:a2a9ea0e34b09f1a747a22ad2f0a3e2d4" id="r_a2a9ea0e34b09f1a747a22ad2f0a3e2d4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2a9ea0e34b09f1a747a22ad2f0a3e2d4">joinEvent</a> (String joinCode, String email)</td></tr>
+<tr class="memitem:adeef06cba105f41233faee518308370c" id="r_adeef06cba105f41233faee518308370c"><td class="memItemLeft"><a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1EventDetailsDTO.html">EventDetailsDTO</a>&#160;</td><td class="memItemRight"><a class="el" href="#adeef06cba105f41233faee518308370c">getEventDetails</a> (Long eventId, String email)</td></tr>
+<tr class="memitem:a279f3bcf9983a93d7bbed7c467a034e4" id="r_a279f3bcf9983a93d7bbed7c467a034e4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a279f3bcf9983a93d7bbed7c467a034e4">validateEventIsActive</a> (Long eventId)</td></tr>
+<tr class="memitem:ad58da4c294de7f2f92a772eabc05c505" id="r_ad58da4c294de7f2f92a772eabc05c505"><td class="memItemLeft">List&lt; <a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1EventSummaryDTO.html">EventSummaryDTO</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ad58da4c294de7f2f92a772eabc05c505">findAllByUser</a> (String email)</td></tr>
+<tr class="memitem:aab3d175e32c681c7e919804dc285c86d" id="r_aab3d175e32c681c7e919804dc285c86d"><td class="memItemLeft"><a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1Event.html">Event</a>&#160;</td><td class="memItemRight"><a class="el" href="#aab3d175e32c681c7e919804dc285c86d">createEvent</a> (<a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1Event.html">Event</a> event, String email)</td></tr>
+<tr class="memitem:aebcee09b3548a332f9b3a5bc0acbd175" id="r_aebcee09b3548a332f9b3a5bc0acbd175"><td class="memItemLeft"><a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1Event.html">Event</a>&#160;</td><td class="memItemRight"><a class="el" href="#aebcee09b3548a332f9b3a5bc0acbd175">findById</a> (Long eventId)</td></tr>
+<tr class="memitem:a680d7db59d9065ebef8ccb6eadc2b7f7" id="r_a680d7db59d9065ebef8ccb6eadc2b7f7"><td class="memItemLeft"><a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1Event.html">Event</a>&#160;</td><td class="memItemRight"><a class="el" href="#a680d7db59d9065ebef8ccb6eadc2b7f7">getEventWithPermission</a> (Long eventId, String email)</td></tr>
+<tr class="memitem:a564aac88f671bed40628e7f634fa058c" id="r_a564aac88f671bed40628e7f634fa058c"><td class="memItemLeft"><a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1EventReportDTO.html">EventReportDTO</a>&#160;</td><td class="memItemRight"><a class="el" href="#a564aac88f671bed40628e7f634fa058c">generateReport</a> (Long eventId, String email)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a71c9ebcb713daecdb6cf9c88b64a3df8" id="r_a71c9ebcb713daecdb6cf9c88b64a3df8"><td class="memItemLeft">final <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1EventRepository.html">EventRepository</a>&#160;</td><td class="memItemRight"><a class="el" href="#a71c9ebcb713daecdb6cf9c88b64a3df8">eventRepository</a></td></tr>
+<tr class="memitem:abffb75f0237908ad52c34c37ff97fcb6" id="r_abffb75f0237908ad52c34c37ff97fcb6"><td class="memItemLeft">final <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository.html">UserRepository</a>&#160;</td><td class="memItemRight"><a class="el" href="#abffb75f0237908ad52c34c37ff97fcb6">userRepository</a></td></tr>
+<tr class="memitem:a8007d0640375ac24a78867051c9c1e68" id="r_a8007d0640375ac24a78867051c9c1e68"><td class="memItemLeft">final <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1ExpenseRepository.html">ExpenseRepository</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8007d0640375ac24a78867051c9c1e68">expenseRepository</a></td></tr>
+<tr class="memitem:ae4dfb71568ebc76bab041d1ca53df5fd" id="r_ae4dfb71568ebc76bab041d1ca53df5fd"><td class="memItemLeft">final <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1AttendeeRepository.html">AttendeeRepository</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae4dfb71568ebc76bab041d1ca53df5fd">attendeeRepository</a></td></tr>
+<tr class="memitem:a1bd0e8cc09a7ba52a1aeb45fdfa2df8f" id="r_a1bd0e8cc09a7ba52a1aeb45fdfa2df8f"><td class="memItemLeft">final <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1SettlementEngine.html">SettlementEngine</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1bd0e8cc09a7ba52a1aeb45fdfa2df8f">engine</a></td></tr>
 </table>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a382bea21197b135d3c575dc4ad3eb2fb" name="a382bea21197b135d3c575dc4ad3eb2fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a382bea21197b135d3c575dc4ad3eb2fb">&#9670;&#160;</a></span>EventService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">com.example.demo.service.EventService.EventService </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1EventRepository.html">EventRepository</a></td>          <td class="paramname"><span class="paramname"><em>eventRepository</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository.html">UserRepository</a></td>          <td class="paramname"><span class="paramname"><em>userRepository</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1ExpenseRepository.html">ExpenseRepository</a></td>          <td class="paramname"><span class="paramname"><em>expenseRepository</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1AttendeeRepository.html">AttendeeRepository</a></td>          <td class="paramname"><span class="paramname"><em>attendeeRepository</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1SettlementEngine.html">SettlementEngine</a></td>          <td class="paramname"><span class="paramname"><em>engine</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="abcd90ad6da0c49b02b5bc11c57d5d849" name="abcd90ad6da0c49b02b5bc11c57d5d849"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcd90ad6da0c49b02b5bc11c57d5d849">&#9670;&#160;</a></span>closeEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.example.demo.service.EventService.closeEvent </td>
+          <td>(</td>
+          <td class="paramtype">Long</td>          <td class="paramname"><span class="paramname"><em>eventId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>email</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab3d175e32c681c7e919804dc285c86d" name="aab3d175e32c681c7e919804dc285c86d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab3d175e32c681c7e919804dc285c86d">&#9670;&#160;</a></span>createEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1Event.html">Event</a> com.example.demo.service.EventService.createEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1Event.html">Event</a></td>          <td class="paramname"><span class="paramname"><em>event</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>email</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af418ba2345c4e5aeff9d03646792a100" name="af418ba2345c4e5aeff9d03646792a100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af418ba2345c4e5aeff9d03646792a100">&#9670;&#160;</a></span>deleteEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.example.demo.service.EventService.deleteEvent </td>
+          <td>(</td>
+          <td class="paramtype">Long</td>          <td class="paramname"><span class="paramname"><em>eventId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>email</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad58da4c294de7f2f92a772eabc05c505" name="ad58da4c294de7f2f92a772eabc05c505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad58da4c294de7f2f92a772eabc05c505">&#9670;&#160;</a></span>findAllByUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1EventSummaryDTO.html">EventSummaryDTO</a> &gt; com.example.demo.service.EventService.findAllByUser </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>email</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aebcee09b3548a332f9b3a5bc0acbd175" name="aebcee09b3548a332f9b3a5bc0acbd175"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebcee09b3548a332f9b3a5bc0acbd175">&#9670;&#160;</a></span>findById()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1Event.html">Event</a> com.example.demo.service.EventService.findById </td>
+          <td>(</td>
+          <td class="paramtype">Long</td>          <td class="paramname"><span class="paramname"><em>eventId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a564aac88f671bed40628e7f634fa058c" name="a564aac88f671bed40628e7f634fa058c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a564aac88f671bed40628e7f634fa058c">&#9670;&#160;</a></span>generateReport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1EventReportDTO.html">EventReportDTO</a> com.example.demo.service.EventService.generateReport </td>
+          <td>(</td>
+          <td class="paramtype">Long</td>          <td class="paramname"><span class="paramname"><em>eventId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>email</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adeef06cba105f41233faee518308370c" name="adeef06cba105f41233faee518308370c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeef06cba105f41233faee518308370c">&#9670;&#160;</a></span>getEventDetails()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1EventDetailsDTO.html">EventDetailsDTO</a> com.example.demo.service.EventService.getEventDetails </td>
+          <td>(</td>
+          <td class="paramtype">Long</td>          <td class="paramname"><span class="paramname"><em>eventId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>email</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a680d7db59d9065ebef8ccb6eadc2b7f7" name="a680d7db59d9065ebef8ccb6eadc2b7f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a680d7db59d9065ebef8ccb6eadc2b7f7">&#9670;&#160;</a></span>getEventWithPermission()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1example_1_1demo_1_1model_1_1Event.html">Event</a> com.example.demo.service.EventService.getEventWithPermission </td>
+          <td>(</td>
+          <td class="paramtype">Long</td>          <td class="paramname"><span class="paramname"><em>eventId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>email</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a9ea0e34b09f1a747a22ad2f0a3e2d4" name="a2a9ea0e34b09f1a747a22ad2f0a3e2d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a9ea0e34b09f1a747a22ad2f0a3e2d4">&#9670;&#160;</a></span>joinEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.example.demo.service.EventService.joinEvent </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>joinCode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>email</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a279f3bcf9983a93d7bbed7c467a034e4" name="a279f3bcf9983a93d7bbed7c467a034e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a279f3bcf9983a93d7bbed7c467a034e4">&#9670;&#160;</a></span>validateEventIsActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.example.demo.service.EventService.validateEventIsActive </td>
+          <td>(</td>
+          <td class="paramtype">Long</td>          <td class="paramname"><span class="paramname"><em>eventId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="ae4dfb71568ebc76bab041d1ca53df5fd" name="ae4dfb71568ebc76bab041d1ca53df5fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4dfb71568ebc76bab041d1ca53df5fd">&#9670;&#160;</a></span>attendeeRepository</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1AttendeeRepository.html">AttendeeRepository</a> com.example.demo.service.EventService.attendeeRepository</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1bd0e8cc09a7ba52a1aeb45fdfa2df8f" name="a1bd0e8cc09a7ba52a1aeb45fdfa2df8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bd0e8cc09a7ba52a1aeb45fdfa2df8f">&#9670;&#160;</a></span>engine</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="classcom_1_1example_1_1demo_1_1service_1_1SettlementEngine.html">SettlementEngine</a> com.example.demo.service.EventService.engine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a71c9ebcb713daecdb6cf9c88b64a3df8" name="a71c9ebcb713daecdb6cf9c88b64a3df8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71c9ebcb713daecdb6cf9c88b64a3df8">&#9670;&#160;</a></span>eventRepository</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1EventRepository.html">EventRepository</a> com.example.demo.service.EventService.eventRepository</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8007d0640375ac24a78867051c9c1e68" name="a8007d0640375ac24a78867051c9c1e68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8007d0640375ac24a78867051c9c1e68">&#9670;&#160;</a></span>expenseRepository</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1ExpenseRepository.html">ExpenseRepository</a> com.example.demo.service.EventService.expenseRepository</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abffb75f0237908ad52c34c37ff97fcb6" name="abffb75f0237908ad52c34c37ff97fcb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abffb75f0237908ad52c34c37ff97fcb6">&#9670;&#160;</a></span>userRepository</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository.html">UserRepository</a> com.example.demo.service.EventService.userRepository</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/main/java/com/example/demo/service/<b>EventService.java</b></li>
+<li>src/main/java/com/example/demo/service/<a class="el" href="EventService_8java.html">EventService.java</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -160,7 +504,7 @@ List&lt; <a class="el" href="classcom_1_1example_1_1demo_1_1dto_1_1EventSummaryD
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>com</b></li><li class="navelem"><b>example</b></li><li class="navelem"><b>demo</b></li><li class="navelem"><b>service</b></li><li class="navelem"><a href="classcom_1_1example_1_1demo_1_1service_1_1EventService.html">EventService</a></li>
+    <li class="navelem"><b>com</b></li><li class="navelem"><b>example</b></li><li class="navelem"><a href="namespacecom_1_1example_1_1demo.html">demo</a></li><li class="navelem"><a href="namespacecom_1_1example_1_1demo_1_1service.html">service</a></li><li class="navelem"><a href="classcom_1_1example_1_1demo_1_1service_1_1EventService.html">EventService</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
   </ul>
 </div>
