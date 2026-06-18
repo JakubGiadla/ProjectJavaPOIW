@@ -1,0 +1,100 @@
+\doxysection{com.\+example.\+demo.\+service.\+Auth\+Service Class Reference}
+\hypertarget{classcom_1_1example_1_1demo_1_1service_1_1AuthService}{}\label{classcom_1_1example_1_1demo_1_1service_1_1AuthService}\index{com.example.demo.service.AuthService@{com.example.demo.service.AuthService}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1AuthService_a82fb2416761ccb2dbfaa2835d14da8be}{Auth\+Service}} (\doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository}{User\+Repository}} user\+Repository, BCrypt\+Password\+Encoder password\+Encoder, \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1JwtService}{Jwt\+Service}} jwt\+Service)
+\item 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1User}{User}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1AuthService_ad6de7995f33eb0c6fa9d93d32083b5eb}{register}} (\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1User}{User}} user)
+\item 
+String \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1AuthService_a3836a985fbc4801f43a20118b3724173}{login}} (\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1LoginRequest}{Login\+Request}} request)
+\item 
+void \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1AuthService_aa69ef4db8ba68183cb89e0066b6653cb}{update\+Profile}} (String email, \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1ProfileUpdateRequest}{Profile\+Update\+Request}} request)
+\item 
+void \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1AuthService_a22ccba409831f358f8603c5eddcb7a63}{change\+Password}} (String email, \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1ChangePasswordRequest}{Change\+Password\+Request}} request)
+\item 
+void \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1AuthService_aee7c217b37de8ad8a647740a24f90933}{delete\+User}} (String email)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository}{User\+Repository}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1AuthService_a8fdfbcc2331225571188e40a457582c8}{user\+Repository}}
+\item 
+final BCrypt\+Password\+Encoder \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1AuthService_a5fa19257eaf50b68dcd2fb9bf7a51325}{password\+Encoder}}
+\item 
+final \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1JwtService}{Jwt\+Service}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1AuthService_a4abef075ddfb19f939bb853ade1f164f}{jwt\+Service}}
+\end{DoxyCompactItemize}
+
+
+\label{classcom_1_1example_1_1demo_1_1service_1_1AuthService_doc-constructors}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1AuthService_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1AuthService_a82fb2416761ccb2dbfaa2835d14da8be}\index{com.example.demo.service.AuthService@{com.example.demo.service.AuthService}!AuthService@{AuthService}}
+\index{AuthService@{AuthService}!com.example.demo.service.AuthService@{com.example.demo.service.AuthService}}
+\doxysubsubsection{\texorpdfstring{AuthService()}{AuthService()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1AuthService_a82fb2416761ccb2dbfaa2835d14da8be} 
+com.\+example.\+demo.\+service.\+Auth\+Service.\+Auth\+Service (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository}{User\+Repository}}}]{user\+Repository}{, }\item[{BCrypt\+Password\+Encoder}]{password\+Encoder}{, }\item[{\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1JwtService}{Jwt\+Service}}}]{jwt\+Service}{}\end{DoxyParamCaption})}
+
+
+
+\label{classcom_1_1example_1_1demo_1_1service_1_1AuthService_doc-func-members}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1AuthService_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1AuthService_a22ccba409831f358f8603c5eddcb7a63}\index{com.example.demo.service.AuthService@{com.example.demo.service.AuthService}!changePassword@{changePassword}}
+\index{changePassword@{changePassword}!com.example.demo.service.AuthService@{com.example.demo.service.AuthService}}
+\doxysubsubsection{\texorpdfstring{changePassword()}{changePassword()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1AuthService_a22ccba409831f358f8603c5eddcb7a63} 
+void com.\+example.\+demo.\+service.\+Auth\+Service.\+change\+Password (\begin{DoxyParamCaption}\item[{String}]{email}{, }\item[{\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1ChangePasswordRequest}{Change\+Password\+Request}}}]{request}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1AuthService_aee7c217b37de8ad8a647740a24f90933}\index{com.example.demo.service.AuthService@{com.example.demo.service.AuthService}!deleteUser@{deleteUser}}
+\index{deleteUser@{deleteUser}!com.example.demo.service.AuthService@{com.example.demo.service.AuthService}}
+\doxysubsubsection{\texorpdfstring{deleteUser()}{deleteUser()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1AuthService_aee7c217b37de8ad8a647740a24f90933} 
+void com.\+example.\+demo.\+service.\+Auth\+Service.\+delete\+User (\begin{DoxyParamCaption}\item[{String}]{email}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1AuthService_a3836a985fbc4801f43a20118b3724173}\index{com.example.demo.service.AuthService@{com.example.demo.service.AuthService}!login@{login}}
+\index{login@{login}!com.example.demo.service.AuthService@{com.example.demo.service.AuthService}}
+\doxysubsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1AuthService_a3836a985fbc4801f43a20118b3724173} 
+String com.\+example.\+demo.\+service.\+Auth\+Service.\+login (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1LoginRequest}{Login\+Request}}}]{request}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1AuthService_ad6de7995f33eb0c6fa9d93d32083b5eb}\index{com.example.demo.service.AuthService@{com.example.demo.service.AuthService}!register@{register}}
+\index{register@{register}!com.example.demo.service.AuthService@{com.example.demo.service.AuthService}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1AuthService_ad6de7995f33eb0c6fa9d93d32083b5eb} 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1User}{User}} com.\+example.\+demo.\+service.\+Auth\+Service.\+register (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1User}{User}}}]{user}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1AuthService_aa69ef4db8ba68183cb89e0066b6653cb}\index{com.example.demo.service.AuthService@{com.example.demo.service.AuthService}!updateProfile@{updateProfile}}
+\index{updateProfile@{updateProfile}!com.example.demo.service.AuthService@{com.example.demo.service.AuthService}}
+\doxysubsubsection{\texorpdfstring{updateProfile()}{updateProfile()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1AuthService_aa69ef4db8ba68183cb89e0066b6653cb} 
+void com.\+example.\+demo.\+service.\+Auth\+Service.\+update\+Profile (\begin{DoxyParamCaption}\item[{String}]{email}{, }\item[{\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1ProfileUpdateRequest}{Profile\+Update\+Request}}}]{request}{}\end{DoxyParamCaption})}
+
+
+
+\label{classcom_1_1example_1_1demo_1_1service_1_1AuthService_doc-variable-members}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1AuthService_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1AuthService_a4abef075ddfb19f939bb853ade1f164f}\index{com.example.demo.service.AuthService@{com.example.demo.service.AuthService}!jwtService@{jwtService}}
+\index{jwtService@{jwtService}!com.example.demo.service.AuthService@{com.example.demo.service.AuthService}}
+\doxysubsubsection{\texorpdfstring{jwtService}{jwtService}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1AuthService_a4abef075ddfb19f939bb853ade1f164f} 
+final \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1JwtService}{Jwt\+Service}} com.\+example.\+demo.\+service.\+Auth\+Service.\+jwt\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1AuthService_a5fa19257eaf50b68dcd2fb9bf7a51325}\index{com.example.demo.service.AuthService@{com.example.demo.service.AuthService}!passwordEncoder@{passwordEncoder}}
+\index{passwordEncoder@{passwordEncoder}!com.example.demo.service.AuthService@{com.example.demo.service.AuthService}}
+\doxysubsubsection{\texorpdfstring{passwordEncoder}{passwordEncoder}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1AuthService_a5fa19257eaf50b68dcd2fb9bf7a51325} 
+final BCrypt\+Password\+Encoder com.\+example.\+demo.\+service.\+Auth\+Service.\+password\+Encoder\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1AuthService_a8fdfbcc2331225571188e40a457582c8}\index{com.example.demo.service.AuthService@{com.example.demo.service.AuthService}!userRepository@{userRepository}}
+\index{userRepository@{userRepository}!com.example.demo.service.AuthService@{com.example.demo.service.AuthService}}
+\doxysubsubsection{\texorpdfstring{userRepository}{userRepository}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1AuthService_a8fdfbcc2331225571188e40a457582c8} 
+final \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository}{User\+Repository}} com.\+example.\+demo.\+service.\+Auth\+Service.\+user\+Repository\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+src/\+main/\+java/\+com/\+example/\+demo/\+service/\+\doxymbox{\hyperlink{AuthService_8java}{Auth\+Service.\+java}}\end{DoxyCompactItemize}

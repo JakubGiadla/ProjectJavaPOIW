@@ -1,0 +1,95 @@
+\doxysection{com.\+example.\+demo.\+controller.\+Event\+Controller Class Reference}
+\hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1EventController}{}\label{classcom_1_1example_1_1demo_1_1controller_1_1EventController}\index{com.example.demo.controller.EventController@{com.example.demo.controller.EventController}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1EventController_afe612b2a7856e9c4e43ad2be3c5503e9}{Event\+Controller}} (\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1EventService}{Event\+Service}} event\+Service)
+\item 
+Response\+Entity$<$ List$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1EventSummaryDTO}{Event\+Summary\+DTO}} $>$ $>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1EventController_ae2e464981372300d4a416694e9dfc813}{get\+All\+Events}} (Principal principal)
+\item 
+Response\+Entity$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Event}{Event}} $>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1EventController_ae8066317b7c67e7328022b4e25fae31c}{create\+Event}} (@Request\+Body \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Event}{Event}} event, Principal principal)
+\item 
+Response\+Entity$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1EventDetailsDTO}{Event\+Details\+DTO}} $>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1EventController_a5589297e61f917845b05784e3d0e240e}{get\+Event\+Details}} (@Path\+Variable Long event\+Id, Principal principal)
+\item 
+Response\+Entity$<$ Void $>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1EventController_a79d96ffd811806ea8fb3e7d4f8cc9ef1}{delete\+Event}} (@Path\+Variable Long event\+Id, Principal principal)
+\item 
+Response\+Entity$<$ Map$<$ String, String $>$ $>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1EventController_aa85790c9d8746866623e6fd525668507}{join\+Event}} (@Request\+Param String join\+Code, Principal principal)
+\item 
+Response\+Entity$<$ String $>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1EventController_a83a3a86f86b7fd7f1a1d2c6427832982}{close\+Event}} (@Path\+Variable Long event\+Id, Principal principal)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1EventService}{Event\+Service}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1EventController_aaa804da623ecebf44493665128a1f780}{event\+Service}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Kontroler obsługujący główne operacje na wydarzeniach (Events). Wszystkie endpointy są zabezpieczone i wymagają autoryzacji użytkownika (JWT). 
+
+\label{classcom_1_1example_1_1demo_1_1controller_1_1EventController_doc-constructors}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1EventController_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1EventController_afe612b2a7856e9c4e43ad2be3c5503e9}\index{com.example.demo.controller.EventController@{com.example.demo.controller.EventController}!EventController@{EventController}}
+\index{EventController@{EventController}!com.example.demo.controller.EventController@{com.example.demo.controller.EventController}}
+\doxysubsubsection{\texorpdfstring{EventController()}{EventController()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1EventController_afe612b2a7856e9c4e43ad2be3c5503e9} 
+com.\+example.\+demo.\+controller.\+Event\+Controller.\+Event\+Controller (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1EventService}{Event\+Service}}}]{event\+Service}{}\end{DoxyParamCaption})}
+
+
+
+\label{classcom_1_1example_1_1demo_1_1controller_1_1EventController_doc-func-members}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1EventController_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1EventController_a83a3a86f86b7fd7f1a1d2c6427832982}\index{com.example.demo.controller.EventController@{com.example.demo.controller.EventController}!closeEvent@{closeEvent}}
+\index{closeEvent@{closeEvent}!com.example.demo.controller.EventController@{com.example.demo.controller.EventController}}
+\doxysubsubsection{\texorpdfstring{closeEvent()}{closeEvent()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1EventController_a83a3a86f86b7fd7f1a1d2c6427832982} 
+Response\+Entity$<$ String $>$ com.\+example.\+demo.\+controller.\+Event\+Controller.\+close\+Event (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{event\+Id}{, }\item[{Principal}]{principal}{}\end{DoxyParamCaption})}
+
+POST /\+api/\+events/\+\{event\+Id\}/\+close Finalizuje wydarzenie – po zamknięciu nie można dodawać nowych wydatków. Wymaga uprawnień organizatora. \Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1EventController_ae8066317b7c67e7328022b4e25fae31c}\index{com.example.demo.controller.EventController@{com.example.demo.controller.EventController}!createEvent@{createEvent}}
+\index{createEvent@{createEvent}!com.example.demo.controller.EventController@{com.example.demo.controller.EventController}}
+\doxysubsubsection{\texorpdfstring{createEvent()}{createEvent()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1EventController_ae8066317b7c67e7328022b4e25fae31c} 
+Response\+Entity$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Event}{Event}} $>$ com.\+example.\+demo.\+controller.\+Event\+Controller.\+create\+Event (\begin{DoxyParamCaption}\item[{@Request\+Body \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Event}{Event}}}]{event}{, }\item[{Principal}]{principal}{}\end{DoxyParamCaption})}
+
+POST /\+api/\+events Inicjalizuje nowe wydarzenie w systemie. Użytkownik wysyłający żądanie zostaje automatycznie przypisany jako organizator. \Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1EventController_a79d96ffd811806ea8fb3e7d4f8cc9ef1}\index{com.example.demo.controller.EventController@{com.example.demo.controller.EventController}!deleteEvent@{deleteEvent}}
+\index{deleteEvent@{deleteEvent}!com.example.demo.controller.EventController@{com.example.demo.controller.EventController}}
+\doxysubsubsection{\texorpdfstring{deleteEvent()}{deleteEvent()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1EventController_a79d96ffd811806ea8fb3e7d4f8cc9ef1} 
+Response\+Entity$<$ Void $>$ com.\+example.\+demo.\+controller.\+Event\+Controller.\+delete\+Event (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{event\+Id}{, }\item[{Principal}]{principal}{}\end{DoxyParamCaption})}
+
+DELETE /\+api/\+events/\+\{event\+Id\} Usuwa wydarzenie z bazy danych. Operacja dostępna tylko dla właściciela (organizatora) wydarzenia. \Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1EventController_ae2e464981372300d4a416694e9dfc813}\index{com.example.demo.controller.EventController@{com.example.demo.controller.EventController}!getAllEvents@{getAllEvents}}
+\index{getAllEvents@{getAllEvents}!com.example.demo.controller.EventController@{com.example.demo.controller.EventController}}
+\doxysubsubsection{\texorpdfstring{getAllEvents()}{getAllEvents()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1EventController_ae2e464981372300d4a416694e9dfc813} 
+Response\+Entity$<$ List$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1EventSummaryDTO}{Event\+Summary\+DTO}} $>$ $>$ com.\+example.\+demo.\+controller.\+Event\+Controller.\+get\+All\+Events (\begin{DoxyParamCaption}\item[{Principal}]{principal}{}\end{DoxyParamCaption})}
+
+GET /\+api/\+events Pobiera listę wszystkich wydarzeń powiązanych z zalogowanym użytkownikiem (w których uczestniczy lub jest organizatorem). Wykorzystuje principal.\+get\+Name() (email) do zidentyfikowania użytkownika. \Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1EventController_a5589297e61f917845b05784e3d0e240e}\index{com.example.demo.controller.EventController@{com.example.demo.controller.EventController}!getEventDetails@{getEventDetails}}
+\index{getEventDetails@{getEventDetails}!com.example.demo.controller.EventController@{com.example.demo.controller.EventController}}
+\doxysubsubsection{\texorpdfstring{getEventDetails()}{getEventDetails()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1EventController_a5589297e61f917845b05784e3d0e240e} 
+Response\+Entity$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1EventDetailsDTO}{Event\+Details\+DTO}} $>$ com.\+example.\+demo.\+controller.\+Event\+Controller.\+get\+Event\+Details (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{event\+Id}{, }\item[{Principal}]{principal}{}\end{DoxyParamCaption})}
+
+GET /\+api/\+events/\+\{event\+Id\} Zwraca szczegółowe informacje o wybranym wydarzeniu wraz z listą uczestników. Serwis weryfikuje, czy użytkownik ma prawo wglądu (czy jest uczestnikiem lub organizatorem). \Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1EventController_aa85790c9d8746866623e6fd525668507}\index{com.example.demo.controller.EventController@{com.example.demo.controller.EventController}!joinEvent@{joinEvent}}
+\index{joinEvent@{joinEvent}!com.example.demo.controller.EventController@{com.example.demo.controller.EventController}}
+\doxysubsubsection{\texorpdfstring{joinEvent()}{joinEvent()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1EventController_aa85790c9d8746866623e6fd525668507} 
+Response\+Entity$<$ Map$<$ String, String $>$ $>$ com.\+example.\+demo.\+controller.\+Event\+Controller.\+join\+Event (\begin{DoxyParamCaption}\item[{@Request\+Param String}]{join\+Code}{, }\item[{Principal}]{principal}{}\end{DoxyParamCaption})}
+
+POST /\+api/\+events/\+join Umożliwia dołączenie do wydarzenia za pomocą unikalnego kodu zaproszenia. Automatycznie tworzy powiązanie między użytkownikiem a wydarzeniem. 
+
+\label{classcom_1_1example_1_1demo_1_1controller_1_1EventController_doc-variable-members}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1EventController_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1EventController_aaa804da623ecebf44493665128a1f780}\index{com.example.demo.controller.EventController@{com.example.demo.controller.EventController}!eventService@{eventService}}
+\index{eventService@{eventService}!com.example.demo.controller.EventController@{com.example.demo.controller.EventController}}
+\doxysubsubsection{\texorpdfstring{eventService}{eventService}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1EventController_aaa804da623ecebf44493665128a1f780} 
+final \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1EventService}{Event\+Service}} com.\+example.\+demo.\+controller.\+Event\+Controller.\+event\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+src/\+main/\+java/\+com/\+example/\+demo/\+controller/\+\doxymbox{\hyperlink{EventController_8java}{Event\+Controller.\+java}}\end{DoxyCompactItemize}

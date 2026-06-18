@@ -1,0 +1,127 @@
+\doxysection{com.\+example.\+demo.\+service.\+Expense\+Service Class Reference}
+\hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService}{}\label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService}\index{com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a057c7437233bc7e45bd2282acd6abb0b}{Expense\+Service}} (\doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1ExpenseRepository}{Expense\+Repository}} expense\+Repository, \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1SettlementEngine}{Settlement\+Engine}} engine, \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1EventService}{Event\+Service}} event\+Service, \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository}{User\+Repository}} user\+Repository)
+\item 
+void \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a65ee51bfddf9ed6c52d854cb8b8561fd}{register\+User}} (\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1User}{User}} user)
+\item 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Expense}{Expense}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a854e1df9f6e6c3c0bb4cc44b624d94cd}{create\+Expense}} (Long event\+Id, \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1ExpenseRequest}{Expense\+Request}} request, String email)
+\item 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Expense}{Expense}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_af0fadd597902251ea73886cbc0eb529a}{add\+Expense}} (\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Event}{com.\+example.\+demo.\+model.\+Event}} event, String description, \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1User}{User}} payer, double amount, List$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1User}{User}} $>$ participants, String split\+Type, Map$<$ Long, Double $>$ weights)
+\item 
+List$<$ Transaction $>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a6cdd8a3f7fe7998650b4de432e5ed82e}{calculate\+Settlements}} ()
+\item 
+List$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Expense}{Expense}} $>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a1fdfe365087c07f817d6e46c13862b95}{get\+History}} (Long event\+Id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a14a4aa6233ddc1bcbac546c95929f3b3}{process\+Expense}} (Long payer\+Id, long total\+Amount, List$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1User}{User}} $>$ participants, String split\+Type, Map$<$ Long, Double $>$ weights)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1ExpenseRepository}{Expense\+Repository}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a3104e5e0f6d7aca701e8dcf763d1b04f}{expense\+Repository}}
+\item 
+final \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1SettlementEngine}{Settlement\+Engine}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_ab5bd8eb480d30abdc7a2373b033f352b}{engine}}
+\item 
+final \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1EventService}{Event\+Service}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a492b08e73accc0a0fc31ce2abc072f6a}{event\+Service}}
+\item 
+final \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository}{User\+Repository}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_ae71bcdd691446f30b78f38af6eeaca37}{user\+Repository}}
+\item 
+final Map$<$ Long, Long $>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a167e97f216cc74899d3eb9f2d3ca313f}{balances}} = new Hash\+Map$<$$>$()
+\end{DoxyCompactItemize}
+
+
+\label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_doc-constructors}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a057c7437233bc7e45bd2282acd6abb0b}\index{com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}!ExpenseService@{ExpenseService}}
+\index{ExpenseService@{ExpenseService}!com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}}
+\doxysubsubsection{\texorpdfstring{ExpenseService()}{ExpenseService()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a057c7437233bc7e45bd2282acd6abb0b} 
+com.\+example.\+demo.\+service.\+Expense\+Service.\+Expense\+Service (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1ExpenseRepository}{Expense\+Repository}}}]{expense\+Repository}{, }\item[{\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1SettlementEngine}{Settlement\+Engine}}}]{engine}{, }\item[{\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1EventService}{Event\+Service}}}]{event\+Service}{, }\item[{\doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository}{User\+Repository}}}]{user\+Repository}{}\end{DoxyParamCaption})}
+
+
+
+\label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_doc-func-members}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_af0fadd597902251ea73886cbc0eb529a}\index{com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}!addExpense@{addExpense}}
+\index{addExpense@{addExpense}!com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}}
+\doxysubsubsection{\texorpdfstring{addExpense()}{addExpense()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_af0fadd597902251ea73886cbc0eb529a} 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Expense}{Expense}} com.\+example.\+demo.\+service.\+Expense\+Service.\+add\+Expense (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Event}{com.\+example.\+demo.\+model.\+Event}}}]{event}{, }\item[{String}]{description}{, }\item[{\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1User}{User}}}]{payer}{, }\item[{double}]{amount}{, }\item[{List$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1User}{User}} $>$}]{participants}{, }\item[{String}]{split\+Type}{, }\item[{Map$<$ Long, Double $>$}]{weights}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a6cdd8a3f7fe7998650b4de432e5ed82e}\index{com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}!calculateSettlements@{calculateSettlements}}
+\index{calculateSettlements@{calculateSettlements}!com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}}
+\doxysubsubsection{\texorpdfstring{calculateSettlements()}{calculateSettlements()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a6cdd8a3f7fe7998650b4de432e5ed82e} 
+List$<$ Transaction $>$ com.\+example.\+demo.\+service.\+Expense\+Service.\+calculate\+Settlements (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a854e1df9f6e6c3c0bb4cc44b624d94cd}\index{com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}!createExpense@{createExpense}}
+\index{createExpense@{createExpense}!com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}}
+\doxysubsubsection{\texorpdfstring{createExpense()}{createExpense()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a854e1df9f6e6c3c0bb4cc44b624d94cd} 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Expense}{Expense}} com.\+example.\+demo.\+service.\+Expense\+Service.\+create\+Expense (\begin{DoxyParamCaption}\item[{Long}]{event\+Id}{, }\item[{\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1dto_1_1ExpenseRequest}{Expense\+Request}}}]{request}{, }\item[{String}]{email}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a1fdfe365087c07f817d6e46c13862b95}\index{com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}!getHistory@{getHistory}}
+\index{getHistory@{getHistory}!com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}}
+\doxysubsubsection{\texorpdfstring{getHistory()}{getHistory()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a1fdfe365087c07f817d6e46c13862b95} 
+List$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Expense}{Expense}} $>$ com.\+example.\+demo.\+service.\+Expense\+Service.\+get\+History (\begin{DoxyParamCaption}\item[{Long}]{event\+Id}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a14a4aa6233ddc1bcbac546c95929f3b3}\index{com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}!processExpense@{processExpense}}
+\index{processExpense@{processExpense}!com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}}
+\doxysubsubsection{\texorpdfstring{processExpense()}{processExpense()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a14a4aa6233ddc1bcbac546c95929f3b3} 
+void com.\+example.\+demo.\+service.\+Expense\+Service.\+process\+Expense (\begin{DoxyParamCaption}\item[{Long}]{payer\+Id}{, }\item[{long}]{total\+Amount}{, }\item[{List$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1User}{User}} $>$}]{participants}{, }\item[{String}]{split\+Type}{, }\item[{Map$<$ Long, Double $>$}]{weights}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a65ee51bfddf9ed6c52d854cb8b8561fd}\index{com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}!registerUser@{registerUser}}
+\index{registerUser@{registerUser}!com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}}
+\doxysubsubsection{\texorpdfstring{registerUser()}{registerUser()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a65ee51bfddf9ed6c52d854cb8b8561fd} 
+void com.\+example.\+demo.\+service.\+Expense\+Service.\+register\+User (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1User}{User}}}]{user}{}\end{DoxyParamCaption})}
+
+
+
+\label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_doc-variable-members}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a167e97f216cc74899d3eb9f2d3ca313f}\index{com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}!balances@{balances}}
+\index{balances@{balances}!com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}}
+\doxysubsubsection{\texorpdfstring{balances}{balances}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a167e97f216cc74899d3eb9f2d3ca313f} 
+final Map$<$Long, Long$>$ com.\+example.\+demo.\+service.\+Expense\+Service.\+balances = new Hash\+Map$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_ab5bd8eb480d30abdc7a2373b033f352b}\index{com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}!engine@{engine}}
+\index{engine@{engine}!com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}}
+\doxysubsubsection{\texorpdfstring{engine}{engine}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_ab5bd8eb480d30abdc7a2373b033f352b} 
+final \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1SettlementEngine}{Settlement\+Engine}} com.\+example.\+demo.\+service.\+Expense\+Service.\+engine\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a492b08e73accc0a0fc31ce2abc072f6a}\index{com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}!eventService@{eventService}}
+\index{eventService@{eventService}!com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}}
+\doxysubsubsection{\texorpdfstring{eventService}{eventService}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a492b08e73accc0a0fc31ce2abc072f6a} 
+final \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1EventService}{Event\+Service}} com.\+example.\+demo.\+service.\+Expense\+Service.\+event\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a3104e5e0f6d7aca701e8dcf763d1b04f}\index{com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}!expenseRepository@{expenseRepository}}
+\index{expenseRepository@{expenseRepository}!com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}}
+\doxysubsubsection{\texorpdfstring{expenseRepository}{expenseRepository}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_a3104e5e0f6d7aca701e8dcf763d1b04f} 
+final \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1ExpenseRepository}{Expense\+Repository}} com.\+example.\+demo.\+service.\+Expense\+Service.\+expense\+Repository\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_ae71bcdd691446f30b78f38af6eeaca37}\index{com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}!userRepository@{userRepository}}
+\index{userRepository@{userRepository}!com.example.demo.service.ExpenseService@{com.example.demo.service.ExpenseService}}
+\doxysubsubsection{\texorpdfstring{userRepository}{userRepository}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1ExpenseService_ae71bcdd691446f30b78f38af6eeaca37} 
+final \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository}{User\+Repository}} com.\+example.\+demo.\+service.\+Expense\+Service.\+user\+Repository\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+src/\+main/\+java/\+com/\+example/\+demo/\+service/\+\doxymbox{\hyperlink{ExpenseService_8java}{Expense\+Service.\+java}}\end{DoxyCompactItemize}

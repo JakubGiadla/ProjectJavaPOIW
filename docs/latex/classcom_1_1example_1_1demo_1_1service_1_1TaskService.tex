@@ -1,0 +1,127 @@
+\doxysection{com.\+example.\+demo.\+service.\+Task\+Service Class Reference}
+\hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService}{}\label{classcom_1_1example_1_1demo_1_1service_1_1TaskService}\index{com.example.demo.service.TaskService@{com.example.demo.service.TaskService}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a1ad2222b5b25b3714e524932efb6b023}{Task\+Service}} (\doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1TaskRepository}{Task\+Repository}} task\+Repository, \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository}{User\+Repository}} user\+Repository, \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1EventRepository}{Event\+Repository}} event\+Repository, \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1AttendeeRepository}{Attendee\+Repository}} attendee\+Repository)
+\item 
+List$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Task}{Task}} $>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a09493632498f7b2c667b9eccb9a54d4a}{get\+Tasks\+By\+Event}} (Long event\+Id, String email)
+\item 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Task}{Task}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a061d011af815933992ff7273d0830379}{add\+Task}} (\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Task}{Task}} task, Long event\+Id, String email)
+\item 
+void \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a217df9f680de2e393cd4def0ad9866c2}{complete\+Task}} (Long task\+Id, String email)
+\item 
+void \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a45e71242a7225aeddc473a6279d7af28}{assign\+Task}} (Long task\+Id, String target\+Email, String actor\+Email)
+\item 
+void \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1TaskService_aae24fb2828e4e9ad20bc9b01651ae128}{unassign\+Task}} (Long task\+Id, String email)
+\item 
+void \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a3fc19194f5be7a99a6e7b598e68b76af}{delete\+Task}} (Long task\+Id, String email)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Event}{Event}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a3962bcd149d849c0a0740b863411fe8d}{get\+Verified\+Event}} (Long event\+Id, String email)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1TaskRepository}{Task\+Repository}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a90e28f824e523afdbdcbf007b7540504}{task\+Repository}}
+\item 
+final \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository}{User\+Repository}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a48ce7f402fb96c45abfb6eec169407af}{user\+Repository}}
+\item 
+final \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1EventRepository}{Event\+Repository}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a864c50ac8a849df4b4d1b823c7b55e58}{event\+Repository}}
+\item 
+final \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1AttendeeRepository}{Attendee\+Repository}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1TaskService_af23286b83b00106977cba59db5d116f3}{attendee\+Repository}}
+\end{DoxyCompactItemize}
+
+
+\label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_doc-constructors}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a1ad2222b5b25b3714e524932efb6b023}\index{com.example.demo.service.TaskService@{com.example.demo.service.TaskService}!TaskService@{TaskService}}
+\index{TaskService@{TaskService}!com.example.demo.service.TaskService@{com.example.demo.service.TaskService}}
+\doxysubsubsection{\texorpdfstring{TaskService()}{TaskService()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a1ad2222b5b25b3714e524932efb6b023} 
+com.\+example.\+demo.\+service.\+Task\+Service.\+Task\+Service (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1TaskRepository}{Task\+Repository}}}]{task\+Repository}{, }\item[{\doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository}{User\+Repository}}}]{user\+Repository}{, }\item[{\doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1EventRepository}{Event\+Repository}}}]{event\+Repository}{, }\item[{\doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1AttendeeRepository}{Attendee\+Repository}}}]{attendee\+Repository}{}\end{DoxyParamCaption})}
+
+
+
+\label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_doc-func-members}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a061d011af815933992ff7273d0830379}\index{com.example.demo.service.TaskService@{com.example.demo.service.TaskService}!addTask@{addTask}}
+\index{addTask@{addTask}!com.example.demo.service.TaskService@{com.example.demo.service.TaskService}}
+\doxysubsubsection{\texorpdfstring{addTask()}{addTask()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a061d011af815933992ff7273d0830379} 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Task}{Task}} com.\+example.\+demo.\+service.\+Task\+Service.\+add\+Task (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Task}{Task}}}]{task}{, }\item[{Long}]{event\+Id}{, }\item[{String}]{email}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a45e71242a7225aeddc473a6279d7af28}\index{com.example.demo.service.TaskService@{com.example.demo.service.TaskService}!assignTask@{assignTask}}
+\index{assignTask@{assignTask}!com.example.demo.service.TaskService@{com.example.demo.service.TaskService}}
+\doxysubsubsection{\texorpdfstring{assignTask()}{assignTask()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a45e71242a7225aeddc473a6279d7af28} 
+void com.\+example.\+demo.\+service.\+Task\+Service.\+assign\+Task (\begin{DoxyParamCaption}\item[{Long}]{task\+Id}{, }\item[{String}]{target\+Email}{, }\item[{String}]{actor\+Email}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a217df9f680de2e393cd4def0ad9866c2}\index{com.example.demo.service.TaskService@{com.example.demo.service.TaskService}!completeTask@{completeTask}}
+\index{completeTask@{completeTask}!com.example.demo.service.TaskService@{com.example.demo.service.TaskService}}
+\doxysubsubsection{\texorpdfstring{completeTask()}{completeTask()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a217df9f680de2e393cd4def0ad9866c2} 
+void com.\+example.\+demo.\+service.\+Task\+Service.\+complete\+Task (\begin{DoxyParamCaption}\item[{Long}]{task\+Id}{, }\item[{String}]{email}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a3fc19194f5be7a99a6e7b598e68b76af}\index{com.example.demo.service.TaskService@{com.example.demo.service.TaskService}!deleteTask@{deleteTask}}
+\index{deleteTask@{deleteTask}!com.example.demo.service.TaskService@{com.example.demo.service.TaskService}}
+\doxysubsubsection{\texorpdfstring{deleteTask()}{deleteTask()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a3fc19194f5be7a99a6e7b598e68b76af} 
+void com.\+example.\+demo.\+service.\+Task\+Service.\+delete\+Task (\begin{DoxyParamCaption}\item[{Long}]{task\+Id}{, }\item[{String}]{email}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a09493632498f7b2c667b9eccb9a54d4a}\index{com.example.demo.service.TaskService@{com.example.demo.service.TaskService}!getTasksByEvent@{getTasksByEvent}}
+\index{getTasksByEvent@{getTasksByEvent}!com.example.demo.service.TaskService@{com.example.demo.service.TaskService}}
+\doxysubsubsection{\texorpdfstring{getTasksByEvent()}{getTasksByEvent()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a09493632498f7b2c667b9eccb9a54d4a} 
+List$<$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Task}{Task}} $>$ com.\+example.\+demo.\+service.\+Task\+Service.\+get\+Tasks\+By\+Event (\begin{DoxyParamCaption}\item[{Long}]{event\+Id}{, }\item[{String}]{email}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a3962bcd149d849c0a0740b863411fe8d}\index{com.example.demo.service.TaskService@{com.example.demo.service.TaskService}!getVerifiedEvent@{getVerifiedEvent}}
+\index{getVerifiedEvent@{getVerifiedEvent}!com.example.demo.service.TaskService@{com.example.demo.service.TaskService}}
+\doxysubsubsection{\texorpdfstring{getVerifiedEvent()}{getVerifiedEvent()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a3962bcd149d849c0a0740b863411fe8d} 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1model_1_1Event}{Event}} com.\+example.\+demo.\+service.\+Task\+Service.\+get\+Verified\+Event (\begin{DoxyParamCaption}\item[{Long}]{event\+Id}{, }\item[{String}]{email}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_aae24fb2828e4e9ad20bc9b01651ae128}\index{com.example.demo.service.TaskService@{com.example.demo.service.TaskService}!unassignTask@{unassignTask}}
+\index{unassignTask@{unassignTask}!com.example.demo.service.TaskService@{com.example.demo.service.TaskService}}
+\doxysubsubsection{\texorpdfstring{unassignTask()}{unassignTask()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_aae24fb2828e4e9ad20bc9b01651ae128} 
+void com.\+example.\+demo.\+service.\+Task\+Service.\+unassign\+Task (\begin{DoxyParamCaption}\item[{Long}]{task\+Id}{, }\item[{String}]{email}{}\end{DoxyParamCaption})}
+
+
+
+\label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_doc-variable-members}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_af23286b83b00106977cba59db5d116f3}\index{com.example.demo.service.TaskService@{com.example.demo.service.TaskService}!attendeeRepository@{attendeeRepository}}
+\index{attendeeRepository@{attendeeRepository}!com.example.demo.service.TaskService@{com.example.demo.service.TaskService}}
+\doxysubsubsection{\texorpdfstring{attendeeRepository}{attendeeRepository}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_af23286b83b00106977cba59db5d116f3} 
+final \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1AttendeeRepository}{Attendee\+Repository}} com.\+example.\+demo.\+service.\+Task\+Service.\+attendee\+Repository\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a864c50ac8a849df4b4d1b823c7b55e58}\index{com.example.demo.service.TaskService@{com.example.demo.service.TaskService}!eventRepository@{eventRepository}}
+\index{eventRepository@{eventRepository}!com.example.demo.service.TaskService@{com.example.demo.service.TaskService}}
+\doxysubsubsection{\texorpdfstring{eventRepository}{eventRepository}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a864c50ac8a849df4b4d1b823c7b55e58} 
+final \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1EventRepository}{Event\+Repository}} com.\+example.\+demo.\+service.\+Task\+Service.\+event\+Repository\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a90e28f824e523afdbdcbf007b7540504}\index{com.example.demo.service.TaskService@{com.example.demo.service.TaskService}!taskRepository@{taskRepository}}
+\index{taskRepository@{taskRepository}!com.example.demo.service.TaskService@{com.example.demo.service.TaskService}}
+\doxysubsubsection{\texorpdfstring{taskRepository}{taskRepository}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a90e28f824e523afdbdcbf007b7540504} 
+final \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1TaskRepository}{Task\+Repository}} com.\+example.\+demo.\+service.\+Task\+Service.\+task\+Repository\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a48ce7f402fb96c45abfb6eec169407af}\index{com.example.demo.service.TaskService@{com.example.demo.service.TaskService}!userRepository@{userRepository}}
+\index{userRepository@{userRepository}!com.example.demo.service.TaskService@{com.example.demo.service.TaskService}}
+\doxysubsubsection{\texorpdfstring{userRepository}{userRepository}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1service_1_1TaskService_a48ce7f402fb96c45abfb6eec169407af} 
+final \doxymbox{\hyperlink{interfacecom_1_1example_1_1demo_1_1repository_1_1UserRepository}{User\+Repository}} com.\+example.\+demo.\+service.\+Task\+Service.\+user\+Repository\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+src/\+main/\+java/\+com/\+example/\+demo/\+service/\+\doxymbox{\hyperlink{TaskService_8java}{Task\+Service.\+java}}\end{DoxyCompactItemize}

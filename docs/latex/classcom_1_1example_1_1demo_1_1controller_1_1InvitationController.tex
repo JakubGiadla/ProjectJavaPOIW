@@ -1,0 +1,71 @@
+\doxysection{com.\+example.\+demo.\+controller.\+Invitation\+Controller Class Reference}
+\hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController}{}\label{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController}\index{com.example.demo.controller.InvitationController@{com.example.demo.controller.InvitationController}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Response\+Entity$<$ Map$<$ String, String $>$ $>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_a9765a7e6edbbc9b91d3f79a09f399ba8}{get\+Link}} (@Path\+Variable Long event\+Id, Principal principal)
+\item 
+Response\+Entity$<$ Map$<$ String, String $>$ $>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_a60a8802e9022b7f1947dc51b4631b4f1}{send\+Invitation}} ( @Path\+Variable Long event\+Id, @Request\+Param String email, @Request\+Param String event\+Name, Principal principal)
+\item 
+Response\+Entity$<$ byte\+[$\,$]\+$>$ \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_a0656497b362c73dd5799f4b26c875792}{get\+Qr\+Code}} (@Path\+Variable Long event\+Id, Principal principal)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1InvitationService}{Invitation\+Service}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_a201a1aa87ea0b98535b995c1013d731b}{invitation\+Service}}
+\item 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1EmailService}{Email\+Service}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_adbd26b2f5bbfee637c2925e282aa1f0a}{email\+Service}}
+\item 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1QrCodeService}{Qr\+Code\+Service}} \doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_a07e39af72cc13ef8925b34f082aec8dc}{qr\+Code\+Service}}
+\end{DoxyCompactItemize}
+
+
+\label{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_doc-func-members}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_a9765a7e6edbbc9b91d3f79a09f399ba8}\index{com.example.demo.controller.InvitationController@{com.example.demo.controller.InvitationController}!getLink@{getLink}}
+\index{getLink@{getLink}!com.example.demo.controller.InvitationController@{com.example.demo.controller.InvitationController}}
+\doxysubsubsection{\texorpdfstring{getLink()}{getLink()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_a9765a7e6edbbc9b91d3f79a09f399ba8} 
+Response\+Entity$<$ Map$<$ String, String $>$ $>$ com.\+example.\+demo.\+controller.\+Invitation\+Controller.\+get\+Link (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{event\+Id}{, }\item[{Principal}]{principal}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_a0656497b362c73dd5799f4b26c875792}\index{com.example.demo.controller.InvitationController@{com.example.demo.controller.InvitationController}!getQrCode@{getQrCode}}
+\index{getQrCode@{getQrCode}!com.example.demo.controller.InvitationController@{com.example.demo.controller.InvitationController}}
+\doxysubsubsection{\texorpdfstring{getQrCode()}{getQrCode()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_a0656497b362c73dd5799f4b26c875792} 
+Response\+Entity$<$ byte\+[$\,$]\+$>$ com.\+example.\+demo.\+controller.\+Invitation\+Controller.\+get\+Qr\+Code (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{event\+Id}{, }\item[{Principal}]{principal}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_a60a8802e9022b7f1947dc51b4631b4f1}\index{com.example.demo.controller.InvitationController@{com.example.demo.controller.InvitationController}!sendInvitation@{sendInvitation}}
+\index{sendInvitation@{sendInvitation}!com.example.demo.controller.InvitationController@{com.example.demo.controller.InvitationController}}
+\doxysubsubsection{\texorpdfstring{sendInvitation()}{sendInvitation()}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_a60a8802e9022b7f1947dc51b4631b4f1} 
+Response\+Entity$<$ Map$<$ String, String $>$ $>$ com.\+example.\+demo.\+controller.\+Invitation\+Controller.\+send\+Invitation (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{event\+Id}{, }\item[{@Request\+Param String}]{email}{, }\item[{@Request\+Param String}]{event\+Name}{, }\item[{Principal}]{principal}{}\end{DoxyParamCaption})}
+
+
+
+\label{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_doc-variable-members}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_adbd26b2f5bbfee637c2925e282aa1f0a}\index{com.example.demo.controller.InvitationController@{com.example.demo.controller.InvitationController}!emailService@{emailService}}
+\index{emailService@{emailService}!com.example.demo.controller.InvitationController@{com.example.demo.controller.InvitationController}}
+\doxysubsubsection{\texorpdfstring{emailService}{emailService}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_adbd26b2f5bbfee637c2925e282aa1f0a} 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1EmailService}{Email\+Service}} com.\+example.\+demo.\+controller.\+Invitation\+Controller.\+email\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_a201a1aa87ea0b98535b995c1013d731b}\index{com.example.demo.controller.InvitationController@{com.example.demo.controller.InvitationController}!invitationService@{invitationService}}
+\index{invitationService@{invitationService}!com.example.demo.controller.InvitationController@{com.example.demo.controller.InvitationController}}
+\doxysubsubsection{\texorpdfstring{invitationService}{invitationService}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_a201a1aa87ea0b98535b995c1013d731b} 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1InvitationService}{Invitation\+Service}} com.\+example.\+demo.\+controller.\+Invitation\+Controller.\+invitation\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_a07e39af72cc13ef8925b34f082aec8dc}\index{com.example.demo.controller.InvitationController@{com.example.demo.controller.InvitationController}!qrCodeService@{qrCodeService}}
+\index{qrCodeService@{qrCodeService}!com.example.demo.controller.InvitationController@{com.example.demo.controller.InvitationController}}
+\doxysubsubsection{\texorpdfstring{qrCodeService}{qrCodeService}}
+{\footnotesize\ttfamily \label{classcom_1_1example_1_1demo_1_1controller_1_1InvitationController_a07e39af72cc13ef8925b34f082aec8dc} 
+\doxymbox{\hyperlink{classcom_1_1example_1_1demo_1_1service_1_1QrCodeService}{Qr\+Code\+Service}} com.\+example.\+demo.\+controller.\+Invitation\+Controller.\+qr\+Code\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+src/\+main/\+java/\+com/\+example/\+demo/\+controller/\+\doxymbox{\hyperlink{InvitationController_8java}{Invitation\+Controller.\+java}}\end{DoxyCompactItemize}
