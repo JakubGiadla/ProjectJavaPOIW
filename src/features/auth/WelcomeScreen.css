@@ -1,0 +1,36 @@
+/* src/features/auth/WelcomeScreen.css */
+.empty-card {
+  background: white;
+  border-radius: 32px;
+  padding: 2.5rem 2rem; /* Zmniejszono z 4rem 2rem */
+  text-align: center;
+  max-width: 500px; /* Zmniejszono z 600px - kluczowe dla proporcji */
+  width: 100%;
+  border: 1px dashed var(--border-color); /* Zmieniono 2px na 1px */
+  min-height: auto; /* Zmieniono z 300px, aby karta była zwarta */
+}
+
+.empty-state-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.icon-circle {
+  width: 70px; /* Zmniejszono z 80px */
+  height: 70px; /* Zmniejszono z 80px */
+  background-color: #ecfdf5;
+  color: var(--emerald-green);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem; /* Zmniejszono z 1.5rem */
+}
+
+/* Dodatkowe doprecyzowanie przycisków */
+.btn-lg {
+  font-size: 0.95rem !important;
+}

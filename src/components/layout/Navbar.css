@@ -1,0 +1,78 @@
+/* GŁÓWNY KONTENER NAVBARA */
+.navbar {
+  background-color: #ffffff;
+  transition: all 0.3s ease; /* Płynne reakcje na zmiany rozmiaru */
+}
+
+/* BRANDING / LOGO */
+.text-emerald {
+  color: #10b981 !important; /* Twój główny kolor zielony */
+}
+
+/* AVATAR / PRZYCISK PROFILU */
+.avatar-sm-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+
+/* INTERAKCJA Z PROFILEM */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.hover-bg-light:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-1px); /* Delikatne uniesienie przy najechaniu */
+}
+
+.transition-all {
+  transition: all 0.2s ease-in-out;
+}
+
+/* BADGE POWIADOMIEŃ PRZY AVATARZE */
+.badge.bg-danger {
+  background-color: #ef4444 !important;
+  border: 2px solid #ffffff; /* Biała obwódka, żeby badge nie zlewał się z tłem */
+}
+
+/* SPECYFICZNE STYLE DLA PROFILE DROPDOWN (jeśli nie masz osobnego pliku) */
+.profile-dropdown {
+  z-index: 1050; /* Musi być nad wszystkim innym */
+  border-color: #f1f5f9 !important;
+}
+
+/* KOLORY POMOCNICZE DLA POWIADOMIEŃ W DROPDOWNIE */
+.bg-success-light {
+  background-color: #ecfdf5;
+}
+.bg-info-light {
+  background-color: #eff6ff;
+}
+.bg-warning-light {
+  background-color: #fffbeb;
+}
+
+.text-success {
+  color: #059669;
+}
+.text-info {
+  color: #2563eb;
+}
+.text-warning {
+  color: #d97706;
+}
+
+/* POMOCNICZA KLASA DLA PRZEWINIĘCIA POWIADOMIEŃ */
+.overflow-auto::-webkit-scrollbar {
+  width: 4px;
+}
+
+.overflow-auto::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: 10px;
+}

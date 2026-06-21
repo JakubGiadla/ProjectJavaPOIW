@@ -1,0 +1,164 @@
+/* 1. TŁO MODALA (OVERLAY) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.5); /* Ciemniejsze, eleganckie tło */
+  backdrop-filter: blur(4px); /* Rozmycie tła dashboardu */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* 2. KONTENER MODALA */
+.add-expense-modal {
+  background: white;
+  width: 95%;
+  max-width: 450px;
+  border-radius: 28px;
+  padding: 24px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* 3. INPUTY */
+.amount-input {
+  font-size: 3.5rem;
+  font-weight: 800;
+  border: none;
+  border-bottom: 2px solid #f1f5f9;
+  width: 100%;
+  outline: none;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+.form-control-custom {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1.5px solid #e2e8f0;
+  outline: none;
+  margin-top: 8px;
+}
+
+/* 4. SEKRETY FLEXBOXA (To naprawia Twój widok) */
+.split-options {
+  display: flex; /* Ustawia karty obok siebie */
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.split-card {
+  flex: 1; /* Każda karta zajmuje tyle samo miejsca */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 8px;
+  border-radius: 16px;
+  background: #f8fafc;
+  border: 1px solid #f1f5f9;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.split-card.active {
+  background: #ecfdf5;
+  border-color: var(--emerald-green);
+  color: var(--emerald-green);
+}
+
+.split-card span {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+/* 5. LISTA UCZESTNIKÓW */
+.participant-item {
+  display: flex; /* Układa checkbox, awatar i tekst w jednej linii */
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f8fafc;
+}
+
+.participant-item:last-child {
+  border-bottom: none;
+}
+
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--emerald-green);
+  cursor: pointer;
+}
+
+/* 6. NAGŁÓWEK I PRZYCISKI */
+.modal-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.btn-close-modal {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #64748b;
+}
+
+.btn-emerald {
+  background: var(--emerald-green);
+  color: white;
+  border: none;
+  border-radius: 16px;
+  transition: transform 0.2s;
+}
+
+.btn-emerald:hover {
+  background: var(--emerald-hover);
+  transform: scale(1.02);
+}
+/* KONTENER MODALA - odcięty od wylewania się */
+.add-expense-modal {
+  background: white;
+  width: 95%;
+  max-width: 450px;
+  border-radius: 28px;
+  overflow: hidden; /* Kluczowe! */
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* NOWA KLASA NAGŁÓWKA (żeby Bootstrap tego nie tykał) */
+.ev-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* To rozrzuci tekst i 'X' na boki */
+  padding: 24px 24px 16px 24px;
+}
+
+/* NOWA KLASA BODY (tylko to się będzie scrollować) */
+.ev-body {
+  padding: 0 24px 24px 24px;
+  overflow-y: auto;
+}
+
+.ev-body::-webkit-scrollbar {
+  width: 6px;
+}
+.ev-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+.ev-body::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
